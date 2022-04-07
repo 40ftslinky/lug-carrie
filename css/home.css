@@ -50,7 +50,7 @@
 }
 
 video:after {
-    background-image: ;
+    /* background-image: ; */
 }
 
 .overlay {
@@ -129,6 +129,10 @@ video:after {
 
 .why_subscribe [class*="column"]:first-of-type {
     /* padding: 0 5%; */
+}
+
+.why_subscribe [class*="row"] {
+    gap:3rem;
 }
 
 .why_subscribe .img_wrap {
@@ -258,6 +262,10 @@ button[class*=".flickity"],
     /* padding: 0 5%; */
 }
 
+.why_choose [class*="row"] {
+    gap:3rem;
+}
+
 .why_choose .img_wrap {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -319,10 +327,11 @@ button[class*=".flickity"],
     color: rgba(var(--white-rgb), 0.8);
   }
   
-  /* Create an active/current tablink class */
+  /* Create an active/current tab-item class */
   .tabs .tab-item.active {
     border-bottom: 2px solid rgba(var(--white-rgb), 1);
   }
+
   .tabs .tab-item.active a {
     color: rgba(var(--white-rgb), 1);
   }
@@ -336,9 +345,8 @@ button[class*=".flickity"],
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
   }
-  .tab-pane p {
-    color: rgba(var(--white-rgb), 1);
-  }
+
+  .tab-pane p {  }
 
   .tab-pane.active {
     display: block;
@@ -351,25 +359,92 @@ button[class*=".flickity"],
     font-size: 28px;
   }
   
-  .topright:hover {color: red;}
+  .topright:hover { color: red; }
 
 
 
 /* ------------------------------------------- */
 /* accessories */
 
+
 .accessories {}
 
+.accessories ._row {
+    gap: 1rem
+}
+
+.accessories h2 {
+    margin-bottom: 0;
+}
+
+.accessories .three_col
+/* ,
+.accessories .three_col h6,
+.accessories .three_col h5,
+.accessories .three_col p  */
+{
+    text-align: left !important;
+}
+
+.accessories h6 {
+    font-size: 16px;
+}
+
+.accessories h5 {
+    font-weight: 600;
+}
 
 .accessories [class*="column"]:first-of-type {
     /* padding: 0 5%; */
 }
 
 .accessories .img_wrap {
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-.accessories .img_wrap img {
-    height: 30vh;
+    /* margin-top: 10%; */
+    margin-bottom: 1rem;
 }
 
+.accessories .img_wrap img {
+    height: 40vh;
+}
+
+
+
+/* ------------------------------------------- */
+/* bikes */
+
+.tern_gsd, .tern_hsd {}
+
+section[class*="tern_"] {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+section[class*="tern_"] h2 {
+    margin-bottom: 0;
+}
+
+
+/* ------------------------------------------- */
+/* testimonials */
+
+.testimonials .column_third ._group {
+    padding: 1rem;
+    text-align: left;
+}
+
+.testimonials h2 {
+    margin-bottom: 0;
+}
+
+.testimonials h5 {
+    margin-bottom: 0.5rem;
+}
+
+.testimonials h6 {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.stars {
+    margin-bottom: 0.5rem;
+}

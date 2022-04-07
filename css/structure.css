@@ -384,7 +384,8 @@ section {
 ._x2-padding { padding: 2rem; }
 
 /* margin */
-._no-margin { margin: 0; }
+._no-margin { margin: 0 !important; }
+._no-margin_vert { margin-top: 0 !important; margin-bottom: 0 !important; }
 ._x1-margin { margin: 1rem; }
 
 ._x2-margin { margin: 2rem; }

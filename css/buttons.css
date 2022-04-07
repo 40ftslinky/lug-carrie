@@ -193,7 +193,17 @@ button:hover,
     color: #fff;
     border-color: rgba(var(--primary-rgb),0.9);
 }
+.reverse [class*="ghost"] {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
 
+.reverse [class*="ghost"]:hover {
+    background-color: rgba(var(--primary-rgb),1.0);
+    color: #fff;
+    border-color: rgba(var(--primary-rgb),0.9);
+}
 
 button[class*="naked"] {
     background-color: rgba(var(--primary-rgb),0.0);
