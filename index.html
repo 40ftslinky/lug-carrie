@@ -46,10 +46,26 @@
       <nav class="navigation">        
         <ul class="menu">
           <li class="menu-item"><a class="menu-link" href="#">Why subscription?</a</li>
-          <li class="menu-item"><a class="menu-link" href="#">Family</a</li>
-          <li class="menu-item"><a class="menu-link" href="#">Commuter</a</li>
+          <li class="menu-item "><a class="menu-link has-sub" href="#">Family</a>
+            <div class="dropdown"></div>
+
+            <ul class="sub_menu">
+              <li class="sub_menu-item"><a class="sub_menu-link" href="#">Family GSD</a></li>
+              <li class="sub_menu-item"><a class="sub_menu-link" href="#">Family HSD</a></li>
+            </ul>
+          </li>
+          <li class="menu-item "><a class="menu-link has-sub" href="#">Commuter</a>
+            <div class="dropdown"></div>
+
+            <ul class="sub_menu">
+              <li class="sub_menu-item"><a class="sub_menu-link" href="#">Commuter GSD</a></li>
+              <li class="sub_menu-item"><a class="sub_menu-link" href="#">Commuter HSD</a></li>
+            </ul>
+          </li>
           <li class="menu-item "><a class="menu-link has-sub" href="#">Bikes</a>
-            <ul class="sub_menu dropdown">
+            <div class="dropdown"></div>
+
+            <ul class="sub_menu">
               <li class="sub_menu-item"><a class="sub_menu-link" href="#">GSD</a></li>
               <li class="sub_menu-item"><a class="sub_menu-link" href="#">HSD</a></li>
             </ul>
@@ -161,7 +177,7 @@
 
     <section class="hero centered">
       <!-- autoplay -->
-      <video autoplay muted loop id="backgroundVideo">
+      <video  muted loop id="backgroundVideo">
         <source src="./video/rain.mp4" type="video/mp4">
       </video>
 

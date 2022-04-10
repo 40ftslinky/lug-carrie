@@ -146,9 +146,20 @@ video:after {
 .why_subscribe .img_wrap img {
     height: 70vh;
 }
+@media screen and ( max-width: 1080px ) {
+    .why_subscribe .img_wrap img {
+        height: 90vw;
+    }
+}
+
 
 .why_subscribe [class*="column_60"] {
     max-width: calc((100vw * var(--columns)/10) - var(--columns) * 1rem ) ;
+}
+@media screen and ( max-width: 1080px ) {
+    .why_subscribe [class*="column_60"] {
+        max-width: 90vw;
+    }
 }
 
 /* ------------------------------------------- */
@@ -182,6 +193,12 @@ video:after {
     height: calc(100vh - var(--header_height)) !important;
 
 }
+@media screen and ( max-width: 1080px ) {
+    .gallery-cell {
+        width: 100vw;
+    }
+}
+
 
 .gallery-cell .img_wrap{
     /* height: 70vh; */
@@ -208,6 +225,14 @@ video:after {
         transition: all 0.5s ease-in-out ;
 }
 
+@media screen and ( max-width: 1080px ) {
+    .gallery-cell img {
+        transform: unset;
+        min-height: 40vh;
+    }
+}
+
+
 .gallery-cell .text_wrap{
     position: absolute;
     z-index: 111;
@@ -218,15 +243,26 @@ video:after {
     -webkit-transition: all 0.25s ease-in-out 0.75s;
         transition: all 0.25s ease-in-out 0.75s;
 }
+@media screen and ( max-width: 1080px ) {
+    .gallery-cell .text_wrap {
+        width: 75vw;
+    }
+}
+
 .gallery-cell.is-selected .text_wrap{
     opacity: 10;
-
 }
 
 .gallery-cell h3 {
     color: var(--blue);
     margin-bottom: 1rem;
 } 
+@media screen and ( max-width: 1080px ) {
+    .gallery-cell h3 {
+        --min-fs: 2;
+        --max-fs: 3;
+    }
+}
 
 .gallery-cell h3, 
 .gallery-cell p {
@@ -310,17 +346,26 @@ button[class*=".flickity"],
     margin-bottom: 2rem;
 }
   
-  /* Style the buttons inside the tab */
-  .tabs .tab-item {
+/* Style the buttons inside the tab */
+.tabs .tab-item {
     background-color: inherit;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-  }
+}
+@media screen and ( max-width: 1080px ) {
+    .tabs .tab-item {
+        font-size: 16px;
+        padding: 0.5rem 0.75rem;
+
+    }
+}
+
+
 .tabs .tab-item a {
     color: rgba(var(--white-rgb), 0.4);
-  }
+}
   
   /* Change background color of buttons on hover */
   .tabs .tab-item:hover {
@@ -408,7 +453,7 @@ button[class*=".flickity"],
 }
 
 .accessories .img_wrap img {
-    height: 40vh;
+    /* height: 40vh; */
 }
 
 

@@ -84,7 +84,7 @@
 @media screen and ( max-width: 550px ){
     [class*="button_wrap"]{
         flex-direction: column;
-        margin: 2rem 0 0 0;
+        /* margin: 2rem 0 0 0; */
         width: 100%;
     }
     [class*="button_wrap"] a {
