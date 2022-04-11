@@ -1,0 +1,174 @@
+/* family.css */
+
+
+/* ------------------------------------------- */
+/* hero */
+
+.family .hero {
+    background-image: url('../img/family_fullpage_bg.jpg');
+}
+
+.family .hero.bg_cover::before {
+    background: rgba(32,32,32,0.5);
+    background: linear-gradient(
+                -90deg, 
+                rgba(var(--navy-rgb),0) 0%, 
+                rgba(var(--navy-rgb),0.66) 100%);
+}
+
+.video_overlay_wrap {
+    position: absolute;
+    z-index: 22;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------------------- */
+/* compare */
+
+.compare {}
+
+.family_compare {}
+
+.family_compare .tab-item a {
+    color: rgba(var(--navy-rgb),1)
+}
+
+.family_compare .tab-item a:hover {
+    color: rgba(var(--navy-rgb),0.8)
+}
+
+.compare .tabs .tab-item.active a {
+    color: rgba(var(--navy-rgb),0.6);
+    border-bottom: 2px solid rgba(var(--navy-rgb),0.6)
+}
+
+
+.family_compare + .tab-content ul,
+.family_compare + .tab-content li {
+    text-align: left;
+}
+
+
+/* ------------------------------------------- */
+/* why tern */
+
+.why_tern { }
+
+.why_tern ._row { 
+    /* margin-top: 10%;
+    margin-bottom: 10%; */
+    height: calc(100vh - var(--header_height));
+}
+
+.why_tern h6 {
+    --min-fs: 0.8;
+    --max-fs: 1;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 0; */
+}
+
+.why_tern h2 {
+    margin-top: 0 !important;
+}
+
+.why_tern .normal {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ------------------------------------------- */
+/* why subscribe */
+
+.why_subscribe {}
+
+
+.why_subscribe h2 {
+    margin-top: 0 !important;
+    text-align: center;
+}
+
+/*  */
+
+.how_it_works { 
+    /* height: calc(100vh - var(--header_height)); */
+    background-color: var(--gray-100);
+}
+
+.how_it_works .carousel {
+    min-height: 65vh;
+}
+
+.how_it_works .flickity {}
+
+.how_it_works .bg_cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.how_it_works .bg_cover {
+    width:100%;
+    height: 100%;
+}
+
+.how_it_works .gallery-cell:nth-of-type(1) .bg_cover {
+    background-image: url('../img/family/how_it_works_consultant.jpg');
+}
+
+.how_it_works .gallery-cell:nth-of-type(2) .bg_cover {
+    background-image: url('../img/family/how_it_works_delivery.jpg');
+}
+
+.how_it_works .gallery-cell:nth-of-type(3) .bg_cover {
+    background-image: url('../img/family/how_it_works_service.jpg');
+}
+
+.how_it_works .gallery-cell:nth-of-type(4) .bg_cover {
+    background-image: url('../img/family/how_it_works_accessories.jpg');
+}
+
+.how_it_works .bg_cover::before {
+    background: rgba(32,32,32,0.5);
+}
+
+.bg_image_panel {
+    position: absolute;   
+}
+
+
+.how_it_works .gallery-cell ._panel {
+    display: flex;
+    align-items: center;
+    /* width: unset; */
+    object-fit: cover;
+    min-height: 50vh;
+    max-height: 50vh;
+    width:100%;
+    padding: 10%;
+    top:0;
+    opacity: 0;
+    /* transform: scale(0.75) translateY(-15%); */
+    -webkit-transition: all 0.5s ease-in-out ;
+        transition: all 0.5s ease-in-out ;
+}
+
+.how_it_works .gallery-cell.is-selected ._panel {
+    /* padding: 0 2%; */
+    opacity: 1;
+
+    -webkit-transition: all 0.5s ease-in-out ;
+        transition: all 0.5s ease-in-out ;
+}
+
+.how_it_works .flickity-page-dots {
+    bottom: -45px;
+}

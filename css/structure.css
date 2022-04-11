@@ -101,6 +101,7 @@ section {
 [class*="row"] {
     position: relative;
     display: flex;
+    align-items: center;
 }
 [class*="_row"] {
     gap: 2rem;
@@ -352,6 +353,11 @@ section {
     {
         margin: 0;
     }
+}
+
+.img_wrap, .video_wrap {
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 
