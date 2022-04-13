@@ -5,12 +5,12 @@ jQuery(document).ready(function( $ ) {
     // $("#getstarted").removeClass("active");
     // $(".fullscreen").removeClass("active");
     // $(".fullscreen").hide();
-    $("#getstarted").click(function(e){
+    $( "#getstarted" ).click(function(e){
         e.preventDefault()
         //
-        $(this).toggleClass("active");
-        $(".fullscreen").toggleClass("active");
-        $("body").toggleClass("no_scroll");        
+        $(this).toggleClass( "active" );
+        $( ".fullscreen" ).toggleClass( "active" );
+        $( "body" ).toggleClass( "no_scroll" );        
         //
         if ($( this ).hasClass( "active ") ) {
           $( this ).innerHTML = "Close";
