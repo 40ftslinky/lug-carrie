@@ -1,0 +1,287 @@
+/* forms.css */
+
+
+/* -------------------------------------------------------------- 
+   FORMS
+-------------------------------------------------------------- */
+
+a:focus {
+    outline: none;
+}
+
+input:focus, textarea:focus, button:focus {
+    /* outline: 2px solid #7f54b3; */
+    /* outline: 0.5px solid rgba(var(--black-rgb), 0.1) !important; */
+    outline: none;
+    box-shadow: 0 0 0.25rem rgb(0 0 0 / 20%) !important;
+}
+
+.forms.wrapper {
+    /* max-width: 410px; */
+    /* width: var(--col-mx-width); */
+    margin: auto;  
+}
+  
+  
+.forms fieldset {
+    padding: 1em 1em;
+    margin: 1em 0;
+}
+.forms legend {
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.forms label {
+    display: block;
+    margin: 1em 0;
+    font-size: 0.8rem;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.stage_wrap form label input:not([type=radio]),
+.stage_wrap form label input:not([type=checkbox]),
+#dashboard select,
+.forms label textarea, 
+.forms label select, 
+.forms label input[type=text], 
+.forms label input[type=email], 
+.forms label input[type=search], 
+.forms label input[type=tel], 
+.forms label input[type=url], 
+.forms label input[type=password], 
+.forms label input[type=color], 
+.forms label input[type=file], 
+.forms label input[type=color], 
+.forms label input[type=number], 
+.forms label input[type=range], 
+.forms label input[type=date], 
+.forms label input[type=month], 
+.forms label input[type=week], 
+.forms label input[type=time], 
+.forms label input[type=datetime], 
+.forms label input[type=datetime-local],
+.forms label input:not([type=radio]),
+.forms label input:not([type=checkbox]) {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+}
+  
+/* ------------------------------------------------ */
+/* checkbox fix */
+/* ------------------------------------------------ */
+
+.forms label[class*=radio],
+.forms label[class*=checkbox],
+.stage_wrap label[class*=checkbox] {
+    display: inline-block;
+}
+
+.forms label input[type=radio],
+.forms label input[type=checkbox],
+.stage_wrap label input[type=checkbox] {
+    display: inline-block !important;
+    width: max-content !important;
+    font-size: 1rem;
+}
+.forms label input[type=checkbox],
+.stage_wrap label input[type=checkbox] {
+    margin-right: 0.25rem;
+}
+.forms label input[type=checkbox] {
+    vertical-align: bottom;
+    position: relative;
+    top: -3px;
+}
+.images_check label input[type=checkbox] {
+    top: 0;
+}
+
+.forms label input[type=radio] {
+    vertical-align: bottom;
+    position: relative;
+    top: -3px;
+}
+
+/* checkbox indent */
+
+.forms .checkbox_outer label {
+    margin: 1em 0 0 1.25rem;
+}
+.forms .checkbox_outer label input[type=checkbox],
+.stage_wrap .checkbox_outer label input[type=checkbox]
+{
+    margin-left: -1.25rem;
+}
+
+/*  */
+
+.checkbox_outer + .select_outer {
+    margin-top: 0.5rem;
+    margin-left: 1.25rem;
+}
+  
+  
+/* ------------------------------------------------ */
+  
+select,
+form select, 
+form input[type=text], 
+form input[type=email], 
+form input[type=search], 
+form input[type=tel], 
+form input[type=url], 
+form textarea,
+.forms textarea, 
+.forms select, 
+.forms input[type=text], 
+.forms input[type=email], 
+.forms input[type=search], 
+.forms input[type=tel], 
+.forms input[type=url], 
+.forms input[type=password], 
+.forms input[type=color], 
+.forms input[type=file], 
+.forms input[type=color], 
+.forms input[type=number], 
+.forms input[type=range], 
+.forms input[type=date], 
+.forms input[type=month], 
+.forms input[type=week], 
+.forms input[type=time], 
+.forms input[type=datetime], 
+.forms input[type=datetime-local] {
+      margin: 0.12em 0;
+      padding: 0.25em 0.4em;
+      border: 1px solid #ddd;
+      max-width: 100%;
+}
+.forms select {
+      min-width: 300px;
+}
+@media  screen and (max-width: 400px) {
+    .forms select {
+        min-width: unset;
+        width: 100%;
+    }
+}
+  
+.forms input[type=search] {
+      box-sizing: border-box;
+}
+.forms input[type=file] {
+    border-width: 0;
+    padding: 0;
+}
+.forms input[type=image] {
+    vertical-align: bottom;
+}
+  
+.forms ::placeholder {
+    /* color: turquoise; */
+}
+
+.forms input select {
+    -webkit-appearance: none;
+    background-color: transparent;
+}
+
+select::-ms-expand {
+    display: none;
+}
+  
+  /* ------------------------------------------------------- */
+  /* files upload */
+  
+  /* wtf,forms */
+  
+.file {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 2.5rem;
+}
+  
+input[type='file'] {
+    height: 2.5rem;
+    border-radius: .25rem;  
+}
+  
+.file-custom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 2.5rem;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fff;
+    border: .075rem solid #ddd;
+    border-radius: .25rem;
+    box-shadow: inset 0 0.2rem 0.4rem rgb(0 0 0 / 5%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: left;
+  
+}
+
+/* input[type='file']:before, */
+.file-custom:before {
+    position: absolute;
+    top: -.075rem;
+    right: -.075rem;
+    bottom: -.075rem;
+    z-index: 6;
+    display: block;
+    content: "Browse";
+    height: 2.5rem;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    background-color: #eee;
+    border: .075rem solid #ddd;
+    border-radius: 0 .25rem .25rem 0;
+}
+/* input[type='file']:after, */
+.file-custom:after {
+    content: "Choose file...";
+}
+
+.file-custom:after {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input[type='file'] {
+      
+}
+  
+/* ------------------------------------------------------- */
+/* select */
+
+select {
+    background-color: white;
+    /* inline SVG */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23424242%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    border-radius: 2px;
+    border: none;
+    /* color: #ffffff; */
+    padding: 10px 30px 10px 10px;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}

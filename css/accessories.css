@@ -8,6 +8,9 @@
 
 #accessories .hero {
     background-image: url('../img/why_subscribe/Lug_Carrie_why_subscribe_hero_poster.jpg');
+    height: calc(75vh - var(--header_height));
+    min-height: fit-content;
+    flex: 1;
 }
 
 #accessories .hero h1 {
@@ -23,17 +26,37 @@
                 rgba(var(--navy-rgb),0.66) 100%);
 }
 
-.video_overlay_wrap {
-    position: absolute;
-    z-index: 22;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:1rem;
-    width: 100%;
-    height: 100%;
-}
 
 /* ------------------------------------------- */
 /*  */
+
+
+#accessories .listing {
+    margin-bottom: 5rem;
+}
+
+#accessories .select_group:first-of-type {
+    min-width: 154px;
+}
+
+
+/*  */
+
+#accessories .three_col {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#accessories .column_quarter {
+    max-width: calc((1600px * var(--columns)/10) - (var(--columns) * 2rem ) );
+    /* max-width: calc((100vw * var(--columns)/10) - (var(--columns) * 2rem )); */
+    width: calc(var(--col-width) * var(--columns));
+}
+
+@media screen and (max-width:1080px){ 
+    #accessories .column_quarter {
+    max-width: calc((100vw * var(--columns)/10) - (var(--columns) * 2rem ));
+    --columns: 5;
+    }
+}

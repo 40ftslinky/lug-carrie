@@ -58,12 +58,14 @@
 /* ------------------------------------------- */
 /* why tern */
 
-.why_tern { }
+.why_tern { 
+    gap: 10rem
+}
 
-.why_tern ._row { 
-    /* margin-top: 10%;
-    margin-bottom: 10%; */
-    height: calc(100vh - var(--header_height));
+#family .why_tern ._row { 
+    /* padding-top: 5rem;
+    padding-bottom: 5rem; */
+    /* height: calc(100vh - var(--header_height)); */
 }
 
 .why_tern h6 {

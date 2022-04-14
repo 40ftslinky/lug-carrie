@@ -63,7 +63,7 @@
 .why_tern ._row { 
     /* margin-top: 10%;
     margin-bottom: 10%; */
-    height: calc(100vh - var(--header_height));
+    /* height: calc(100vh - var(--header_height)); */
 }
 
 .why_tern h6 {
