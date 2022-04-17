@@ -214,6 +214,11 @@ section {
     margin-right: auto;
 }
 
+.center p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .space_between{
     display: flex;
     flex-direction: column;
@@ -366,10 +371,15 @@ section {
 
 @media screen and ( max-width: 1600px ) {
     ._max_width_1600 {
-        /* max-width:calc((100% * var(--columns)/10) - (var(--columns) * 3rem )); */
-                /* max-width: calc(1600px - 6rem); */
-                max-width: calc((100vw * var(--columns)/10) - 1rem );
-            }
+        max-width: calc((1600px * var(--columns)/10) - 1rem );
+    }
+}
+
+
+@media screen and ( max-width: 1080px ) {
+    ._max_width_1600 {
+        max-width: calc((100vw * var(--columns)/10) - 1rem );
+    }
 }
 
 .three_col {

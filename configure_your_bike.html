@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body id="home" class="home">
+<body id="configure" class="configure">
 
   <header id="header">
     <div class="logo_wrap">
@@ -130,7 +130,7 @@
 
           </div>
 
-          <div class="column_third _x2-padding">
+          <div class="column_third _x2-padding disabled">
 
           <div class="_group _panel white_bg center">
               <div class="text_block ">
@@ -173,613 +173,146 @@
 
   <main>
 
-    <section class="hero centered">
-      <!-- autoplay src="./video/rain.mp4" -->
-      <video class="lazy" muted loop playsinline poster="./img/Lug_Carrie_hero_poster.jpg" id="backgroundVideo">
-        <source data-src="./video/rain.mp4" type="video/mp4">
-      </video>
+    <section class="configure_sect">
+      
+        <div class="fullwidth_row  ">        
+            <div class="fullwidth_col_left">
 
-      <div class="overlay"></div>
-      <!-- <div class=""> -->
-        <div class="_row">        
-          <div class="column_50">
+                <div class="_wrap">
+                <div class="config_img_block center">
 
-            <div class="_wrap">
-              <div class="text_block center">
-                <h1>Daily life, done&nbsp;better.</h1>
-                <div class="large _regular">
-                  Our quality eBikes, flexible subscription, and city wide service help you do more of life by bike.
+                    <picture class="hsd_base_img">
+                        <source 
+                            media="(min-width: 800px)" 
+                            srcset="./img/configure/hsd/HSD_Base.jpg, 
+                                    ./img/configure/hsd/HSD_Base.jpg" >
+                        <img src="./img/configure/hsd/HSD_Base.jpg" >
+                    </picture>
+
+                    <picture class="hsd_stand_img">
+                        <source 
+                            media="(min-width: 800px)" 
+                            srcset="./img/configure/hsd/HSD_Stand-Down.png, 
+                                    ./img/configure/hsd/HSD_Stand-Down.png" >
+                        <img src="./img/configure/hsd/HSD_Stand-Down.png" loading="lazy">
+                    </picture>
+
+                    <picture class="hsd_stand_img">
+                        <source 
+                            media="(min-width: 800px)" 
+                            srcset="./img/configure/hsd/HSD_Captains_Chair-2723.png, 
+                                    ./img/configure/hsd/HSD_Captains_Chair-2723.png" >
+                        <img src="./img/configure/hsd/HSD_Captains_Chair-2723.png" loading="lazy">
+                    </picture>                    
+
                 </div>
-                <div class="button_wrap_center">
+                </div>
 
-                  <div class="play_button" id="playBtn" onclick="videoControl()"  >
-                    <svg class="play" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g>
-                      <path class="circle" d="M26.584 53.168C41.266 53.168 53.168 41.2676 53.168 26.584C53.168 11.9023 41.266 0 26.584 0C11.902 0 0 11.9023 0 26.584C0 41.2676 11.902 53.168 26.584 53.168Z" fill="#00C1DC"/>
-                      <path class="arrow"  d="M36.1075 26.9304L21.2863 35.167C21.1149 35.2637 20.9684 35.2749 20.8453 35.2004C20.7228 35.126 20.6613 34.9922 20.6613 34.7988V18.3701C20.6613 18.1768 20.7228 18.0427 20.8453 17.9683C20.9684 17.8941 21.1149 17.9053 21.2863 18.002L36.1075 26.2385C36.2789 26.3352 36.3644 26.4504 36.3644 26.5845C36.3644 26.7183 36.2789 26.8337 36.1075 26.9304V26.9304Z" fill="white"/>
-                      </g>                    
-                    </svg>                    
-                  </div>
-
-                  <div class="" id="buttonText">Play Video</div>
-                </div>            
-              </div>
             </div>
-
-          </div>
-        </div>
-        <div class="_row _bottom _center">
-          <div class="page_down_wrap">
-            <svg class="chev_down" width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g >
-              <path d="M19.3647 38.73C8.68701 38.73 0 30.0435 0 19.3665C0 8.68774 8.68701 0 19.3647 0C30.0425 0 38.73 8.68774 38.73 19.3665C38.73 30.0435 30.0425 38.73 19.3647 38.73V38.73ZM19.3647 1.51221C9.52051 1.51221 1.51172 9.52148 1.51172 19.3665C1.51172 29.2097 9.52051 37.2178 19.3647 37.2178C29.209 37.2178 37.2183 29.2097 37.2183 19.3665C37.2183 9.52148 29.2095 1.51221 19.3647 1.51221Z" fill="#EBEAFA"/>
-              <path d="M25.6243 19.0068L19.9003 24.7305C19.8266 24.8047 19.7161 24.8535 19.6178 24.8535C19.5195 24.8535 19.409 24.8047 19.3353 24.7305L13.6113 19.0068C13.5375 18.9326 13.4884 18.8223 13.4884 18.7236C13.4884 18.626 13.5375 18.5156 13.6113 18.4414L14.2254 17.8271C14.2991 17.7539 14.3974 17.7051 14.5079 17.7051C14.6062 17.7051 14.7167 17.7539 14.7905 17.8271L19.6178 22.6553L24.4451 17.8271C24.5189 17.7539 24.6294 17.7051 24.7277 17.7051C24.8259 17.7051 24.9365 17.7539 25.0102 17.8271L25.6243 18.4414C25.6981 18.5156 25.7472 18.626 25.7472 18.7236C25.7472 18.8223 25.6981 18.9326 25.6243 19.0068V19.0068Z" fill="#EDEDED"/>
-              </g>                  
-            </svg>                  
-          </div>
-        </div>
-
-      <!-- </div> -->
-    </section>
-
-
-    <section class="why_subscribe centered red_bg navy">
-      <!-- <div class=""> -->
-        <div class="_row _no-margin">   
-          <!-- <div class="column_10"></div>      -->
-          <div class="column_40 centered">
-
-            <div class="_wrap">
-              <div class="text_block center">
-                <h2 class="navy">Why subscribe?</h2>
-                <!-- <div class="large _regular"> -->
-                  <p class="normal navy">
-                    A subscription is more flexible than owning a bike, because life changes and your needs might change. You can swap accessories, upgrade, downsize or give the bike back. You’ll never pay for service, and our team can come to you for most repairs. You need not worry about Insurance, locks and alarms either because those things are included in your subscription as well.
-                  </p>
-                  <p class="normal navy">
-                    You can even buy your bike, if you fall in love. It happens.
-                  </p>
-                <!-- </div> -->
-                <div class="button_wrap_center_vert">
-
-                  <button id="getstarted" class="button navy_btn">Get Started</button>
-                  <button class="button naked_white">Learn more</button>      
-
-                </div>            
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="column_60">
-            <div class="img_wrap">
-              <img class="cover" src="./img/why_subscribe.jpg" loading="lazy"/>
-            </div>
-          </div>
-        </div>        
-
-      <!-- </div> -->
-    </section>
-
-    <section class="set_up-family_sect _no-flex">
-
-        <div class=""> 
-           <!-- Flickity HTML init -->
-           <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-            
-            <div class="gallery-cell">
-              <div class="cell">
-                <div class="img_wrap">
-                  <img class="" src="./img/gsd/GSD_Base&Layers_72dpi.jpg" />
-                </div>
-                <div class="text_wrap">
-                  <h3 class="title center">Family Config #1</h3>
-                  <div class="desc">
-                    <strong>Tern GSD - from $61 per week</strong>
-                    <p class="normal">The school run has never been more fun. Cargo eBikes for 1 or 2 kids.</p>
-                  </div>
-                  <div class="button_wrap_center_vert">
-
-                    <button class="button blue_btn">Get Started</button>
-                    <button class="button naked">Learn more</button>      
-  
-                  </div> 
-                </div>
-                
-              </div>                
-            </div>
-
-            <div class="gallery-cell">
-              <div class="cell">
-                <div class="img_wrap">
-                  <img class="" src="./img/gsd/GSD_Base&Layers_72dpi+StormBox+Transporter+Crate.jpg" loading="lazy"/>
-                </div>
-                <div class="text_wrap">
-                  <h3 class="title center">Family Config #2</h3>
-                  <div class="desc">
-                    <strong>Tern GSD - from $61 per week</strong>
-                    <p class="normal">The school run has never been more fun. Cargo eBikes for 1 or 2 kids.</p>
-                  </div>
-                  <div class="button_wrap_center_vert">
-
-                    <button class="button blue_btn">Get Started</button>
-                    <button class="button naked">Learn more</button>      
-  
-                  </div> 
-                </div>
-                
-              </div>                
-            </div>
-
-            <div class="gallery-cell">
-              <div class="cell">
-                <div class="img_wrap">
-                  <img class="" src="./img/gsd/GSD_Base&Layers_72dpi+Joyride+Hauler.jpg" loading="lazy"/>
-                </div>
-                <div class="text_wrap">
-                  <h3 class="title center">Family Config #3</h3>
-                  <div class="desc">
-                    <strong>Tern GSD - from $61 per week</strong>
-                    <p class="normal">The school run has never been more fun. Cargo eBikes for 1 or 2 kids.</p>
-                  </div>
-                  <div class="button_wrap_center_vert">
-
-                    <button class="button blue_btn">Get Started</button>
-                    <button class="button naked">Learn more</button>      
-  
-                  </div> 
-                </div>
-                
-              </div>                
-            </div>
-           
-         </div>
-          
-        </div>        
-
-    </section>
-
-    <section class="set_up-commuter_sect _no-flex">
-
-      <div class=""> 
-         <!-- Flickity HTML init -->
-         <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-          
-          <div class="gallery-cell">
-            <div class="cell">
-              <div class="img_wrap">
-                <img class="" src="./img/hsd/HSD_Base&Layers_72dpi.jpg" loading="lazy"/>
-              </div>
-              <div class="text_wrap">
-                <h3 class="title center">Commuter Config #1</h3>
-                <div class="desc">
-                  <strong>Tern HSD - from $44 per week</strong>
-                  <p class="normal">The commute to work? No sweat. Carry up to 60kg.</p>
-                </div>
-                <div class="button_wrap_center_vert">
-
-                  <button class="button blue_btn">Get Started</button>
-                  <button class="button naked">Learn more</button>      
-
-                </div> 
-              </div>
-              
-            </div>                
-          </div>
-
-          <div class="gallery-cell">
-            <div class="cell">
-              <div class="img_wrap">
-                <img class="" src="./img/hsd/HSD_Base&Layers_72dpi+Storm_Shield+Transporter+Bottle.jpg" loading="lazy"/>
-              </div>
-              <div class="text_wrap">
-                <h3 class="title center">Commuter Config #2</h3>
-                <div class="desc">
-                  <strong>Tern HSD - from $44 per week</strong>
-                  <p class="normal">The commute to work? No sweat. Carry up to 60kg.</p>
-                </div>
-                <div class="button_wrap_center_vert">
-
-                  <button class="button blue_btn">Get Started</button>
-                  <button class="button naked">Learn more</button>      
-
-                </div> 
-              </div>
-              
-            </div>                
-          </div>
-
-          <div class="gallery-cell">
-            <div class="cell">
-              <div class="img_wrap">
-                <img class="" src="./img/hsd/HSD_Base&Layers_72dpi+Panier+ClubhouseMini.jpg" loading="lazy"/>
-              </div>
-              <div class="text_wrap">
-                <h3 class="title center">Commuter Config #3</h3>
-                <div class="desc">
-                  <strong>Tern HSD - from $44 per week</strong>
-                  <p class="normal">The commute to work? No sweat. Carry up to 60kg.</p>
-                </div>
-                <div class="button_wrap_center_vert">
-
-                  <button class="button blue_btn">Get Started</button>
-                  <button class="button naked">Learn more</button>      
-
-                </div> 
-              </div>
-              
-            </div>                
-          </div>
-         
-       </div>
         
-      </div>        
+<!--  -->
 
-  </section>
-  
+            <div class="selection fullwidth_col_right">
 
-    <section class="why_choose centered blue_bg">
-      <!-- <div class=""> -->
-        <div class="_row ">             
-          
-          <div class="column_60">
-            <div class="img_wrap">
-              <img class="cover" src="./img/why_choose_quality.jpg" loading="lazy"/>
-            </div>
-          </div>
-
-          <div class="column_40 centered">
-
-            <div class="_wrap">
-              <div class="tab_block center">
-                <h2 class="navy">Why choose a Tern eBike?</h2>
-                <!-- <p class="normal">
-                  One of the most important parts of any electric bike are the electrics. Bosch is one of the top names in the business of e-bike motors and batteries. These deliver a ride that’s smooth and comfortable. The&nbsp;battery charges easily and quickly, and can charge fully in around 4&nbsp;hours. A full charge will last for up to 110km of riding, depending on how much pedal assistance you are using.
-                </p> -->
-                
-                <div class="tabs">
-                  <div class=" tab-item "><a href="#tabs-easy">Easy</a></div>
-                  <div class=" tab-item active"><a href="#tabs-quality">Quality</a></div>
-                  <div class=" tab-item "><a href="#tabs-safety">Safety</a></div>
-                  <div class=" tab-item "><a href="#tabs-fun">Fun</a></div>
-                </div>
-              
-                <div class="tab-content">
-                  <div id="tabs-easy" class="tab-pane ">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                  <div id="tabs-quality" class="tab-pane active">
-                    <p class="navy">
-                      One of the most important parts of any electric bike are the electrics. Bosch is one of the top names in the business of e-bike motors and batteries. These deliver a ride that’s smooth and comfortable. The battery charges easily and quickly, and can charge fully in around 4 hours. A full charge will last for up to 110km of riding, depending on how much pedal assistance you are using.
-                    </p>
-                  </div>
-                  <div id="tabs-safety" class="tab-pane">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-                  </div>
-                  <div id="tabs-fun" class="tab-pane">
-                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                  </div>
-                </div>
-                
-                
-                <div class="button_wrap_center_vert">
-
-                  <button class="button naked_white">Learn more ></button>      
-
-                </div>            
-              </div>
-            </div>
-
-          </div>
-        </div>        
-
-    </section>
-
-    <!-- needs to be carousel - populated from accessories page content -->
-    <section class="accessories centered yellow_bg">
-      <!-- <div class=""> -->
-        <div class="_row ">             
-          
-          <div class="column_100">
-            <div class="_wrap">
-              <div class="text_block center">
-                <h2 class="navy">Accessories for all life’s needs</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="_row _max_width_1600 three_col">             
-          
-          <div class="column_third ">
-            <div class="img_wrap">
-              <img class="cover" src="./img/accessories/cargo_hold_37_panniers.jpg" loading="lazy"/>
-            </div>
-
-            <div class="_group">
-              <div class="text_block left">
-                <h6 class="navy">$3 PER WEEK</h6>
-                <h5 class="navy">Cargo Hold 37 Panniers</h5>
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    The Bike-Trunk: The Cargo Hold Panniers are like a trunk for your bike.                   
-                  </p>                  
-                <!-- </div> -->                         
-              </div>
-            </div>
-
-          </div>
-
-          <div class="column_third ">
-            <div class="img_wrap">
-              <img class="cover" src="./img/accessories/sidekick_seat_pad.jpg" loading="lazy" />
-            </div>
-
-            <div class="_group ">
-              <div class="text_block left ">
-                <h6 class="navy">$2 PER WEEK</h6>
-                <h5 class="navy">Sidekick Seat Pad</h5>
-                <!-- <div class="large _regular"> -->
-                <p class="normal">                   
-                  Foam cushion provides comfort for passengers. 
-                </p>                  
-                <!-- </div> -->                        
-              </div>
-            </div>
-
-          </div>
-
-          <div class="column_third ">
-            <div class="img_wrap">
-              <img class="cover" src="./img/accessories/captains_chair_bundle.jpg" loading="lazy"/>
-            </div>
-
-            <div class="_group">
-              <div class="text_block left">
-                <h6 class="navy">$4 PER WEEK</h6>
-                <h5 class="navy">The Captain’s Chair Bundle</h5>
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    Bundle includes seat, bars & foot pegs.
-                  </p>                  
-                <!-- </div> -->                        
-              </div>
-            </div>
-
-          </div>
-
-          <div class="button_wrap_center_vert">
-
-            <button class="button naked_white">See all 28 accessories ></button>      
-
-          </div> 
-        </div>        
-
-    </section>
-
-    <section class="tern_gsd centered gray_100_bg ">
-      <!-- <div class=""> -->
-        <div class="_row ">   
-          <!-- <div class="column_10"></div>      -->
-          <div class="column_40 centered">
-
-            <div class="_wrap">
-              <div class="text_block center">
-                <h2 class="blue">Tern HSD</h2>
-                <!-- <div class="large _regular"> -->
-                  <h4 class="navy">
-                    From $44 per week
-                  </h4>
-                  <p class="normal gray_800">
-                    Loaded with features. <br> 
-The ultimate nimble cargo ebike.
-                  </p>
-                <!-- </div> -->
-                <div class="button_wrap_center_vert">
-
-                  <button class="button blue_btn">Get Started</button>
-                  <button class="button naked">Learn more</button>      
-
-                </div>            
-              </div>
-            </div>
-
-          </div>
-          
-          <div class="column_60">
-            <div class="img_wrap">
-              <img class="cover" src="./img/tern_hsd.jpg" loading="lazy"/>
-            </div>
-          </div>
-        </div>        
-
-      <!-- </div> -->
-    </section>
-
-    <section class="tern_hsd centered ">
-
-      <div class="_row ">   
-          
-        <div class="column_60">
-          <div class="img_wrap">
-            <img class="cover" src="./img/tern_gsd.jpg" loading="lazy"/>
-          </div>
-        </div>
-        
-        <div class="column_40 centered">
-
-          <div class="_wrap">
-            <div class="text_block center">
-              <h2 class="blue">Tern GSD</h2>
-              <!-- <div class="large _regular"> -->
-                <h4 class="navy">
-                  From $44 per week
-                </h4>
-                <p class="normal gray_800">
-                  When you need to carry a load.  <br>
-                  Rides like a bike, carries like a car.
-                </p>
-              <!-- </div> -->
-              <div class="button_wrap_center_vert">
-
-                <button class="button blue_btn">Get Started</button>
-                <button class="button naked">Learn more</button>      
-
-              </div>            
-            </div>
-          </div>
-
-        </div>
-      </div>      
-    </section>
-
-    <section class="testimonials centered gray_100_bg">
-      <!-- <div class=""> -->
-        <div class="_row ">             
-          
-          <div class="column_100">
-            <div class="_wrap ">
-              <div class="text_block center">
-                <h2 class="navy">5 star reviews</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="_row _max_width_1600 three_col">             
-          
-          <div class="column_third _x2-padding">
-            
-
-            <div class="_group white_bg">
-              <div class="text_block left">
-                <h5 class="navy">Gaurav Bhasin</h5>
-                <h6 class="navy">Description</h6>
-                <div class="stars yellow">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                <div class="progress_timeline">
+                    <ol class="progress_list">
+                        <li class="current">Bikes</li>
+                        <li>Passenger</li>
+                        <li>Cargo</li>
+                        <li>Accessories</li>
+                    </ol>
                 </div>
 
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    For someone who has not ridden the bike for 
-last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                  </p>                  
-                <!-- </div> -->                         
-              </div>
-            </div>
-
-          </div>
-
-          <div class="column_third _x2-padding">
-            
-
-            <div class="_group white_bg">
-              <div class="text_block left">
-                <h5 class="navy">Gaurav Bhasin</h5>
-                <h6 class="navy">Description</h6>
-                <div class="stars yellow">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                <div class="progress_intro">
+                    Choose a bike that best suits your needs and lifestyle.
                 </div>
 
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    For someone who has not ridden the bike for 
-last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                  </p>                  
-                <!-- </div> -->                         
-              </div>
+
+                <form class="select_checkbox_">
+                    <fieldset class="checkbox-group">
+                    <legend class="checkbox-group-legend">Legend</legend>
+                    
+                        <div class="checkbox lrg">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox-input"  />
+                                <div class="checkbox-tile ">
+                                    <div class="checkbox-thumb">
+                                        <img src="https://placekitten.com/110/110" />
+                                    </div>                                                                                                
+                                </div>
+                            </label>
+                        </div>    
+
+                        <div class="checkbox lrg">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox-input"  />
+                                <div class="checkbox-tile ">
+                                    <div class="checkbox-thumb">
+                                        <img src="https://placekitten.com/110/110" />
+                                    </div>                                                                                                
+                                </div>
+                            </label>
+                        </div>   
+
+                        <div class="checkbox">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox-input"  />
+                                <div class="checkbox-tile">
+                                    <div class="checkbox-thumb">
+                                        <img src="https://placekitten.com/110/110" />
+                                    </div>
+
+                                    <div class="checkbox-label">
+                                        <div class="product-head">
+                                            <div class="product-title">Product Title</div>
+                                            <div class="product-price">$44</div>            
+                                        </div>
+                                        
+                                        <div class="product-desc">product description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur in neque ac rhoncus. Sed tortor tellus, bibendum vitae ligula a, faucibus vestibulum ligula. </div>
+                                        <div class="product-ext">
+                                            Learn More
+                                        </div>
+                                    </div>
+                                                                    
+                                </div>
+                            </label>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" class="checkbox-input"  />
+                                <div class="checkbox-tile">
+                                    <div class="checkbox-thumb">
+                                        <img src="https://placekitten.com/110/110" />
+                                    </div>
+
+                                    <div class="checkbox-label">
+                                        <div class="product-head">
+                                            <div class="product-title">Product Title</div>
+                                            <div class="product-price">$44</div>            
+                                        </div>
+                                        
+                                        <div class="product-desc">product description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consectetur in neque ac rhoncus. Sed tortor tellus, bibendum vitae ligula a, faucibus vestibulum ligula. </div>
+                                        <div class="product-ext">
+                                            Learn More
+                                        </div>
+                                    </div>
+                                                                    
+                                </div>
+                            </label>
+                        </div>
+                    
+                    </fieldset>
+                </form>
+
+                <div class="subtotal_panel"></div>
+
             </div>
 
-          </div>
 
-          <div class="column_third _x2-padding">
-            
-
-            <div class="_group white_bg">
-              <div class="text_block left">
-                <h5 class="navy">Gaurav Bhasin</h5>
-                <h6 class="navy">Description</h6>
-                <div class="stars yellow">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    For someone who has not ridden the bike for 
-last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                  </p>                  
-                <!-- </div> -->                         
-              </div>
-            </div>
-
-          </div>
-
-        </div>        
+        </div>
 
     </section>
-
-    <section class="service bg_cover centered ">
-
-      <div class="_row ">   
-          
-        <div class="column_60">
-          
-        </div>
-        
-        <div class="column_40 centered">
-
-          <div class="_wrap">
-            <div class="text_block center">
-              <!-- <div class="large _regular"> -->
-                <h2 class="white">
-                  Service and support
-                </h2>
-                <p class="normal white">
-                  No matter where you ride, we have you and your bike covered. With a range of services to support you at every turn, you can protect your bike against theft, be alerted if someone tries to snatch it, and get help whenever and wherever you need it.
-                </p>
-              <!-- </div> -->
-              <div class="button_wrap_center_vert">
-
-                <button class="button blue_btn">Book a time</button>
-                <button class="button naked">Learn more ></button>
-
-              </div>            
-            </div>
-          </div>
-
-        </div>
-      </div>      
-    </section>
-
-    <!-- 
-    <section class="buttons">
-      <div class="_wrap">
-        <div class="text_block">
-          
-          <div class="intro">
-            Try some buttons
-          </div>
-
-          <div class="button_wrap_left">
-            <button class="button white_btn">Get Started</button>
-            <button class="button ghost_white">Learn more</button>
-        </div>
-
-
-        </div>
-      </div>
-    </section> 
-    -->
 
   </main>
 

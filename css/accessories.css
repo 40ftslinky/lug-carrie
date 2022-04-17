@@ -56,7 +56,29 @@
 
 @media screen and (max-width:1080px){ 
     #accessories .column_quarter {
-    max-width: calc((100vw * var(--columns)/10) - (var(--columns) * 2rem ));
-    --columns: 5;
+        --columns: 5;
+        max-width: calc((100vw * var(--columns)/10) - (var(--columns) * 1rem ));
+        /* width: calc(var(--col-width) * var(--columns)); */
+        width: 50%;
     }
+}
+
+@media screen and (max-width:880px){ 
+    #accessories .column_quarter {
+        --columns: 10; 
+        /* max-width: calc((100vw * var(--columns)/10) - (var(--columns) * 2rem )); */ */
+        max-width: calc((100vw * var(--columns)/10) - 1rem );
+        width: 100%;
+    }
+}
+
+.column_quarter ._group {
+    height: 100%;
+}
+
+#accessories .column_quarter .text_block { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }

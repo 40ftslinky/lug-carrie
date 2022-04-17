@@ -78,7 +78,8 @@ video:after {
 
 
 .play_button {
-    cursor: pointer;
+    cursor: pointer; 
+    margin-right: unset;
 }
 
 .play_button svg path  {
@@ -90,6 +91,10 @@ video:after {
 .play_button:hover .play .circle  {
     fill: rgba(var(--primary-rgb), 0.8);
     stroke: 3px solid white;
+}
+
+#buttonText {
+    margin-left: unset;
 }
 
 
@@ -239,6 +244,7 @@ video:after {
 
 
 [class*="set_up-"] .gallery-cell .text_wrap{
+    width: 100%;
     position: absolute;
     z-index: 111;
     bottom: 0;
