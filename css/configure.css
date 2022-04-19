@@ -1,6 +1,35 @@
 /* configure.css */
 
 
+:root {
+    --gutter: 1rem;
+    --card-shadow: #0082ff;
+    --shadow: 0 0 0 3px var(--card-shadow);
+    --highlight: #2260ff;
+    --highlight-rgb: 34, 96, 255;
+    /*  */
+    --left_col-width: calc((100%/3*2) - 1rem);
+    --right_col-width: calc((100%/3) - 1rem);
+    /*  */
+    --right_col-img_width: calc(100%/6 - 2.5rem);
+    --right_col-img_width_lrg: calc(100%/6 - 4.5rem);    
+    --subtotal-height:75px;
+    /*  */
+    --yellow-rgb: 251, 192, 38;
+    --red-rgb: 250, 93, 56;
+    --blue-rgb: 103, 202, 220;
+    --navy-rgb: 27, 57, 87;
+    /*  */
+}
+@media screen and (max-width: 1350px){
+    :root {
+        --left_col-width: calc((100%/5*3) - 1rem);
+        --right_col-width: calc((100%/5*2) - 1rem);
+        --right_col-img_width: calc(100%/5 - 2.5rem);
+        --right_col-img_width_lrg: calc(100%/5 - 4.5rem);
+    }
+}
+
 
 /* --------------------------------------------------- */
 /* header */
@@ -44,11 +73,11 @@
 }
 
 .fullwidth_col_left {
-    width: calc((100vw/3*2) - 1rem);
+    width: calc((100%/3*2) - 1rem);
 }
 
 .fullwidth_col_right {
-    width: calc((100vw/3) - 1rem);
+    width: calc((100%/3) - 1rem);
     margin-top: var(--header_height);
     height: calc(100vh - var(--header_height));
     padding: 0 calc(var(--gutter) * 1.5);
@@ -142,35 +171,6 @@
 /* --------------------------------------------------- */
 /* selection */
 
-
-:root {
-    --gutter: 1rem;
-    --card-shadow: #0082ff;
-    --shadow: 0 0 0 3px var(--card-shadow);
-    --highlight: #2260ff;
-    --highlight-rgb: 34, 96, 255;
-    /*  */
-    --left_col-width: calc((100vw/3*2) - 1rem);
-    --right_col-width: calc((100vw/3) - 1rem);
-    /*  */
-    --right_col-img_width: calc(100vw/6 - 2.5rem);
-    --right_col-img_width_lrg: calc(100vw/6 - 4.5rem);    
-    --subtotal-height:75px;
-    /*  */
-    --yellow-rgb: 251, 192, 38;
-    --red-rgb: 250, 93, 56;
-    --blue-rgb: 103, 202, 220;
-    --navy-rgb: 27, 57, 87;
-    /*  */
-}
-@media screen and (max-width: 1350px){
-    :root {
-        --left_col-width: calc((100vw/5*3) - 1rem);
-        --right_col-width: calc((100vw/5*2) - 1rem);
-        --right_col-img_width: calc(100vw/5 - 2.5rem);
-        --right_col-img_width_lrg: calc(100vw/5 - 4.5rem);
-    }
-}
 
 form {
   max-width: calc((100vw/3));
