@@ -1,6 +1,8 @@
 /* buttons.css */
 
-
+:root {
+    --col-mx-width: 100%;
+}
 
 /* --------------------------------------------------- */
 /* button wraps */
@@ -10,9 +12,13 @@
     max-width: 410px;
     width: var(--col-mx-width);
     display: flex;
+    gap: 1rem;
+}
+.button_wrap_right {
+    width: 100%;
+
     justify-content: flex-end;
     align-items: flex-end;
-    gap: 1rem;
 }
 
 [class*="button_wrap"]{

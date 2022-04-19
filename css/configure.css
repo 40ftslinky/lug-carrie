@@ -52,7 +52,6 @@
     margin-top: var(--header_height);
     height: calc(100vh - var(--header_height));
     padding: 0 calc(var(--gutter) * 1.5);
-    overflow-y: auto;
 }
 
 @media screen and (max-width:1350px){    
@@ -82,6 +81,7 @@
 .selection {
     background-color: #f5f5f5;
     height: 100vh;
+    overflow-y: scroll;
 }
 @media screen and (max-width:1080px){    
     .selection {
@@ -90,6 +90,11 @@
     }
 }
 
+.col_right_wrap {
+    height: 100%;
+    overflow-y: scroll;
+    margin-bottom: 15rem
+}
 
 /* --------------------------------------------------- */
 /* progress */
@@ -145,11 +150,26 @@
     --highlight: #2260ff;
     --highlight-rgb: 34, 96, 255;
     /*  */
+    --left_col-width: calc((100vw/3*2) - 1rem);
+    --right_col-width: calc((100vw/3) - 1rem);
+    /*  */
+    --right_col-img_width: calc(100vw/6 - 2.5rem);
+    --right_col-img_width_lrg: calc(100vw/6 - 4.5rem);    
+    --subtotal-height:75px;
+    /*  */
     --yellow-rgb: 251, 192, 38;
     --red-rgb: 250, 93, 56;
     --blue-rgb: 103, 202, 220;
     --navy-rgb: 27, 57, 87;
     /*  */
+}
+@media screen and (max-width: 1350px){
+    :root {
+        --left_col-width: calc((100vw/5*3) - 1rem);
+        --right_col-width: calc((100vw/5*2) - 1rem);
+        --right_col-img_width: calc(100vw/5 - 2.5rem);
+        --right_col-img_width_lrg: calc(100vw/5 - 4.5rem);
+    }
 }
 
 form {
@@ -158,6 +178,7 @@ form {
 @media screen and (max-width:1350px){    
     form {
         max-width: calc((100vw*5/2));
+        margin-bottom: 15rem;
     }
 }
 
@@ -457,3 +478,29 @@ form {
     z-index: 0003;
 }
 
+/* --------------------------------------------------- */
+/* col_right */
+
+.col_right_wrap { }
+
+
+/* subtotal */
+
+.subtotal_panel {
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:var(--right_col-width);
+    padding: 1rem;
+    background-color: rgba(var(--white-rgb),0.8);
+    display: flex;
+    flex-direction: row;
+}
+
+.subtotal_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
+}
