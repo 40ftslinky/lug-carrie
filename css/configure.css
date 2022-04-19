@@ -81,7 +81,6 @@
     width: calc((100%/3) - 1rem);
     margin-top: var(--header_height);
     height: calc(100vh - var(--header_height));
-    padding: 0 calc(var(--gutter) * 1.5);
 }
 
 @media screen and (max-width:1350px){    
@@ -123,7 +122,8 @@
 .col_right_wrap {
     height: 100%;
     overflow-y: scroll;
-    margin-bottom: 15rem
+    /* margin-bottom: 15rem; */
+    padding: 0 calc(var(--gutter) * 1.5);
 }
 
 /* --------------------------------------------------- */
@@ -172,35 +172,6 @@
 /* --------------------------------------------------- */
 /* selection */
 
-
-:root {
-    --gutter: 1rem;
-    --card-shadow: #0082ff;
-    --shadow: 0 0 0 3px var(--card-shadow);
-    --highlight: #2260ff;
-    --highlight-rgb: 34, 96, 255;
-    /*  */
-    --left_col-width: calc((100vw/3*2) - 1rem);
-    --right_col-width: calc((100vw/3) - 1rem);
-    /*  */
-    --right_col-img_width: calc(100vw/6 - 2.5rem);
-    --right_col-img_width_lrg: calc(100vw/6 - 4.5rem);    
-    --subtotal-height:75px;
-    /*  */
-    --yellow-rgb: 251, 192, 38;
-    --red-rgb: 250, 93, 56;
-    --blue-rgb: 103, 202, 220;
-    --navy-rgb: 27, 57, 87;
-    /*  */
-}
-@media screen and (max-width: 1350px){
-    :root {
-        --left_col-width: calc((100vw/5*3) - 1rem);
-        --right_col-width: calc((100vw/5*2) - 1rem);
-        --right_col-img_width: calc(100vw/5 - 2.5rem);
-        --right_col-img_width_lrg: calc(100vw/5 - 4.5rem);
-    }
-}
 
 form {
   max-width: calc((100vw/3));
@@ -486,6 +457,8 @@ form {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    transition: 0.15s ease;
+
 }
 @media screen and (max-width:1080px){    
     .config_img_block picture {
@@ -522,9 +495,26 @@ form {
     right:0;
     width:var(--right_col-width);
     padding: 1rem;
-    background-color: rgba(var(--white-rgb),0.8);
+    background-color: rgba(var(--white-rgb),0.9);
     display: flex;
     flex-direction: row;
+    /* box-shadow: 0 0 14px 0 rgba(var(--white-rgb),0.5) */
+    /* box-shadow: 0 0 14px 0 rgba(var(--red-rgb),0.5) */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.subtotal_panel::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* box-shadow: 0 calc(var(--gutter)*-3) calc(var(--gutter)*3) #fff; */
+    box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),0.8)
 }
 
 .subtotal_wrap {

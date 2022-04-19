@@ -179,7 +179,7 @@
                             <img src="./img/configure/hsd/HSD_Base.jpg" >
                         </picture>
 
-                        <picture class="hsd_stand_img">
+                        <picture class="hsd_stand_img" id="HSD_Stand-Down" style="opacity:0;">
                             <source 
                                 media="(min-width: 800px)" 
                                 srcset="./img/configure/hsd/HSD_Stand-Down.png, 
@@ -187,12 +187,12 @@
                             <img src="./img/configure/hsd/HSD_Stand-Down.png" loading="lazy">
                         </picture>
 
-                        <picture class="hsd_stand_img">
+                        <picture class="hsd_captains_chair_img" id="HSD_Captains_Chair"  style="opacity:0;">
                             <source 
                                 media="(min-width: 800px)" 
-                                srcset="./img/configure/hsd/HSD_Captains_Chair-2723.png, 
-                                        ./img/configure/hsd/HSD_Captains_Chair-2723.png" >
-                            <img src="./img/configure/hsd/HSD_Captains_Chair-2723.png" loading="lazy">
+                                srcset="./img/configure/hsd/HSD_Captains_Chair.png, 
+                                        ./img/configure/hsd/HSD_Captains_Chair.png" >
+                            <img src="./img/configure/hsd/HSD_Captains_Chair.png" loading="lazy">
                         </picture>                    
 
                     </div>
@@ -238,7 +238,7 @@
                             <div class="bikes_checkbox active">
                                 <div class="checkbox lrg">
                                     <label class="checkbox-wrapper">
-                                        <input type="checkbox" class="checkbox-input" checked />
+                                        <input type="checkbox" class="checkbox-input"  value="hsd" checked />
                                         <div class="checkbox-tile ">
                                             <div class="checkbox-thumb">
                                                 <img src="https://placekitten.com/110/110" />
@@ -249,7 +249,7 @@
 
                                 <div class="checkbox lrg">
                                     <label class="checkbox-wrapper">
-                                        <input type="checkbox" class="checkbox-input"  />
+                                        <input type="checkbox" class="checkbox-input"  value="gsd"  />
                                         <div class="checkbox-tile ">
                                             <div class="checkbox-thumb">
                                                 <img src="https://placekitten.com/110/110" />
@@ -266,7 +266,7 @@
 
                             <div class="checkbox">
                                 <label class="checkbox-wrapper">
-                                    <input type="checkbox" class="checkbox-input"  />
+                                    <input type="checkbox" class="checkbox-input" value="HSD_Stand-Down" />
                                     <div class="checkbox-tile">
                                         <div class="checkbox-thumb">
                                             <img src="https://placekitten.com/110/110" />
@@ -274,7 +274,7 @@
 
                                         <div class="checkbox-label">
                                             <div class="product-head">
-                                                <div class="product-title">Product Title</div>
+                                                <div class="product-title">HSD_Stand-Down</div>
                                                 <div class="product-price">$44</div>            
                                             </div>
                                             
@@ -290,7 +290,7 @@
                             
                             <div class="checkbox">
                                 <label class="checkbox-wrapper">
-                                    <input type="checkbox" class="checkbox-input"  />
+                                    <input type="checkbox" class="checkbox-input" value="HSD_Captains_Chair-2723" />
                                     <div class="checkbox-tile">
                                         <div class="checkbox-thumb">
                                             <img src="https://placekitten.com/110/110" />
@@ -298,7 +298,7 @@
 
                                         <div class="checkbox-label">
                                             <div class="product-head">
-                                                <div class="product-title">Product Title</div>
+                                                <div class="product-title">HSD_Captains_Chair-2723</div>
                                                 <div class="product-price">$44</div>            
                                             </div>
                                             
@@ -511,6 +511,7 @@
   <script src="./js/lazyLoad_video.js"></script>
   <script src="./js/active_tabs.js"></script>
   <script src="./js/getstarted_add_active.js"></script>
+  <script src="./js/configure_your_bike.js" /></script>
 
   <!-- https://flickity.metafizzy.co/ -->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
