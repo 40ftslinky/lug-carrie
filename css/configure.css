@@ -528,8 +528,11 @@ form {
     bottom:0;
     right:0;
     width:var(--right_col-width);
-    padding: 1rem;
-    background-color: rgba(var(--white-rgb),0.9);
+    padding: 1.5rem;
+    /* background-color: rgba(var(--white-rgb),0.9); */
+    background-color: var(--gray-100);
+    border-top: 1px solid var(--gray-200);
+
     display: flex;
     flex-direction: row;
     /* box-shadow: 0 0 14px 0 rgba(var(--white-rgb),0.5) */
@@ -554,7 +557,9 @@ form {
     top: 0;
     left: 0;
     /* box-shadow: 0 calc(var(--gutter)*-3) calc(var(--gutter)*3) #fff; */
-    box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),0.8)
+    /* box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),0.8) */
+    box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),1);
+    border-bottom: 1px solid var(--gray-200);
 }
 
 .subtotal_wrap {
@@ -563,4 +568,10 @@ form {
     align-items: center;
     justify-content: flex-start;
     width:100%;
+}
+.sub_total, .sub_amount, .sub_period {
+    font-size: 18px;
+}
+.sub_total, .sub_period {
+    margin-right: 0.5rem;
 }
