@@ -645,13 +645,19 @@ section {
     visibility: visible;
     opacity:1;
     display: block;
-    transition: all 0.25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 .hidden {
     visibility: hidden;
     opacity:0;
     display: none !important;
-    transition: all 0.25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 
 
@@ -697,7 +703,10 @@ section {
 .unfixed {
     position: relative !important;
     /* background-color: red; */
-    transition: all 0.25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
     /* possible solution? */
     scroll-snap-align: start;
     /* https://firefox-source-docs.mozilla.org/performance/scroll-linked_effects.html */
