@@ -29,6 +29,7 @@ effects
     --screen-width-mob: 48em; /* 768px */
     --subtotal-height:110px;
     --footer-height:380px;
+    --calc_mx_height: calc(100vh - var(--header_height));
 }
 
 @media (min-width:1080px){
@@ -56,6 +57,12 @@ main {
 
 section {
     display: flex;
+}
+
+@media screen and (max-width:1080px){    
+    section {
+        padding-top: 0;
+    }
 }
 
 /* --------------------------------------------------- */
@@ -154,11 +161,11 @@ section {
 }
 
 
-.centered{
+.centered {
     display: flex;
     flex-direction: column;
     justify-content: center !important;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .center_row {
@@ -312,6 +319,10 @@ section {
     position: relative;
 }
 
+.hero [class*="column_"] {
+    max-width: none;
+}
+
 
 @media screen and ( max-width: 1080px ){
     [class*="column_"]:not(.column_xxxxx),
@@ -429,13 +440,25 @@ section {
     [class*="column_"]:first-of-type,
     [class*="column_"]:last-of-type
     {
-        margin: 0;
+        /* margin: 0; */
     }
 }
 
 .img_wrap, .video_wrap {
     margin-top: 10%;
     margin-bottom: 10%;
+}
+
+@media screen and (max-width:1080px){ 
+    .img_wrap, .video_wrap {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.video_wrap video {
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 
@@ -472,6 +495,7 @@ section {
     width: 100%;    
     height: 100vh;
     padding-top: var(--header_height);
+    padding-bottom: 2rem;
     color: white;
     overflow: hidden;
 }
@@ -559,13 +583,14 @@ section {
 .bg_cover {
     width:100%;
     height: 100%;
+    background-position: center center;
 }
 
 .bg_cover::before {
     background: rgba(32,32,32,0.5);
     background: linear-gradient(
                 90deg, 
-                rgba(var(--black-rgb),0) 0%, 
+                rgba(var(--black-rgb),0) 50%, 
                 rgba(var(--black-rgb),0.66) 100%);
     content:'';
     position:absolute;
@@ -574,6 +599,12 @@ section {
     left:0;
     width:100%;
     height:100%;
+}
+
+@media screen and ( max-width: 1080px ) {
+    .bg_cover::before {
+        background: rgba(32,32,32,0.5) !important;
+    }
 }
 
 

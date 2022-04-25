@@ -229,45 +229,6 @@ body, p {
     color: #231F20;
 }
 
-:root, 
-* {
-
-    /* --min-fs: 1;
-    --max-fs: 1.5; */
-    --min-vw: 20;
-    --max-vw: 90;
-
-  
-    --min-fs-rem: var(--min-fs) * 1rem;
-    --max-fs-rem: var(--max-fs) * 1rem;
-    --min-vw-rem: var(--min-vw) * 1rem;
-  
-    --slope: (var(--max-fs) - var(--min-fs)) * (100vw - var(--min-vw-rem)) / (var(--max-vw) - var(--min-vw));
-  
-/*   */
-    font-size: clamp(
-        var(--min-fs-rem), 
-        var(--min-fs-rem) + var(--slope), 
-        var(--max-fs-rem)
-    ); 
-/*   */
-
-/* ----------
-    clamp(
-        minimum, 
-        preferred, 
-        maximum
-    ); 
------------ */
-
-/*  
-    font-size: clamp(
-        var(--fluid-type-min, 1rem),
-        calc(1rem + var(--fluid-type-target, 3vw)),
-        var(--fluid-type-max, 1.3rem)
-    ); 
-*/
-}
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -349,6 +310,15 @@ h6,
 
 
 .intro, .large, .normal, .small, .micro { max-width: 65ch; }
+.center .intro, 
+.center .large, 
+.center .normal, 
+.center .small, 
+.center .micro { 
+    margin-left:auto;
+    margin-right: auto; 
+}
+
 
 ._huge { font-size: 96; }
 ._h1 { font-size: 80; }
@@ -363,3 +333,47 @@ h6,
 ._overline { font-size: 10; }
 ._caption { font-size: 12; }
   
+
+/* ----------------------------- */
+/*  */
+
+:root, 
+* {
+
+    /* --min-fs: 1;
+    --max-fs: 1.5; */
+    --min-vw: 20;
+    --max-vw: 90;
+
+    --min-fs-rem: var(--min-fs) * 1rem;
+    --max-fs-rem: var(--max-fs) * 1rem;
+    --min-vw-rem: var(--min-vw) * 1rem;
+  
+    --slope: (var(--max-fs) - var(--min-fs)) 
+            * (100vw - var(--min-vw-rem)) 
+             / ((var(--max-vw) - var(--min-vw)));
+  
+/*   */
+    font-size: clamp(
+        var(--min-fs-rem), 
+        var(--min-fs-rem) + var(--slope), 
+        var(--max-fs-rem)
+    ); 
+/*   */
+
+/* ----------
+    clamp(
+        minimum, 
+        preferred, 
+        maximum
+    ); 
+----------- */
+
+/*  
+    font-size: clamp(
+        var(--fluid-type-min, 1rem),
+        calc(1rem + var(--fluid-type-target, 3vw)),
+        var(--fluid-type-max, 1.3rem)
+    ); 
+*/
+}

@@ -1,0 +1,133 @@
+/* bikes.css */
+
+
+/* ------------------------------------------- */
+/* hero */
+
+#bikes.gsd .hero {
+    background-image: url('../img/bikes/GSD_fullpage_bg.jpg');
+    background-position: center center;
+}
+
+#bikes.hsd .hero {
+    background-image: url('../img/bikes/HSD_fullpage_bg.jpg');
+    background-position: center center;
+}
+
+
+#bikes .hero.bg_cover::before {
+    background: rgba(15,15,15,0.5);
+    background: linear-gradient(
+                -90deg, 
+                rgba(var(--navy-rgb),0) 50%, 
+                rgba(var(--navy-rgb),0.75) 100%);
+}
+@media screen and ( max-width: 1080px ) {
+    #bikes .hero.bg_cover::before {
+        background: rgba(32,32,32,0.5);
+        background: linear-gradient(
+                    -90deg, 
+                    rgba(var(--navy-rgb),0.66) 0%, 
+                    rgba(var(--navy-rgb),0.66) 100%);
+    }
+}
+
+
+#bikes .hero {
+    width: 100%;    
+    height: 100vh;
+    padding-top: var(--header_height);
+    color: white;
+    overflow: hidden;
+}
+
+
+/* ------------------------------------------- */
+/* shopping */
+
+.shopping {}
+
+/* ------------------------------------------- */
+/* meet_gsd */
+
+.meet_gsd {}
+
+.icon_list { text-align: left; padding-left: 0;}
+
+.icon_list li {}
+
+.icon_list li{
+    list-style-type: none;
+    display: flex;
+    gap: 0.75rem;
+}
+.icon_list li:before {
+    display: inline-block;
+    /* font-size: 1em; */
+    line-height: 0;
+    margin-left: - 1.5em;
+    width: 1.5em;
+    /* color: $primary-color; */
+    /* content: '\e800'; */
+}
+
+
+.icon_cargo:before {
+    content: url('../img/bikes/icon_cargo.svg');
+}
+.icon_parking:before {
+    content: url('../img/bikes/icon_parking.svg');
+}
+.icon_range:before {
+    content: url('../img/bikes/icon_range.svg');
+}
+.icon_power:before {
+    content: url('../img/bikes/icon_power.svg');
+}
+.icon_comfortable:before {
+    content: url('../img/bikes/icon_comfortable.svg');
+}
+.icon_solar:before {
+    content: url('../img/bikes/icon_solar.svg');
+}
+
+
+
+
+/* ------------------------------------------- */
+/* options */
+
+
+.options {
+    background-image: url("../img/bikes/GSD_options.jpg") ;
+    width:100%;
+    height: var(--calc_mx_height);
+}
+
+
+.options.bg_cover::before {
+    background: rgba(32,32,32,0.5);
+    background: linear-gradient(
+                -90deg, 
+                rgba(var(--black-rgb),0) 50%, 
+                rgba(var(--black-rgb),0.75) 100%);
+}
+
+@media screen and ( max-width: 1080px ) {
+    #bikes .bg_cover::before {
+        background: rgba(32,32,32,0.5);
+        background: linear-gradient(
+                    -90deg, 
+                    rgba(var(--navy-rgb),0.66) 0%, 
+                    rgba(var(--navy-rgb),0.66) 100%);
+    }
+}
+
+
+/* ------------------------------------------- */
+/*  */
+
+#bikes .testimonials {
+    margin-bottom:5rem
+}
+

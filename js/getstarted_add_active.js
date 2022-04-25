@@ -10,12 +10,16 @@ jQuery(document).ready(function( $ ) {
         //
         $(this).toggleClass( "active" );
         $( ".fullscreen" ).toggleClass( "active" );
-        $( "body" ).toggleClass( "no_scroll" );        
+        $( "body" ).toggleClass( "no_scroll" );
+        $("#header").toggleClass("reverse");
+        
         //
         if ($( this ).hasClass( "active ") ) {
           $( this ).innerHTML = "Close";
+          // $("#header").removeClass("reverse");
         } else {
           $( this ).innerHTML = "Get Started";
+          // $("#header").addClass("reverse");
         }
     });
 });

@@ -59,7 +59,9 @@
 /* why tern */
 
 .why_tern { 
-    gap: 10rem
+    gap: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 #family .why_tern ._row { 
@@ -94,7 +96,7 @@
 
 
 .why_subscribe h2 {
-    margin-top: 0 !important;
+    /* margin-top: 0 !important; */
     text-align: center;
 }
 
