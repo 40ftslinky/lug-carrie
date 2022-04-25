@@ -73,7 +73,7 @@
     font-weight: 300;
     font-size: 28px;
     top: 3%;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
@@ -93,6 +93,11 @@
 .faqs_item_content {
     display: none;
     background-color: white;
-    margin-top: 1rem;
+    margin: 1rem 4rem 0 0;
+}
+@media screen and ( max-width: 1080px ) {
+    .faqs_item_content {
+        margin-right: 2rem;
+    }
 }
 /*end faq*/
