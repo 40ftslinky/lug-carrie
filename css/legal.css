@@ -7,7 +7,7 @@
 /* hero */
 
 #legal .hero {
-    background-image: url('../img/legal/legal_fullpage_bg.jpg');
+    background-image: url('../img/terms/terms_fullpage_bg.jpg');
     height: calc(75vh - var(--header_height));
     min-height: fit-content;
     flex: 1;
