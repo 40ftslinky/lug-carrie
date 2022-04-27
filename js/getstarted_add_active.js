@@ -14,11 +14,11 @@ jQuery(document).ready(function( $ ) {
       // $("#header").toggleClass("reverse");
       //
       if ($( this ).hasClass( "active") ) {
-        $( this ).html("Close");
+        $( "#getstarted" ).html("Close");
         $("#header").removeClass("reverse");
       } 
       else if ($( "#header" ).hasClass( "reverse") ) {    
-        $( this ).html("Get Started");
+        $( "#getstarted" ).html("Get Started");
         $("#header").removeClass("reverse");
       } 
       else {
