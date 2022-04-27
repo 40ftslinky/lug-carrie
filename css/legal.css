@@ -1,4 +1,4 @@
-/* faq.css */
+/* legal.css */
 
 
 
@@ -6,21 +6,21 @@
 /* ------------------------------------------- */
 /* hero */
 
-#faq .hero {
-    background-image: url('../img/faq/faq_fullpage_bg.jpg');
+#legal .hero {
+    background-image: url('../img/legal/legal_fullpage_bg.jpg');
     height: calc(75vh - var(--header_height));
     min-height: fit-content;
     flex: 1;
     margin-bottom: 2rem;
 }
 
-#faq .hero h1 {
+#legal .hero h1 {
     --min-fs:3;
     --max-fs:5;
     margin-top:0;
 }
 
-#faq .hero.bg_cover::before {
+#legal .hero.bg_cover::before {
     background: rgba(32,32,32,0.5);
     background: linear-gradient(
                 -90deg, 
@@ -28,7 +28,7 @@
                 rgba(var(--navy-rgb),0.66) 100%);
 }
 
-#faq .hero [class*="column"] {
+#legal .hero [class*="column"] {
     margin-right: unset;
 }
 
