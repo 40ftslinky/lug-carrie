@@ -11,15 +11,22 @@ jQuery(document).ready(function( $ ) {
         $(this).toggleClass( "active" );
         $( ".fullscreen" ).toggleClass( "active" );
         $( "body" ).toggleClass( "no_scroll" );
-        $("#header").toggleClass("reverse");
+        // $("#header").toggleClass("reverse");
         
         //
         if ($( this ).hasClass( "active ") ) {
           $( this ).innerHTML = "Close";
-          // $("#header").removeClass("reverse");
-        } else {
-          $( this ).innerHTML = "Get Started";
           // $("#header").addClass("reverse");
+        } 
+        else if ($(this).scrollTop() > 200){
+          // $("#header").removeClass("reverse");
+        } 
+        else if ($( "#header" ).hasClass( "reverse ") ) {    
+          $("#header").removeClass("reverse");
+        } 
+        else {
+          $( this ).innerHTML = "Get Started";
+          $("#header").removeClass("reverse");
         }
     });
 });

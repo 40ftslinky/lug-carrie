@@ -248,7 +248,8 @@ form {
 }
 
 .checkbox-input:checked + .checkbox-tile {
-  border-color: var(--highlight);
+  border-color: #9c9c9c;
+    /* border-color: var(--highlight); */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: var(--highlight);
 }
@@ -419,9 +420,13 @@ form {
 .product-head .product-title, 
 .product-head .product-price {
   font-size: 18px;
-  font-weight: 500;
+  line-height: 1.1;
   color: #202020;
   margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.product-head .product-price {
+    font-weight: 500;
 }
 
 .checkbox-label .product-desc{
@@ -538,6 +543,27 @@ form {
 .config_img_block picture:nth-of-type(4) {
     z-index: 0004;
 }
+
+
+.config_img_block picture:nth-of-type(5) {
+    z-index: 0005;
+}
+
+
+.config_img_block picture:nth-of-type(6) {
+    z-index: 0006;
+}
+
+
+.config_img_block picture:nth-of-type(7) {
+    z-index: 0007;
+}
+
+.config_img_block picture:nth-of-type(8) {
+    z-index: 0008;
+}
+
+
 
 /* --------------------------------------------------- */
 /* col_right */
