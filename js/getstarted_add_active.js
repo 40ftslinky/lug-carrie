@@ -5,27 +5,23 @@ jQuery(document).ready(function( $ ) {
     // $("#getstarted").removeClass("active");
     // $(".fullscreen").removeClass("active");
     // $(".fullscreen").hide();
-    $( "#getstarted" ).click(function(e){
+    $( ".getstarted" ).click(function(e){
         e.preventDefault()
         //
         $(this).toggleClass( "active" );
         $( ".fullscreen" ).toggleClass( "active" );
         $( "body" ).toggleClass( "no_scroll" );
         // $("#header").toggleClass("reverse");
-        
         //
-        if ($( this ).hasClass( "active ") ) {
-          $( this ).innerHTML = "Close";
+        if ($( this ).hasClass( "active") ) {
+          $( this ).html("Close");
           // $("#header").addClass("reverse");
         } 
-        else if ($(this).scrollTop() > 200){
-          // $("#header").removeClass("reverse");
-        } 
-        else if ($( "#header" ).hasClass( "reverse ") ) {    
+        else if ($( "#header" ).hasClass( "reverse") ) {    
           $("#header").removeClass("reverse");
         } 
         else {
-          $( this ).innerHTML = "Get Started";
+          $( this ).html("Get Started");
           $("#header").removeClass("reverse");
         }
     });
