@@ -28,7 +28,9 @@
                 rgba(var(--navy-rgb),0.66) 100%);
 }
 
-
+#accessory .listing-single {
+    margin-top: var(--header_height);
+}
 /* ------------------------------------------- */
 /*  */
 
