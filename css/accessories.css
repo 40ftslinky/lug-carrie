@@ -30,6 +30,7 @@
 
 #accessory .listing-single {
     margin-top: var(--header_height);
+    background: var(--gray-100);
 }
 /* ------------------------------------------- */
 /*  */
