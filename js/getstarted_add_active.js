@@ -15,11 +15,8 @@ jQuery(document).ready(function( $ ) {
         //
         if ($( this ).hasClass( "active") ) {
           $( this ).html("Close");
-          // $("#header").addClass("reverse");
         } 
-        else if ($( "#header" ).hasClass( "reverse") ) {    
-          $("#header").removeClass("reverse");
-        } 
+        
         else {
           $( this ).html("Get Started");
           $("#header").removeClass("reverse");
