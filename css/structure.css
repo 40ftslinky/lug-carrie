@@ -121,10 +121,12 @@ section {
 }
 
 
-[class*="_group"]:not(.xxxx_group)  {
+[class*="_group"]:not(.xxxx_group),
+[class*="_group"]:not(.no_gap)  {
     display: flex;
     width:unset;
     justify-content: flex-start;
+    gap:1rem;
 }
 
 @media screen and ( max-width: 1080px ){
@@ -237,7 +239,9 @@ section {
     justify-content: space-between;
 }
 
-
+.no_gap {
+    gap:unset;
+}
 
 /* --------------------------------------------------- */
 /* general chunks */
@@ -345,7 +349,11 @@ section {
 
 @media screen and ( min-width: 1600px ){
 
-    [class*="column_"]:not(.column_xxxxx) {
+    [class*="column_100"] {
+        max-width: calc((1600px * var(--columns)/10) - ((10 - var(--columns)) * 1rem ));
+    }
+
+    [class*="column_"]:not(.column_100) {
         max-width: calc((1600px * var(--columns)/10) - (var(--columns) * 1rem ));
     }
 }
