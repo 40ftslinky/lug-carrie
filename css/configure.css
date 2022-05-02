@@ -145,6 +145,12 @@
     overflow: auto;
 }
 
+@media screen and (max-width:1080px){    
+    .progress_list {
+        max-width: calc(100vw - (var(--gutter)*2));
+    }
+}
+
 .progress_list li { 
     list-style-position: inside;
     color: #333;
@@ -223,8 +229,9 @@
     }
 }
 
-#configure .checkbox-group > * {
-  margin: 0.5rem 0;
+#configure .checkbox-group > * ,
+#configure .checkbox-group .checkbox {
+    margin: 0.5rem 0;
 }
 
 #configure .checkbox-group-legend {
@@ -584,7 +591,7 @@
     border-top: 1px solid var(--gray-200);
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* box-shadow: 0 0 14px 0 rgba(var(--white-rgb),0.5) */
     /* box-shadow: 0 0 14px 0 rgba(var(--red-rgb),0.5) */
     backdrop-filter: blur(8px);
@@ -611,6 +618,10 @@
     box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),1);
     border-bottom: 1px solid var(--gray-200);
 }
+.info_wrap {
+    display: flex;
+
+}
 
 .subtotal_wrap {
     display: flex;
@@ -622,6 +633,19 @@
 .sub_total, .sub_amount, .sub_period {
     font-size: 18px;
 }
+.sub_amount {
+    font-weight: 600;
+}
 .sub_total, .sub_period {
     margin-right: 0.5rem;
+}
+
+.subtotal_panel [class*="_group"] {
+    gap:0.25rem
+}
+
+.desc_group {
+    font-size: 0.675rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
 }

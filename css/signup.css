@@ -12,3 +12,8 @@
     background: var(--gray-100);
     padding-bottom: 5rem;
 }
+
+
+[class*="_wrap"] label[class*="checkbox"] {
+    
+}

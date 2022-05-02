@@ -121,20 +121,28 @@ form textarea,
     min-width: min-content;
 } 
 
+label, input {
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
 .error_msg {
     font-size: 0.8rem;
     color: var(--error);
-    /* display: none; */
+    display: none;
     visibility: hidden;
     opacity: 0;
     /*     
     position: absolute;
     top: 0.25rem;
      */
+     
 }
 
 .error_msg.visible {
-    /* display: block; */
+    display: block;
     visibility: visible;
     opacity: 1;
 }
@@ -144,8 +152,7 @@ form textarea,
 /* ------------------------------------------------ */
 
 .forms label[class*="radio"],
-.forms label[class*="checkbox"],
-[class*="_wrap"] label[class*="checkbox"] {
+.forms label[class*="checkbox"] {
     display: inline-block;
     width: fit-content;
 }
