@@ -165,6 +165,13 @@ form textarea,
     position: relative;
     top: -3px;
 }
+
+.forms ._group label input[type=checkbox] {
+    vertical-align: bottom;
+    position: relative;
+    top: 3px;
+}
+
 .forms label input[type=checkbox].lrg {
     vertical-align: bottom;
     position: relative;
