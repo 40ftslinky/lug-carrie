@@ -542,7 +542,7 @@ nav ul li ul li {
     }
 
     .burger-check {
-        display: none;
+        display: none !important;
     }
 
     .burger-check:checked ~ .burger {
