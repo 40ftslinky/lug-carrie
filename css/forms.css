@@ -22,6 +22,9 @@ button:focus {
     margin: auto;  
 }
   
+.forms form {
+    max-width: 500px;
+}  
   
 .forms fieldset {
     padding: 1em 1em;
@@ -40,11 +43,16 @@ button:focus {
 }
 .forms label {
     display: block;
-    margin: 1em 0;
+    margin: 0 0 1rem 0;
     font-size: 0.8rem;
     max-width: 100%;
     cursor: pointer;
 }
+.forms label.radio.lrg,
+.forms label.checkbox.lrg {
+    font-size: 1rem;
+}
+
 .forms label {
     display: flex;
     flex-direction: column;
@@ -78,7 +86,40 @@ form label input:not([type=checkbox]),
     font-size: 1rem;
     font-weight: 300;
     position: relative;
+    padding: 0.25em 0.4em;
 }
+
+textarea, 
+select, 
+input[type=text], 
+input[type=email], 
+input[type=search], 
+input[type=tel], 
+input[type=url], 
+input[type=password], 
+input[type=color], 
+input[type=file], 
+input[type=color], 
+input[type=number], 
+input[type=range], 
+input[type=date], 
+input[type=month], 
+input[type=week], 
+input[type=time], 
+input[type=datetime], 
+input[type=datetime-local],
+input:not([type=radio]),
+input:not([type=checkbox]) {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+form textarea,
+.forms textarea {
+    min-width: min-content;
+} 
 
 .error_msg {
     font-size: 0.8rem;
@@ -102,27 +143,32 @@ form label input:not([type=checkbox]),
 /* checkbox fix */
 /* ------------------------------------------------ */
 
-.forms label[class*=radio],
-.forms label[class*=checkbox],
-.stage_wrap label[class*=checkbox] {
+.forms label[class*="radio"],
+.forms label[class*="checkbox"],
+[class*="_wrap"] label[class*="checkbox"] {
     display: inline-block;
+    width: fit-content;
 }
 
 .forms label input[type=radio],
-.forms label input[type=checkbox],
-.stage_wrap label input[type=checkbox] {
+.forms label input[type=checkbox] {
     display: inline-block !important;
     width: max-content !important;
     font-size: 1rem;
 }
 .forms label input[type=checkbox],
-.stage_wrap label input[type=checkbox] {
+.forms label input[type=radio] {
     margin-right: 0.25rem;
 }
 .forms label input[type=checkbox] {
     vertical-align: bottom;
     position: relative;
     top: -3px;
+}
+.forms label input[type=checkbox].lrg {
+    vertical-align: bottom;
+    position: relative;
+    top: -6px;
 }
 .images_check label input[type=checkbox] {
     top: 0;
@@ -152,6 +198,12 @@ form label input:not([type=checkbox]),
     margin-left: 1.25rem;
 }
   
+[class*="_group"] label.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+}
   
 /* ------------------------------------------------ */
   
@@ -185,10 +237,39 @@ form textarea,
       padding: 0.25em 0.4em;
       border: 1px solid #ddd;
       max-width: 100%;
-      background-color: unset;
 }
+
+select,
+form select, 
+form input[type=text], 
+form input[type=email], 
+form input[type=search], 
+form input[type=tel], 
+form input[type=url], 
+form textarea,
+.forms textarea, 
+.forms select, 
+.forms input[type=text], 
+.forms input[type=email], 
+.forms input[type=search], 
+.forms input[type=tel], 
+.forms input[type=url], 
+.forms input[type=password], 
+/* .forms input[type=file],  */
+/* .forms input[type=color],  */
+.forms input[type=number], 
+.forms input[type=range], 
+.forms input[type=date], 
+.forms input[type=month], 
+.forms input[type=week], 
+.forms input[type=time], 
+.forms input[type=datetime], 
+.forms input[type=datetime-local] {
+      background-color: #FFF;
+}
+
 .forms select {
-      min-width: 300px;
+      /* min-width: 300px; */
 }
 @media  screen and (max-width: 400px) {
     .forms select {
@@ -291,6 +372,7 @@ input[type='file'] {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    vertical-align: middle;
 }
 
 input[type='file'] {

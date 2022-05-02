@@ -143,6 +143,12 @@
 .gray_200_bg {
     background-color: var(--gray-200);
 }
+.gray_600 {
+    color: var(--gray-600);
+}
+.gray_800 {
+    color: var(--gray-800);
+}
 
 .primary, .blue {
     color: var(--primary);
