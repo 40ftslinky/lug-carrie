@@ -134,3 +134,39 @@
                 -90deg, 
                 rgba(var(--black-rgb),0) 0%, 
                 rgba(var(--black-rgb),0.66) 100%);
+}
+
+
+/* ------------------------------------------- */
+/* why_subscribe_process */
+
+
+.why_subscribe_process {
+    padding-bottom: 5rem;
+}
+
+.process_wrap {
+    margin-bottom: 3rem;
+}
+
+@media screen and ( max-width: 1080px ) {
+    .why_subscribe_process .process_row {
+        flex-direction: row;
+    }
+}
+
+._card {
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+._card span {
+    text-align: center;
+}
+
+.subscribe_icon {
+    width:4rem;
+    height: 4rem;
+}
