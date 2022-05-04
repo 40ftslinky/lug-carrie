@@ -233,7 +233,7 @@ section {
     margin-right: auto;
 }
 
-.space_between{
+.space_between {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
