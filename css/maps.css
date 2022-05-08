@@ -1,0 +1,82 @@
+/* maps.css */
+
+#map,
+#map_syd { 
+    height: 60vh; 
+}
+
+[id*="map"] {}
+
+
+
+#map .leaflet-control a,
+#map_syd .leaflet-control a,
+#map .leaflet-control,
+#map_syd .leaflet-control {
+   /* color:#dedede; */
+   color:#888888;
+   font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+}
+#map .leaflet-control-attribution,
+#map_syd .leaflet-control-attribution {
+    font-size: .6rem;
+}
+
+#map .leaflet-container ,
+#map_syd .leaflet-container {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+}
+
+#map .info,
+#map_syd .info {
+   padding: 6px 8px;
+   font: 14px/16px 'Poppins', Arial, Helvetica, sans-serif;
+   background: white;
+   background: rgba(255,255,255,0.9);
+   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+   border-radius: 5px;
+}
+#map .leaflet-top .info h4,
+#map_syd .leaflet-top .info h4 {
+   font: 14px/16px 'Poppins', Arial, Helvetica, sans-serif !important;
+   font-size: .8rem;
+   margin: 0 0 5px;
+   color: #777;
+}
+#map .leaflet-top .info.leaflet-control ,
+#map_syd .leaflet-top .info.leaflet-control  {
+    /* font: 12px/1.5 'Poppins' Arial, Helvetica, sans-serif !important; */
+    font-family: 'Poppins' Arial, Helvetica, sans-serif !important;
+    font-size: .8rem;
+    color: #2d2d2d;
+}
+
+#map .leaflet-container a.leaflet-popup-close-button,
+#map_syd .leaflet-container a.leaflet-popup-close-button {
+    color: #494949;
+}
+
+#map .leaflet-bottom {
+    display: none;
+}
+
+#map .leaflet-popup-content,
+#map_syd .leaflet-popup-content {
+    /* font: 12px/1.5 'Poppins' Arial, Helvetica, sans-serif !important; */
+    font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
+    font-size: .8rem;
+    color: #2d2d2d;
+}
+
+#map > #victoria,
+#map_syd > #victoria,
+svg.leaflet-zoom-animated path:last-of-type {
+    /* display: none; */
+    /* z-index: 0; */
+}
+
+.leaflet-top, .leaflet-bottom {
+    /* position: absolute; */
+    z-index: 999;
+    /* pointer-events: none; */
+}

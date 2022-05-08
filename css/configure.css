@@ -64,6 +64,7 @@
     width: 100%;
     overflow-y: hidden;
     margin: 0;
+    height: 100vh;
 }
 @media screen and (max-width:1080px){    
     .fullwidth_row {
@@ -648,4 +649,8 @@
     font-size: 0.675rem;
     font-weight: 300;
     margin-bottom: 1rem;
+}
+
+.subtotal_panel [class*="button_"] {
+    justify-content: space-between;
 }

@@ -1,4 +1,4 @@
-/* commuter.css */
+/* why_subscribe.css */
 
 
 /* ------------------------------------------- */
@@ -145,6 +145,9 @@
     padding-bottom: 5rem;
 }
 
+.why_subscribe_process .column_80 {
+  max-width: 980px;
+}
 .process_wrap {
     margin-bottom: 3rem;
 }
@@ -191,6 +194,13 @@
 /* ------------------------------------------- */
 /* tables */
 
+.buy_out {}
+
+.buy_out ._panel {
+  background-color: #fff;
+}
+
+
 .buy_out .table {
     display: table;
     text-align: left;
@@ -207,7 +217,7 @@
     display: table-row;
   }
   
-  .buy_out.theader {
+  .buy_out .theader {
     display: table-row;
   }
   

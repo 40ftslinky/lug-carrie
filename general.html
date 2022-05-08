@@ -3,7 +3,7 @@
 
     <head>
     <meta charset="utf-8">
-    <title>Family | Lug+Carrie</title>
+    <title>General Page | Lug+Carrie</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,10 +25,20 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+
     <meta name="theme-color" content="#fafafa">
     </head>
 
-    <body id="family">
+    <body id="general">
 
     <header id="header">
         <div class="logo_wrap">
@@ -47,15 +57,20 @@
         <div class="nav_wrap">      
             <nav class="navigation">        
                 <ul class="menu">
-                    <li class="menu-item"><a class="menu-link" href="why_subscribe.html">Why subscribe?</a</li>
-                    <li class="menu-item current"><a class="menu-link" href="#">Family</a> </li>
-                    <li class="menu-item "><a class="menu-link" href="commuter.html">Commuter</a></li>
+                    <li class="menu-item current"><a class="menu-link" href="why_subscribe.html">Why subscribe?</a</li>
+                    <li class="menu-item "><a class="menu-link " href="family.html">Family</a>
+                        
+                    </li>
+                    <li class="menu-item "><a class="menu-link" href="commuter.html">Commuter</a>
+                       
+                    </li>
                     <li class="menu-item "><a class="menu-link has-sub" href="#">Bikes</a>
                         <div class="dropdown"></div>
 
                         <ul class="sub_menu">
                             <li class="sub_menu-item"><a class="sub_menu-link" href="gsd.html">GSD</a></li>
                             <li class="sub_menu-item"><a class="sub_menu-link" href="hsd.html">HSD</a></li>
+                            <li class="sub_menu-item"><a class="sub_menu-link" href="accessories.html">Accessories</a></li>
                         </ul>
                     </li>
                     <li class="menu-item"><a class="menu-link" href="faq.html">FAQ</a></li>
@@ -118,7 +133,7 @@
 
                 </div>
 
-                <div class="column_third ">
+                <div class="column_third">
 
                 <div class="_group _panel white_bg center">
                     <div class="text_block ">
@@ -161,7 +176,7 @@
 
     <main>
 
-        <section class="hero bg_cover ">
+        <section class="hero bg_cover centered">
         <!-- autoplay -->
         <!-- <video  muted loop id="backgroundVideo">
             <source src="./video/rain.mp4" type="video/mp4">
@@ -170,16 +185,12 @@
         <!-- <div class="overlay"></div> -->
         <!-- <div class=""> -->
             <div class="_row">        
-                <div class="column_50">
+                <div class="column_60 ">
 
                     <div class="_wrap">
                         <div class="text_block center">
-                            <h1>Make every<br>
-                                day an<br>
-                                adventure</h1>
+                            <h1>Customer Service Information</h1>
                             <div class="large _regular">
-                                Easy to ride from the first pedal, our Tern eBike options
-                                for 1 or 2 children bring joy back to the school run.
                             </div>
                             <div class="button_wrap_center">
                             <!-- 
@@ -214,480 +225,180 @@
         <!-- </div> -->
         </section>
 
+        <section class="map_sect centered ">
+            <!-- <div class=""> --> 
+                <div class="column_wrap column_row">
 
-        <section class="why_subscribe centered gray_100_bg">
-        <!-- <div class=""> -->
-            <div class="_row _no-margin">   
-                <div class="column_40 centered">
+                    <div class="column_50 ">
+                        <div id="map" class=""></div>
 
-                    <div class="_wrap">
-                        <div class="text_block center">
-                            <h2 class="blue">An eBike <br>to grow with</h2>
-
-                            <p class="normal ">
-                            The low centre of gravity will make you and your kids feel safe so you can enjoy the ride. If your kids ride a scooter they will love a L+C ride. School bags, shopping and the laptop for work get easily swallowed by our flexible accessories options. There’s 37 of them to make your ride perfect for your family.
-                            </p>                  
-
+                        <div class="_wrap">
+                            <div class="_group _x2-padding centered">
+                                <div class="location column_40">                                    
+                                    <!--  -->
+                                    <div class="_subject">
+                                        <h3 class="">Heading</h3>
+                                    </div>
+                                    <div class="_item">                                        
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut fringilla turpis, id pulvinar nisi. Aliquam non nulla lobortis, tincidunt enim dignissim, molestie lacus.  
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="button_wrap_center_vert">
-                            <button class="button blue_btn">Get Started</button>
-                        </div>
-
                     </div>
 
-                </div>
-                
-                <div class="column_60">
-                    <div class="video_wrap">
-                        <!-- autoplay -->
-                        <video  muted loop id="inlineVideo" preload="none" poster="./img/family/family_poster.jpg">
-                            <source src="./video/rain.mp4" type="video/mp4">
-                        </video>
+                    <div class="column_50">
 
-                        <div class="video_overlay_wrap">
-                            <div class="play_button" id="playBtn_white" onclick="videoControlInline()"  >                    
-                                <svg class="play" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g >
-                                        <path class="circle" d="M52.168 26.584C52.168 40.7153 40.7137 52.168 26.584 52.168C12.4542 52.168 1 40.7152 1 26.584C1 12.4546 12.4543 1 26.584 1C40.7137 1 52.168 12.4546 52.168 26.584Z" stroke="white" stroke-width="2"/>
-                                        <path class="arrow" d="M36.1075 26.9304L21.2863 35.167C21.1149 35.2637 20.9684 35.2749 20.8453 35.2004C20.7228 35.126 20.6613 34.9922 20.6613 34.7988V18.3701C20.6613 18.1768 20.7228 18.0427 20.8453 17.9683C20.9684 17.8941 21.1149 17.9053 21.2863 18.002L36.1075 26.2385C36.2789 26.3352 36.3644 26.4504 36.3644 26.5845C36.3644 26.7183 36.2789 26.8337 36.1075 26.9304V26.9304Z" fill="white"/>
-                                    </g>                        
-                                </svg>                                            
+                        <div id="map_syd" class=""></div>
+
+                        <div class="_wrap">
+                            <div class="_group _x2-padding centered">
+                                <div class="location column_40 ">                                    
+                                    <!--  -->
+                                    <div class="_subject">
+                                        <h3 class="">Heading</h3>
+                                    </div>    
+                                    <div class="_item">                                        
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut fringilla turpis, id pulvinar nisi. Aliquam non nulla lobortis, tincidunt enim dignissim, molestie lacus.  
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="white" id="buttonText_white">Watch Video</div>
-                        </div>                    
-
+                        </div>
                     
                     </div>
                 </div>
-            </div>        
-
-        <!-- </div> -->
         </section>
-
-        <section class="compare centered ">
-            <!-- <div class=""> -->
+        
+        <section class=" _example_sect _x2-padding centered">
             <div class="_row ">             
-                
                 <div class="column_60">
-                <div class="img_wrap">
-                    <img class="cover" src="./img/why_choose_quality.jpg" loading="lazy"/>
-                </div>
-                </div>
-    
-                <div class="column_40 centered">
-    
-                <div class="_wrap">
-                    <div class="tab_block center">
-                    <h2 class="blue">Compare the bikes</h2>
-                    <!-- <p class="normal">
-                        One of the most important parts of any electric bike are the electrics. Bosch is one of the top names in the business of e-bike motors and batteries. These deliver a ride that’s smooth and comfortable. The&nbsp;battery charges easily and quickly, and can charge fully in around 4&nbsp;hours. A full charge will last for up to 110km of riding, depending on how much pedal assistance you are using.
-                    </p> -->
-                    
-                    <div class="tabs family_compare">
-                        <div class=" tab-item active"><a href="#tabs-gsd">GSD</a></div>
-                        <div class=" tab-item"><a href="#tabs-hsd">HSD</a></div>                    
-                    </div>
-                    
-                    <div class="tab-content">
-                        <div id="tabs-gsd" class="tab-pane active">
-                            <ul>
-                                <li>
-                                    Carry 1 or 2 kids up to 7 years old
-                                </li>
-                                <li>
-                                    Compact – similar length to a standard bike.
-                                </li>
-                                <li>
-                                    Up to 57 litres of storage or up to 200kg
-                                </li>
-                                <li>
-                                    Carry up to two kids plus groceries, or a whole lot of cargo
-                                </li>
-                                <li>
-                                    Built-in dual-battery technology lets you ride all day
-                                </li>
-                                <li>
-                                    Space-saving features like Flat Fold and Vertical Parking  
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="tabs-hsd" class="tab-pane ">
-                            <ul>
-                                <li>
-                                    Light – similar weight to a normal bike
-                                </li>
-                                <li>
-                                    Compact – shorter than  a standard bike.
-                                </li>
-                                <li>
-                                    Up to 37  litres of storage or up to 170kg 
-                                </li>
-                                <li>
-                                    Carry all you need for work, or the weeks groceries
-                                </li>
-                                <li>
-                                    Built-in dual-battery technology lets you ride all day
-                                </li>
-                                <li>
-                                    Space-saving features like Flat Fold and Vertical Parking
-                                </li>
-                            </ul>
-                        </div>                    
-                    </div>
-                    
-                    
-                    <div class="button_wrap_center_vert">
-    
-                        <button class="button blue_btn">Configure GSD</button>      
-    
-                    </div>            
-                    </div>
-                </div>
-    
-                </div>
-            </div>        
-    
-        </section>
 
-        <section class="why_tern centered blue_bg ">
-            
-            <!--  -->
-            <div class="_row " data-aos="fade-up" data-aos-mirror="true">   
-                <!-- <div class="_row ">    -->
-                    <div class="column_40 centered">
-    
                     <div class="_wrap">
-                        <div class="text_block center">
-                            <h6 class="white">Why a Tern eBike?</h6>
-                            <h2 class="navy">Your second car has two wheels</h2>
-                            <!-- <div class="large _regular"> -->
-                                
-                            <p class="normal navy">
-                                The annual cost of running a car in Australia is tens of thousands of dollars. And it’s rare that drivers need to carry more than what can be carried on a Tern eCargo bike. So your L+C bike can be your second car, just way more cost effective. It’s positive transport without the traffic jams, parking, servicing, insurance, rego, fuel, depreciation and big fat carbon footprint. With fuel prices only going one way, your L+C is a great way to get around and cool for the planet. 
-                            </p>
-                            <!-- </div> -->                    
-                                    
+
+                        <div class="_group">
+
+                            <div class="display_table">
+                                <p><strong>Table Details</strong>.</p>
+
+                                <div class="_panel center">
+                                    <div class="table" id="table">
+                                        <div class='theader'>
+                                        <div class='table_header'>Item</div>
+                                        <div class='table_header'>Name</div>
+                                        <div class='table_header'>GSD</div>
+                                        </div>
+                                        <div class='table_row'>
+                                        <div class='table_small'>
+                                            <div class='table_cell'>Item</div>
+                                            <div class='table_cell'>Row 1.</div>
+                                        </div>
+                                        <div class='table_small'>
+                                            <div class='table_cell'>Name</div>
+                                            <div class='table_cell'>Name Col Row 1</div>
+                                        </div>
+                                        <div class='table_small'>
+                                            <div class='table_cell'>Detail</div>
+                                            <div class='table_cell'>
+                                                <div class="_group">
+                                                    Details<br>
+                                                    details
+                                                </div>
+                                            </div>
+                                        </div>                                                  
+                                        </div>
+
+                                        <div class='table_row'>
+                                            <div class='table_small'>
+                                            <div class='table_cell'>Item</div>
+                                            <div class='table_cell'>Row 2.</div>
+                                        </div>
+                                        <div class='table_small'>
+                                            <div class='table_cell'>Name</div>
+                                            <div class='table_cell'>Name Col Row 2</div>
+                                            </div>
+                                            <div class='table_small'>
+                                            <div class='table_cell'>Detail</div>
+                                            <div class='table_cell'>
+                                                <div class="_group">
+                                                    Details<br>
+                                                    details
+                                                </div>
+                                            </div>
+                                            </div>                                                  
+                                        </div>                                        
+                                        
+                                    </div>
+
+                                    <div>to be completed...</div>
+
+
+                                </div>                                        
+
+                            </div>
+
                         </div>
-                    </div>
-    
-                </div>
-                
-                <div class="column_60">
-                    <div class="img_wrap">
-                        <img class="cover" src="./img/family/family_why_tern.jpg" loading="lazy"/>
-                    </div>
-                </div>
-            </div> 
 
-            <!--  -->
-            
-            <div class="_row " data-aos="fade-up" data-aos-mirror="true">   
-                <!-- <div class="_row ">    -->
-                    <div class="column_40 centered">
-    
-                    <div class="_wrap">
-                        <div class="text_block center">
-                            <h6 class="white">Why a Tern eBike?</h6>
-                            <h2 class="navy">
-                                A Tern vs other eBikes
-                            </h2>
-                            <!-- <div class="large _regular"> -->
-                                
-                            <p class="normal navy">
-                                We’ve ridden them all. In our opinion Tern is the best. And we’ve specced it with the best brakes, derailleurs, engines you name it. If things change and a better option hits the market we’ll stock that and you can choose to swap out your current bike.
-                            </p>
-                            <!-- </div> -->
-                            
-                        </div>
                     </div>
-    
-                </div>
-                
-                <div class="column_60">
-                    <div class="img_wrap">
-                        <img class="cover" src="./img/family/family_why_tern_frame_blue.jpg" loading="lazy"/>
-                    </div>
-                </div>
-            </div> 
-
-            <!--  -->
-
-            <div class="_row " data-aos="fade-up" data-aos-mirror="true">   
-                <!-- <div class="_row ">    -->
-                    <div class="column_40 centered">
-    
-                    <div class="_wrap">
-                        <div class="text_block center">
-                            <h6 class="white">Why a Tern eBike?</h6>
-                            <h2 class="navy">What if it gets stolen?</h2>
-                            <!-- <div class="large _regular"> -->
-                                
-                            <p class="normal navy">
-                                Theft is extremely rare due to the built in alarm and locking systems. However, if professionals really go to the trouble of taking your bike, you will just have to pay an excess fee and we will give you another bike.
-                            </p>
-                            <!-- </div> -->
-                            
-                                    
-                        </div>
-                    </div>
-    
-                </div>
-                
-                <div class="column_60">
-                    <div class="img_wrap">
-                        <img class="cover" src="./img/family/family_why_tern_under_blue.jpg" loading="lazy"/>
-                    </div>
-                </div>
-            </div>  
-    
-        </section>
-
-        <section class="why_subscribe centered ">
-            <!-- <div class=""> -->
-            <div class="_row ">   
-                <!-- <div class="column_10"></div>      -->           
-                
-                <div class="column_60">
-                <div class="img_wrap">
-                    <img class="cover" src="./img/family/family_why_subscribe.jpg" loading="lazy"/>
-                </div>
                 </div>
 
-                <div class="column_40 centered">
-                    <div class="_wrap">
-                        <div class="text_block center">
-                            <h2 class="blue">Why subscribe?</h2>
-                            <!-- <div class="large _regular"> -->
-                            
-                            <p class="normal navy">
-                                The best thing of all, you get to try on the lifestyle before you buy. The vast majority of our customers love their new life on an L+C bike. For the small group that don’t, they can cancel their subscription and hand the bike back rather than having a five to eight thousand dollar high performance dust gatherer in their garage.
-                            </p>
-                            <!-- </div> -->
-                                
-                        </div>
-                        
-        
-                    </div>
-                </div>        
-    
-            <!-- </div> -->
+            </div>
         </section>
 
 
-        <section class="how_it_works _no-flex">
+        <section class="accordian_sect centered ">
+            <!-- <div class=""> --> 
+            <div class="_row ">             
+                <div class="column_60">
 
-            <div class="_row _no-margin">   
-                <!-- <div class="column_10"></div>      -->
-                <div class="column_100 centered">
-    
                     <div class="_wrap">
-                        <div class="text_block center">
-                            <h2 class="blue">An eBike to grow with</h2>
+
+                        <div class="_group">
+                            <div class="faqs">
+                                
+                                <!--  -->
+                                <div>
+                                    <h3 class="">Level Three Heading</h3>
+                                </div>
+
+                                <div class="faqs_item">
+                                    <div class="faqs_item_title">
+                                        Question Number One?
+                                    </div>
+                                    <div class="faqs_item_content">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut fringilla turpis, id pulvinar nisi. Aliquam non nulla lobortis, tincidunt enim dignissim, molestie lacus. Nam consectetur enim ut sem hendrerit finibus. Nulla facilisis feugiat mi, ac accumsan nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ullamcorper pharetra augue, et sodales orci viverra sed. Nullam congue ipsum quis mi tincidunt, vitae sagittis justo aliquet. Pellentesque nisi ex, aliquet vitae velit a, commodo dapibus arcu. Vivamus at nibh id sem ullamcorper accumsan. Vestibulum venenatis hendrerit augue, eget maximus nisi pretium quis.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="faqs_item">
+                                    <div class="faqs_item_title">
+                                        Question Number Two?
+                                    </div>
+                                    <div class="faqs_item_content">
+                                        <p>
+                                            Sed placerat velit sed tincidunt sodales. Proin sed justo bibendum, tempor nisi ut, scelerisque metus. Donec porttitor quam quis neque ornare dapibus. Mauris in dolor at nunc euismod euismod. Nunc suscipit magna magna, a faucibus neque facilisis a. Curabitur varius ex at ultrices dictum. Maecenas finibus sed dolor non vestibulum. Maecenas hendrerit lectus vitae finibus pharetra. Morbi quis odio luctus, pellentesque est non, luctus est. Vivamus ornare ornare libero. Donec euismod tortor vitae ligula volutpat, vitae tempor lorem gravida. Nullam nec sapien libero.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+
+                                <!--  -->
+                            </div>
                         </div>
-        
+
                     </div>
-    
+
                 </div>
-            </div>
-
-        <div class="carousel"> 
-            <!-- Flickity HTML init -->
-            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-            
-            <div class="gallery-cell">
-                <div class="cell">
-
-                    <div class="_panel bg_cover ">
-                        
-                        <!-- <div class="bg_image_panel">
-                            <img src="./img/family/family_how_it_works_consultant.jpg">
-                        </div> -->
-
-                        <div class="text_wrap white _x2-padding">
-                            <h3 class="title center">Chat with our experts</h3>
-                            <div class="desc">
-                                <p class="normal white center">Our experts can talk you through all your options and help you decide on the perfect bike to suit your lifestyle needs.</p>
-                            </div>
- 
-                        </div>
-                    </div>
-                
-                </div>                
-            </div>
-
-            <div class="gallery-cell">
-                <div class="cell">
-
-                    <div class="_panel bg_cover">
-                        
-                        <!-- <div class="bg_image_panel">
-                            <img src="./img/family/family_how_it_works_delivery.jpg">
-                        </div> -->
-
-                        <div class="text_wrap white _x2-padding">
-                            <h3 class="title center">Door to door delivery</h3>
-                            <div class="desc">
-                                <p class="normal white center">Complementary delivery includes a 40 minute orientation on your new bike.</p>
-                            </div>
- 
-                        </div>
-                    </div>
-                
-                </div>                
-            </div>
-
-
-            <div class="gallery-cell">
-                <div class="cell">
-
-                    <div class="_panel bg_cover">
-                        
-                        <!-- <div class="bg_image_panel">
-                            <img src="./img/family/family_how_it_works_service.jpg">
-                        </div> -->
-
-                        <div class="text_wrap white _x2-padding">
-                            <h3 class="title center">Here when you need us</h3>
-                            <div class="desc">
-                                <p class="normal white center">
-                                    For peace of mind we include locks, an alarm and roadside assistance. If you have maintenance issues, we’ll come to you, so you’ll never be stranded.
-                                </p>
-                            </div>
- 
-                        </div>
-                    </div>
-                
-                </div>                
-            </div>
-
-            <div class="gallery-cell">
-                <div class="cell">
-
-                    <div class="_panel bg_cover">
-                        
-                        <!-- <div class="bg_image_panel">
-                            <img src="./img/family/family_how_it_works_accessories.jpg">
-                        </div> -->
-
-                        <div class="text_wrap white _x2-padding">
-                            <h3 class="title center">When life changes</h3>
-                            <div class="desc">
-                                <p class="normal white center">
-                                    As your kids grow, your needs can change. That’s why your subscription is flexible. Swap accessories or upgrade your bike, at any time.
-                                </p>
-                            </div>
- 
-                        </div>
-                    </div>
-                
-                </div>                
-            </div>
-
-            
-        </div>
-            
-        </div>        
-
+            </div>      
         </section>
 
-        <section class="testimonials centered ">
-            <!-- <div class=""> -->
-              <div class="_row ">             
-                
-                <div class="column_100">
-                  <div class="_wrap ">
-                    <div class="text_block center">
-                      <h2 class="navy">5 star reviews</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="_row _max_width_1600 three_col">             
-                
-                <div class="column_third _x2-padding">
-                  
-      
-                  <div class="_panel white_bg">
-                    <div class="text_block left">
-                      <h5 class="navy">Gaurav Bhasin</h5>
-                      <h6 class="navy">Description</h6>
-                      <div class="stars yellow">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-      
-                      <!-- <div class="large _regular"> -->
-                        <p class="normal">                   
-                          For someone who has not ridden the bike for 
-      last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                        </p>                  
-                      <!-- </div> -->                         
-                    </div>
-                  </div>
-      
-                </div>
-      
-                <div class="column_third _x2-padding">
-                  
-      
-                  <div class="_panel white_bg">
-                    <div class="text_block left">
-                      <h5 class="navy">Gaurav Bhasin</h5>
-                      <h6 class="navy">Description</h6>
-                      <div class="stars yellow">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-      
-                      <!-- <div class="large _regular"> -->
-                        <p class="normal">                   
-                          For someone who has not ridden the bike for 
-      last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                        </p>                  
-                      <!-- </div> -->                         
-                    </div>
-                  </div>
-      
-                </div>
-      
-                <div class="column_third _x2-padding">
-                  
-      
-                  <div class="_panel white_bg">
-                    <div class="text_block left">
-                      <h5 class="navy">Gaurav Bhasin</h5>
-                      <h6 class="navy">Description</h6>
-                      <div class="stars yellow">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-      
-                      <!-- <div class="large _regular"> -->
-                        <p class="normal">                   
-                          For someone who has not ridden the bike for 
-      last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                        </p>                  
-                      <!-- </div> -->                         
-                    </div>
-                  </div>
-      
-                </div>
-      
-              </div>        
-      
-          </section>
-      
+
 
 
 
@@ -847,6 +558,13 @@
     <script src="./js/video_control.js"></script>
     <script src="./js/active_tabs.js"></script>
     <script src="./js/getstarted_add_active.js"></script>
+    <script src="./js/faqs.js"></script>
+
+    <script src="./js/maps/delivery.js"></script>
+    <script src="./js/maps/custom_maps.js"></script>
+    <script src="./js/maps/custom_maps_syd.js"></script>
+
+
 
     <!-- https://flickity.metafizzy.co/ -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
