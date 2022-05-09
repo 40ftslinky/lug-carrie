@@ -144,7 +144,6 @@
             display: none;
             visibility: hidden;
             opacity: 0;
-            s
             }
         }
         /* Media queries for when the viewport is narrow. */
@@ -195,9 +194,9 @@
             }
         }
         @media only screen and (max-width: 650px) {
-            .rounded {
-                border-top-left-radius: 8px;
-                border-top-right-radius: 8px;
+            .rounded-top {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
                 width: 100% !important; min-width: initial !important;
             }
         }
@@ -269,7 +268,7 @@
                     <!-- This table wraps the whole body email within it's width (650px), 
                         sets the background color (white) and border (none) -->
                     <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff"  > <tr> <td>     <![endif]-->
-                    <table border="0" width="650" cellpadding="0" cellspacing="0" role="presentation" align="center" bgcolor="#ffffff" style="background:#fff;border-spacing:0;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;" class="email-container">
+                    <table border="0" width="650" cellpadding="0" cellspacing="0" role="presentation" align="center" bgcolor="#ffffff" style="background:#fff;border-spacing:0;" class="email-container">
 
                         <!-- Single Fluid Image, No Crop : BEGIN -->
                         <tr>
@@ -299,10 +298,10 @@
 
                         <!-- Full Width, Fluid Column : BEGIN -->
                         <tr>
-                            <td style="border-collapse:collapse;">
+                            <td style="border-collapse:collapse; ">
                                 <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" style="border-spacing:0;">
                                     <tr>
-                                        <td style="padding:50px;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:16px;line-height:25px;color:#666666;border-collapse:collapse;">
+                                        <td style="padding:50px 50px 10px;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:16px;line-height:25px;color:#666666;border-collapse:collapse;">
                                         
                                         <h2 style="text-align: center;">Lorem ipsum - Heading Level 2</h2>
                                         <p style="margin-top: 0.25em;">
@@ -316,7 +315,7 @@
                                         <p style="margin-top: 0.25em;">
                                             Proin ultricies elementum feugiat. Curabitur et mollis neque. Aenean urna felis, consectetur et ex nec, ultricies tincidunt erat. <a href="#link">link text</a>.
                                         </p>
-                                        <h3 style="margin-bottom: 0.25em;">What do I need to do?</h3>
+                                        <h4 style="margin-bottom: 0.25em;">Heading Level 4</h4>
                                         <p style="margin-top: 0.25em;">
                                             Duis dictum, odio ut pharetra facilisis, elit neque auctor enim, et consequat orci ante quis dolor. Quisque vestibulum arcu id cursus interdum. Vivamus varius leo nec odio facilisis tristique ac eu arcu. 
                                         </p>
@@ -329,12 +328,12 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td align="center" vertical-align="middle" style="font-size:0px;padding:30px;word-break:break-word;">
+                                        <td align="center" vertical-align="middle" style="font-size:0px;padding:0 50px 50px;word-break:break-word;">
                                             <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
                                                 <tr>
                                                     <td align="center" bgcolor="#FA5D38" role="presentation" style="border:none;border-radius:30px;cursor:auto;padding:11px 20px;background:#FA5D38;" valign="middle">
                                                         <a href="#button_link" style="background:#FA5D38;color:#ffffff;font-family:Poppins, sans-serif;font-size:18px;font-weight:600;line-height:120%;Margin:0;text-decoration:none;text-transform:none;" target="_blank">
-                                                            <span style="font-family: 'Poppins', Helvetica, sans-serif;">Add now</span>
+                                                            <span style="font-family: 'Poppins', Helvetica, sans-serif;">Button Text</span>
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -355,9 +354,9 @@
                     <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0"> <tr> <td>     <![endif]-->
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" class="email-container" style="border-spacing:0;">
                         <tr>
-                            <td style="border-collapse:collapse;">
+                            <td style="border-collapse:collapse;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background:#67cadc;">
                                 <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0"> <tr> <td>     <![endif]-->
-                                <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" class="email-container" style="border-spacing:0;background:#67cadc;">
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" class="email-container" style="border-spacing:0;">
                                     <tr>
                                         <td class="" valign="middle" style="padding:20px 0 5px;text-align:center;border-collapse:collapse;">
                                             <a href="https://www.lug-carrie.com" target="_blank"><img src="/images/LC_logo_REV.png" alt="Logo" height="21" width="106" border="0"></a>
@@ -388,7 +387,11 @@
                                     </tr>
                                 </table>
                                 <!--[if mso | IE]> </td> </tr> </table>     <![endif]-->
-
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-collapse:collapse;">
+ 
                                 <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0"> <tr> <td>     <![endif]-->
                                 <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" class="email-container" style="border-spacing:0;">
                                     <tr>

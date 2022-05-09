@@ -56,19 +56,19 @@
 .map_sect .column_wrap {
     width:100vw;
     flex-direction: row;
-    gap: unset;
+    gap: 3rem;
 }
 .map_sect .column_50 {
-    width:50vw;
+    width: calc(50vw - 1.5rem);
     max-width: unset;
 }
 
 .map_sect .column_50 .column_row{
-    width:50vw;
+    width: calc(50vw - 1.5rem);
     max-width: unset;
 }
 #map, #map_syd {
-    width: 50vw;
+    width: calc(50vw - 1.5rem);
     max-width: unset;
 }
 @media screen and (max-width:1080px){ 
