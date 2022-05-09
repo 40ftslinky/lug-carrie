@@ -99,13 +99,13 @@ function onEachFeatureSyd(feature, layersyd) {
         click: zoomToFeatureSyd
     });
     // layersyd.bindPopup("This is the "+feature.properties.name+ " region. <br/> <div class='button_wrap_sm'><button class='button btn_small ghost_red'>Learn More</button> <button class='button btn_small red_btn '>Book Region</button></div>");
-    layersyd.bindPopup("You clicked the map at " + event.latlng.toString());
+    layersyd.bindPopup("You clicked the map at " + latlng.toString());
 }
 
-geojsonsyd = L.geojson(deliveryData, {
-    style: styleSyd,
-    onEachFeatureSyd: onEachFeatureSyd
-}).addTo(mymap_syd);
+// geojsonsyd = L.geojson(deliveryData, {
+//     style: styleSyd,
+//     onEachFeatureSyd: onEachFeatureSyd
+// }).addTo(mymap_syd);
 
 mymap_syd.attributionControl.addAttribution('Delivery data &copy; Lug+Carrie');
 
@@ -115,7 +115,8 @@ var popup2 = L.popup();
 function onMapClickSyd(event) {
     popup2
         .setLatLng(event.latlng)
-        .setContent("You clicked the map at <br>" + event.latlng.toString())
+        // .setContent("You clicked the map at <br>" + event.latlng.toString())
+        .setContent("You clicked outside the delivery area")
         .openOn(mymap_syd);
 }
 mymap_syd.on('click', onMapClickSyd);
