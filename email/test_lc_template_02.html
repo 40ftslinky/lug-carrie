@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+    <!-- So that mobile webkit will display zoomed in -->
+        <meta name="format-detection" content="telephone=no">
+    <!-- disable auto telephone linking in iOS -->
+        <title>Lug+Carrie | Test template</title>
+        <style type="text/css">
+            /* colours */
+            :root {
+                --yellow: #FBC026;
+                --red: #FA5D38;
+                --blue: #67cadc;
+                --navy: #1B3957;
+                /*  */
+                /* GREYS */
+                /* Gray/Gray 100 */
+                --gray-100: #F8F9FA;
+                /* Gray/Gary 200 */
+                --gray-200: #E9ECEF;
+                /* Gray/Gray 300 */
+                --gray-300: #DEE2E6;
+                /* Gray/Gray 400 */
+                --gray-400: #CED4DA;
+                /* Gray/Gray 500 */
+                --gray-500: #ADB5BD;
+                /* Gray/Gray 650 */
+                --gray-650: #6C757D;
+                /* Gray/Gray 700 */
+                --gray-700: #495057;
+                /* Gray/Gray 800 */
+                --gray-800: #343A40;
+                /* Gray/Gray 900 */
+                --gray-900: #2a2325;
+                /* not white on black */
+                --not-white: #C4C1C1;
+                /* not black */
+                --not-black: #181818;
+                --pitch-black: #010101;
+            }
+        </style>
+        <style type="text/css">
+        /* Force Hotmail to display emails at full width */
+        .ReadMsgBody {
+            width: 100%;
+            background-color: #eeeeee;
+        }
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass {
+            width: 100%;
+            background-color: #eeeeee;
+        }
+        /* Forces Hotmail to display normal line spacing. */
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        /* Resolves webkit padding issue. */
+        table {
+            border-spacing: 0;
+        }
+        /* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
+        table td {
+            border-collapse: collapse;
+        }
+        /* Yahoo auto-sensing link color and border */
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+        /* resets */
+        body,table,td,p,a { -ms-text-size-adjust: 100% !important; -webkit-text-size-adjust: 100% !important; }
+        table, tr, td { border-spacing: 0 !important; mso-table-lspace: 0px !important; mso-table-rspace: 0pt !important; border-collapse: collapse !important; mso-line-height-rule:exactly !important;}
+        /* Media queries for when the viewport is larger than the default email width */
+        @media only screen and (min-width: 651px) {
+            table[class="content"] {
+            width: 650px;
+            margin: 0 auto;
+            }
+        }
+        /* Media queries for when the viewport is smaller than the default email width but not too narrow. */
+        @media screen and (max-device-width: 650px),
+        screen and (max-width: 650px) {
+            /* Constrain email width for small screens */
+            table[class="email-container"] {
+            width: 100% !important;
+            }
+            /* Constrain tables for small screens */
+            table[class="fluid"] {
+            width: 100% !important;
+            }
+            /* Force images to resize to full width of their container */
+            img[class="fluid"],
+            img[class="force-col-center"] {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            }
+            /* And center these ones */
+            img[class="force-col-center"] {
+            margin: auto !important;
+            }
+            /* Force table cells into rows */
+            td[class="force-col"],
+            td[class="force-col-center"] {
+            display: block !important;
+            width: 100% !important;
+            clear: both;
+            }
+            /* And center these ones */
+            td[class="force-col-center"] {
+            text-align: center !important;
+            padding: 20px 0 !important
+            }
+            /* Force table cells into rows */
+            /* Float a previously stacked image to the left */
+            img[class="col-3-img-l"] {
+            float: left;
+            margin: 0 15px 15px 0;
+            }
+            /* Float a previously stacked image to the right */
+            img[class="col-3-img-r"] {
+            float: right;
+            margin: 0 0 15px 15px;
+            }
+            /* Make bulletproof buttons full width */
+            a[class="button"] {
+            width: 100% !important;
+            }
+            td[class="hide"] {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            s
+            }
+        }
+        /* Media queries for when the viewport is narrow. */
+        /* Rules prefixed with 'hh-' (for 'handheld') repeat much of what's above, but these don't trigger until the smaller screen width. */
+        @media screen and (max-device-width: 425px),
+        screen and (max-width: 425px) {
+            /* Helper only visible on handhelds. All styles are inline along with a `display:none`, which this class overrides */
+            div[class="hh-visible"] {
+            display: block !important;
+            }
+            /* Center stuff */
+            div[class="hh-center"] {
+            text-align: center;
+            width: 100% !important;
+            }
+            /* Constrain tables for small screens */
+            table[class="hh-fluid"] {
+            width: 100% !important;
+            }
+            /* Force images to resize to full width of their container */
+            img[class="hh-fluid"],
+            img[class="hh-force-col-center"] {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            }
+            /* And center these ones */
+            img[class="hh-force-col-center"] {
+            margin: auto !important;
+            }
+            /* Force table cells into rows */
+            td[class="hh-force-col"],
+            td[class="hh-force-col-center"] {
+            display: block !important;
+            width: 100% !important;
+            clear: both;
+            }
+            /* And center these ones */
+            td[class="hh-force-col-center"] {
+            text-align: center !important;
+            }
+            /* Stack the previously floated images */
+            img[class="col-3-img-l"],
+            img[class="col-3-img-r"] {
+            float: none !important;
+            margin: 15px auto !important;
+            text-align: center !important;
+            }
+        }
+        @media only screen and (max-width: 650px) {
+            .rounded {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                width: 100% !important; min-width: initial !important;
+            }
+        }
+        </style>
+        <!--[if !mso]>
+        <!-- webfonts -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <!--
+        <![endif]-->
+    </head>
+    <body bgcolor="#f5f5f5" link="398bce" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin:0; padding:0;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;background: #f4f4f4;">
+
+        <style type="text/css">
+            div.preheader {
+              display: none !important;
+            }
+        </style>
+        <div class="preheader" style="font-size: 1px; display: none !important;">Preheader display text.</div>
+
+        <center style="width: 100%;background-color:#f5f5f5;">
+
+
+            <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0"> <tr> <td>     <![endif]-->
+            <table class="content" cellpadding="0" cellspacing="0" role="presentation" border="0" height="100%" width="100%"  style="border-spacing:0;">
+                <tr>
+                    <td style="border-collapse:collapse;">
+
+                    <!-- CSS Image background in Outlook : BEGIN -->
+
+                    <!-- Best used with absolute image paths -->
+
+                    <!--[if gte mso 9]>
+                        <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+                            <v:fill type="tile" color="#eeeeee" src="/images/.png">
+                        </v:background>
+                    <![endif]-->
+
+                    <!-- CSS Image background in Outlook : END -->
+
+                    <!-- Logo Left Nav Right + Vertical Padding : BEGIN -->
+
+                    <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0"> <tr> <td>     <![endif]-->
+                    <table border="0" width="650" cellpadding="0" cellspacing="0" role="presentation" align="center" class="email-container" style="border-spacing:0; ">
+                        <tr>
+                            <td height="30" style="font-size:0;line-height:0;border-collapse:collapse;"> </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="force-col-center" valign="middle" style="padding:30px 50px;text-align:left;background: #FA5D38;border-collapse:collapse;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+                                <!-- <div class="rounded" style="border-top-left-radius: 10px;border-top-right-radius: 10px;"> -->
+                                    <a href="https://www.lug-carrie.com" target="_blank"><img src="/images/LC_logo_REV.png" alt="Logo" height="35" width="174" border="0"></a>
+                                <!-- </div> -->
+                            </td>
+                            <td class="hide" valign="middle" style="padding:20px 0;text-align:right;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:12px;border-collapse:collapse;">
+                            </td>
+                        </tr>
+                        <!-- 
+                        <tr>
+                        <td height="0" style="font-size:0;line-height:0;border-collapse:collapse;"> </td>
+                        </tr> 
+                        -->
+                    </table>
+                    <!--[if mso | IE]> </td> </tr> </table>     <![endif]-->
+
+                    <!-- Logo Left Nav Right + Vertical Padding : END -->
+
+                    <!-- Email Container : BEGIN -->
+
+                    <!-- This table wraps the whole body email within it's width (650px), 
+                        sets the background color (white) and border (none) -->
+                    <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff"  > <tr> <td>     <![endif]-->
+                    <table border="0" width="650" cellpadding="0" cellspacing="0" role="presentation" align="center" bgcolor="#ffffff" style="background:#fff;border-spacing:0;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;" class="email-container">
+
+                        <!-- Single Fluid Image, No Crop : BEGIN -->
+                        <tr>
+                            <td style="border-collapse:collapse;">
+                            </td>
+                        </tr>
+
+                        <!-- Single Fluid Image, No Crop : END -->
+
+                        <!-- Full Width, Fluid Image : BEGIN -->
+                        <tr>
+                            <td style="border-collapse:collapse;">
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" style="border-spacing:0;">
+                                    <tr>
+                                        <td style="padding:0;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:16px;line-height:25px;color:#666666;border-collapse:collapse;">
+                                            <div style="text-align: center; height: 300px; overflow-y: hidden;">
+                                                <img width="100%" border="0" style="display: block; border: none; outline: none; text-decoration: none; width: 100%!important; height: auto!important;"
+                                            src="/images/placeholder.jpg" />
+                    
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- Full Width, Fluid Image : END -->
+
+                        <!-- Full Width, Fluid Column : BEGIN -->
+                        <tr>
+                            <td style="border-collapse:collapse;">
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" style="border-spacing:0;">
+                                    <tr>
+                                        <td style="padding:50px;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:16px;line-height:25px;color:#666666;border-collapse:collapse;">
+                                        
+                                        <h2 style="text-align: center;">Lorem ipsum - Heading Level 2</h2>
+                                        <p style="margin-top: 0.25em;">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                        <h3 style="margin-bottom: 0.25em;">Lorem ipsum - Heading Level 3</h3>
+                                        <p style="margin-top: 0.25em;">
+                                            Lorem ipsum dolor sit amet &lt;account@lug-carrie.com&gt; consectetur adipiscing elit. Pellentesque pellentesque pellentesque enim, ut egestas erat suscipit a. Phasellus viverra mauris sit amet orci mollis consectetur.
+                                        </p>
+                                        <h3 style="margin-bottom: 0.25em;">Lorem ipsum - Heading Level 3</h3>
+                                        <p style="margin-top: 0.25em;">
+                                            Proin ultricies elementum feugiat. Curabitur et mollis neque. Aenean urna felis, consectetur et ex nec, ultricies tincidunt erat. <a href="#link">link text</a>.
+                                        </p>
+                                        <h3 style="margin-bottom: 0.25em;">What do I need to do?</h3>
+                                        <p style="margin-top: 0.25em;">
+                                            Duis dictum, odio ut pharetra facilisis, elit neque auctor enim, et consequat orci ante quis dolor. Quisque vestibulum arcu id cursus interdum. Vivamus varius leo nec odio facilisis tristique ac eu arcu. 
+                                        </p>
+                                        <p>
+                                            Morbi ut blandit diam. Phasellus porta, quam ac tincidunt fermentum, dui metus cursus ex, sed pharetra augue ex cursus nisi. <a href="#link">link text</a>, Morbi rhoncus tincidunt faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum pellentesque tincidunt ante sit amet fermentum.
+                                        </p>
+                                        <!-- <p>
+                                            <a href="#link" style="display:block;text-align:center;background:#FA5D38;padding:10px 15px;color:white;text-decoration:none;width:50%;margin:auto;-webkit-border-radius:30px;border-radius:30px;-moz-border-radius:30px;">Button Text</a>
+                                        </p> -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" vertical-align="middle" style="font-size:0px;padding:30px;word-break:break-word;">
+                                            <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+                                                <tr>
+                                                    <td align="center" bgcolor="#FA5D38" role="presentation" style="border:none;border-radius:30px;cursor:auto;padding:11px 20px;background:#FA5D38;" valign="middle">
+                                                        <a href="#button_link" style="background:#FA5D38;color:#ffffff;font-family:Poppins, sans-serif;font-size:18px;font-weight:600;line-height:120%;Margin:0;text-decoration:none;text-transform:none;" target="_blank">
+                                                            <span style="font-family: 'Poppins', Helvetica, sans-serif;">Add now</span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- Full Width, Fluid Column : END -->
+                    </table>
+                    <!--[if mso | IE]> </td> </tr> </table>     <![endif]-->
+
+                    <!-- Email Container : END -->
+
+                    <!-- Footer : BEGIN -->
+                    <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0"> <tr> <td>     <![endif]-->
+                    <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" class="email-container" style="border-spacing:0;">
+                        <tr>
+                            <td style="border-collapse:collapse;">
+                                <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0"> <tr> <td>     <![endif]-->
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" class="email-container" style="border-spacing:0;background:#67cadc;">
+                                    <tr>
+                                        <td class="" valign="middle" style="padding:20px 0 5px;text-align:center;border-collapse:collapse;">
+                                            <a href="https://www.lug-carrie.com" target="_blank"><img src="/images/LC_logo_REV.png" alt="Logo" height="21" width="106" border="0"></a>
+                                        </td>
+                                        <!-- <td style="text-align:center;padding:20px 0px 5px;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#888888;border-collapse:collapse;">
+                                            © Lug+Carrie<br>
+                                        </td> -->
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td style="text-align:center;padding:5px 0px 20px;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:10px;line-height:18px;color:#888888;border-collapse:collapse;">
+                                            <span color="#ffffff" style="color: #ffffff;">
+                                                Melbourne: (03) 9000 0830
+                                            </span> <br>
+                                            <span color="#ffffff" style="color: #ffffff;">
+                                                Sydney: (02) 9000 1255
+                                            </span> <br>
+                                            <span color="#ffffff" style="color: #ffffff;">
+                                                We're open M - F, 9am - 6pm and Sat 10am - 4pm
+                                            </span> <br>
+                                            <span color="#ffffff" style="color: #ffffff;">
+                                                Find more information online at our website
+                                            </span> <br>
+                                            <span color="#ffffff" style="color: #ffffff;">
+                                                www.lug-carrie.com
+                                            </span> <br>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if mso | IE]> </td> </tr> </table>     <![endif]-->
+
+                                <!--[if mso]> <table width="650" align="center" border="0" cellpadding="0" cellspacing="0"> <tr> <td>     <![endif]-->
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" align="center" class="email-container" style="border-spacing:0;">
+                                    <tr>
+                                        <td style="text-align:center;padding:20px 0px 5px 0px;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#888888;border-collapse:collapse;">
+                                            <a href="https://www.linkedin.com/company/lug-carrie/" style="width: 21px; height: 21px;padding-right: 10px;"><img src="/images/LinkedIn.png" alt="LinkedIn" style="border: none;"></a>  
+                                            <a href="twitter" style="width: 21px; height: 21px;padding-right: 10px;"><img src="/images/Twitter.png" style="border: none;" alt="Twitter"></a>  
+                                            <a href="https://www.facebook.com/lugandcarrie" style="width: 21px; height: 21px;padding-right: 10px;"><img src="/images/Facebook.png" style="border: none;" alt="Facebook"></a>
+                                            <a href="https://www.instagram.com/lugandcarrie/" style="width: 21px; height: 21px;"><img src="/images/Instagram.png" style="border: none;" alt="Instagram"></a>  
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding:5px 0px 5px;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:10px;line-height:18px;color:#888888;border-collapse:collapse;">
+                                            <span color="#57585B" style="color: #57585B;">
+                                                Sent to: {!Contact.Email}
+                                            </span> <br>
+                                            <span color="#57585B" style="color: #57585B;">
+                                                Lug+Carrie, 146 Argyle Street, Fitzroy Victoria 3065, Australia
+                                            </span> <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:center;padding:5px 0px 20px;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:10px;line-height:18px;color:#888888;border-collapse:collapse;">
+                                            <span color="#57585B" style="color: #57585B;">Trouble seeing this email? 
+                                                <a href="#" style="color: #57585B; text-decoration: underline;" target="_blank" class="mktNoTok">
+                                                    View it as a web page.
+                                                </a>
+                                            </span> <br>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--[if mso | IE]> </td> </tr> </table>     <![endif]-->
+
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if mso | IE]> </td> </tr> </table>     <![endif]-->
+
+                    <!-- Footer : END -->
+                    </td>
+                </tr>
+            </table>
+            <!--[if mso | IE]> </td> </tr> </table>     <![endif]-->
+        </center>
+    </body>
+</html>
