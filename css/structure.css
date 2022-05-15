@@ -159,7 +159,7 @@ section:last-of-type {
 
 @media (max-width: 1080px){
     ._panel {
-        width: 500px;
+        /* width: 500px; */
         max-width: 90vw;
         padding: 1rem;
 
@@ -327,7 +327,7 @@ section:last-of-type {
 
 [class*="column_"]:not(.column_xxxxx) {
     /* max-width: calc((1200px * var(--columns)/10) - 3rem ); */
-    max-width: calc((100vw * var(--columns)/10) - (var(--columns) * 1rem ));
+    max-width: calc((100vw * var(--columns)/10) - (var(--columns) * 1rem ) - 3rem);
     width: calc(var(--col-width) * var(--columns));
     height:auto;
     position: relative;
@@ -359,7 +359,7 @@ section:last-of-type {
     }
 
     [class*="column_"]:not(.column_100) {
-        max-width: calc((1600px * var(--columns)/10) - (var(--columns) * 1rem ));
+        max-width: calc((1600px * var(--columns)/10) - (var(--columns) * 1rem ) - 3rem);
     }
 }
 
@@ -393,21 +393,21 @@ section:last-of-type {
     ._max_width_1600 {
         /* max-width:calc((1600px * var(--columns)/10) - (var(--columns) * 3rem )); */
                 /* max-width: calc(1600px - 6rem); */
-        max-width: calc(((1600px) * var(--columns)/10) - 1rem );
+        max-width: calc(((1600px) * var(--columns)/10) - 3rem );
         width: calc(var(--col-width) * var(--columns));
     }
 }
 
 @media screen and ( max-width: 1600px ) {
     ._max_width_1600 {
-        max-width: calc((1600px * var(--columns)/10) - 1rem );
+        max-width: calc((1600px * var(--columns)/10) - 3rem );
     }
 }
 
 
 @media screen and ( max-width: 1080px ) {
     ._max_width_1600 {
-        max-width: calc((100vw * var(--columns)/10) - 1rem );
+        max-width: calc((100vw * var(--columns)/10) - 3rem );
     }
 }
 
@@ -468,7 +468,7 @@ section:last-of-type {
 }
 @media screen and (min-width:1080px){ 
     .img_wrap img {
-        max-height: calc(100vw * 1/3);
+        /* max-height: calc(100vw * 1/3); */
     }
 }
 
@@ -710,7 +710,7 @@ section {
 
 .fill {object-fit: fill;}
 .contain {object-fit: contain;}
-.cover {object-fit: cover;}
+.cover {object-fit: cover; object-position: unset;}
 .scale-down {object-fit: scale-down;}
 .none {object-fit: none;}
 

@@ -130,7 +130,7 @@ h1 {
 }
 
 h2 {
-	margin-top: 0.8em !important;
+	margin-top: 0;
 	margin-bottom: 0.8em;
 }
 
@@ -191,6 +191,11 @@ p,
     margin-left: auto;
     margin-right: auto;
 }
+.center h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* ----------------------------- */
 /*  */
@@ -245,8 +250,8 @@ h1,
 
 h2,
 .h2 {
-    --min-fs: 2.5;
-    --max-fs: 4;
+    --min-fs: 1;
+    --max-fs: 3.75;
     letter-spacing: -0.5;
 }
 
@@ -279,25 +284,25 @@ h6,
 }
 
 .intro {
-    --min-fs: 1.5;
+    --min-fs: 1.2;
     --max-fs: 1.5;
     letter-spacing: 0.25;
 }
 
 .large {
-    --min-fs: 1.125;
+    --min-fs: 1;
     --max-fs: 1.125;
     letter-spacing: 0.5;
 }
 
 .normal {
-    --min-fs: 1;
+    --min-fs: 0.8;
     --max-fs: 1;
     letter-spacing: 0.5;
 }
 
 .small {
-    --min-fs: 0.75;
+    --min-fs: 0.65;
     --max-fs: 0.75;
     letter-spacing: 1;
 }
@@ -353,13 +358,11 @@ h6,
             * (100vw - var(--min-vw-rem)) 
              / ((var(--max-vw) - var(--min-vw)));
   
-/*   */
     font-size: clamp(
         var(--min-fs-rem), 
         var(--min-fs-rem) + var(--slope), 
         var(--max-fs-rem)
     ); 
-/*   */
 
 /* ----------
     clamp(

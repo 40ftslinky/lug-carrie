@@ -54,6 +54,10 @@
     text-align: left;
 }
 
+.compare img {
+    min-height: 66vh;
+}
+
 
 /* ------------------------------------------- */
 /* why tern */

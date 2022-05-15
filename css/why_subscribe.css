@@ -41,9 +41,9 @@
 /* ------------------------------------------- */
 /*  */
 
-.how_it_works { 
-    /* height: calc(100vh - var(--header_height)); */
-    background-color: var(--gray-100);
+section.how_it_works { 
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 .how_it_works .carousel {
@@ -116,7 +116,14 @@
     bottom: -45px;
 }
 
+/* ------------------------------------------- */
+/* flexible */
 
+.flexible {}
+
+.flexible img {
+  min-height: 66vh;
+}
 
 /* ------------------------------------------- */
 /* love */
@@ -142,7 +149,8 @@
 
 
 .why_subscribe_process {
-    padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .why_subscribe_process .column_80 {
