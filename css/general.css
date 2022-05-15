@@ -32,6 +32,11 @@
   background-position: center 25%;
 }
 
+#blog .hero {
+  background-image: url('../img/general/blog_fullpage_bg.jpg');
+  background-position: center 25%;
+}
+
 /* ------------------------------------------- */
 /*  */
 
