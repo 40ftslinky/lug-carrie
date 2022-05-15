@@ -6,13 +6,35 @@
 /* ------------------------------------------- */
 /* hero */
 
+#general .hero,
 #general .hero {
-    background-image: url('../img/general/general_fullpage_bg.jpg');
     height: calc(75vh - var(--header_height));
     min-height: fit-content;
     flex: 1;
     margin-bottom: 2rem;
 }
+
+#general .hero {
+  background-image: url('../img/general/general_fullpage_bg.jpg');
+}
+#contact .hero {
+  background-image: url('../img/general/contact_fullpage_bg.jpg');
+}
+#service .hero {
+  background-image: url('../img/general/service_fullpage_bg.jpg');
+}
+#consult .hero {
+  background-image: url('../img/general/consult_fullpage_bg.jpg');
+  background-position: center 25%;
+}
+#manuals .hero {
+  background-image: url('../img/general/manuals_fullpage_bg.jpg');
+  background-position: center 25%;
+}
+
+/* ------------------------------------------- */
+/*  */
+
 
 #general .hero h1 {
     --min-fs:3;
@@ -50,9 +72,27 @@
 
 
 /* ------------------------------------------- */
+/* intro */
+
+.intro_sect {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* ------------------------------------------- */
+/* calendly */
+
+/* cant target inside an iFrame */
+#consult .calendly [data-container] > a {
+  display: none;
+}
+ 
+
+
+/* ------------------------------------------- */
 /* map */
 
- 
+
 .map_sect .column_wrap {
     width:100vw;
     flex-direction: row;

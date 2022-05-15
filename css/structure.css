@@ -55,6 +55,9 @@ main {
     /* margin-top: var(--header_height); */
 }
 
+article header {display:none}
+
+
 section {
     display: flex;
 }
@@ -208,6 +211,7 @@ section:last-of-type {
 
 .top {
     justify-content: flex-start;
+    align-items: flex-start;
 }
 .bottom {
     justify-content: flex-end;

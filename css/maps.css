@@ -1,7 +1,8 @@
 /* maps.css */
 
 #map,
-#map_syd { 
+#map_syd,
+#map_melb { 
     height: 60vh; 
 }
 
@@ -11,24 +12,34 @@
 
 #map .leaflet-control a,
 #map_syd .leaflet-control a,
+#map_melb .leaflet-control a,
+[id*="map"] .leaflet-control a,
 #map .leaflet-control,
-#map_syd .leaflet-control {
+#map_syd .leaflet-control,
+#map_melb .leaflet-control,
+[id*="map"] .leaflet-control {
    /* color:#dedede; */
    color:#888888;
    font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
 }
 #map .leaflet-control-attribution,
-#map_syd .leaflet-control-attribution {
+#map_syd .leaflet-control-attribution,
+#map_melb .leaflet-control-attribution,
+[id*="map"] .leaflet-control-attribution {
     font-size: .6rem;
 }
 
 #map .leaflet-container ,
-#map_syd .leaflet-container {
+#map_syd .leaflet-container, 
+#map_melb .leaflet-container,
+[id*="map"] .leaflet-container {
     font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
 }
 
 #map .info,
-#map_syd .info {
+#map_syd .info,
+#map_melb .info,
+[id*="map"] .info {
    padding: 6px 8px;
    font: 14px/16px 'Poppins', Arial, Helvetica, sans-serif;
    background: white;
@@ -37,14 +48,16 @@
    border-radius: 5px;
 }
 #map .leaflet-top .info h4,
-#map_syd .leaflet-top .info h4 {
+#map_syd .leaflet-top .info h4,
+#map_melb .leaflet-top .info h4 {
    font: 14px/16px 'Poppins', Arial, Helvetica, sans-serif !important;
    font-size: .8rem;
    margin: 0 0 5px;
    color: #777;
 }
 #map .leaflet-top .info.leaflet-control ,
-#map_syd .leaflet-top .info.leaflet-control  {
+#map_syd .leaflet-top .info.leaflet-control,
+#map_melb .leaflet-top .info.leaflet-control  {
     /* font: 12px/1.5 'Poppins' Arial, Helvetica, sans-serif !important; */
     font-family: 'Poppins' Arial, Helvetica, sans-serif !important;
     font-size: .8rem;
@@ -52,7 +65,8 @@
 }
 
 #map .leaflet-container a.leaflet-popup-close-button,
-#map_syd .leaflet-container a.leaflet-popup-close-button {
+#map_syd .leaflet-container a.leaflet-popup-close-button,
+#map_melb .leaflet-container a.leaflet-popup-close-button {
     color: #494949;
 }
 
@@ -61,7 +75,8 @@
 }
 
 #map .leaflet-popup-content,
-#map_syd .leaflet-popup-content {
+#map_syd .leaflet-popup-content,
+#map_melb .leaflet-popup-content {
     /* font: 12px/1.5 'Poppins' Arial, Helvetica, sans-serif !important; */
     font-family: 'Poppins', Arial, Helvetica, sans-serif !important;
     font-size: .8rem;
