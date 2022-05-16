@@ -37,6 +37,15 @@
   background-position: center 25%;
 }
 
+#about .hero {
+  background-image: url('../img/general/about_fullpage_bg.jpg');
+  background-position: center 25%;
+}
+
+.about_sect {
+  margin-top: calc(var(--header_height)*1.5);
+}
+
 /* ------------------------------------------- */
 /*  */
 
