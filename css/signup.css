@@ -17,3 +17,16 @@
 [class*="_wrap"] label[class*="checkbox"] {
     
 }
+
+/* ------------------------------------------- */
+/* STRIPE */
+
+
+#loginform label {
+    display: flex;
+    align-items: center;
+}
+input#rememberme {
+    width: auto;
+    margin-right: 0.5rem;
+}
