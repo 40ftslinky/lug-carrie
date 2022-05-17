@@ -1,6 +1,7 @@
 /* accessories.css */
 
 
+#accessories {margin: 0; padding: 0;}
 
 
 /* ------------------------------------------- */
@@ -86,4 +87,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+#accessories .column_quarter .text_block p { 
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
 }

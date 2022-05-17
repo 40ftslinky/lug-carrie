@@ -536,7 +536,7 @@ section:last-of-type {
 }
 
 /* ------------------------------------------- */
-/* content */
+/* HERO */
 
 .hero [class*="column"] {
     padding: 0 5%;
@@ -554,6 +554,16 @@ section:last-of-type {
     }
 }
 
+
+.hero.small_bg {
+    height: unset;
+    min-height: calc(45vh - var(--header_height));
+}
+
+.hero.medium_bg {
+    height: unset;
+    min-height: calc(75vh - var(--header_height));
+}
 
 
 /* --------------------------------------------------- */

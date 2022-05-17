@@ -2,36 +2,9 @@
 
 #home.home {}
 
-#home .hero {
-    width: 100%;    
-    height: 100vh;
-    padding-top: var(--header_height);
-    color: white;
-    overflow: hidden;
-}
-
-#home .hero:after {
-    background-image: ;
-}
 
 /* ------------------------------------------- */
-/* content */
-
-.hero [class*="column"] {
-    padding: 0 5%;
-    margin-right: auto;
-}
-
-.hero .large {
-    max-width: 45ch;
-    margin: auto;
-}
-
-@media screen and ( max-width: 67.5rem ){
-    .hero [class*="column"] {
-        margin-left: auto;
-    }
-}
+/* hero */
 
 
 /* ------------------------------------------- */
@@ -173,7 +146,8 @@ video:after {
 }
 
 .why_subscribe .img_wrap {
-    
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .why_subscribe .img_wrap img {
     height: 70vh;

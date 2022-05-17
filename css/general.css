@@ -3,6 +3,9 @@
 
 
 
+
+
+
 /* ------------------------------------------- */
 /* hero */
 
@@ -12,6 +15,10 @@
     min-height: fit-content;
     flex: 1;
     margin-bottom: 2rem;
+}
+
+.hero {
+  background-image: url('../img/general/generic_fullpage_bg.jpg');
 }
 
 #general .hero {
@@ -47,7 +54,28 @@
 }
 
 /* ------------------------------------------- */
+/* lifestyle */
+
+#lifestyle {}
+
+#lifestyle section:first-of-type {
+  padding-top: 3rem;
+  padding-bottom:5rem;
+}
+
+.lifestyle_article .hero {
+  height: calc(45vh - var(--header_height));
+}
+
+.blog-single {
+  padding-top: 3rem;
+  padding-bottom:5rem;
+}
+
+/* ------------------------------------------- */
 /*  */
+
+
 
 
 #general .hero h1 {
