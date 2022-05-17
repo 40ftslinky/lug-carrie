@@ -203,6 +203,9 @@
 #configure .checkbox {
   border-radius: 8px;
 }
+#configure .checkbox.is_disabled {
+    opacity: 0.5;
+}
 
 #configure .checkbox:last-of-type {
     margin-bottom: 100px;
