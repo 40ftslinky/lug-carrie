@@ -497,8 +497,10 @@ section[class*="tern_"] {
     padding-bottom: 3rem;
 }
 
-.tern_gsd ._row {
-    flex-direction: column-reverse;
+@media screen and ( max-width: 1080px ) {
+	.tern_gsd ._row {
+		flex-direction: column-reverse;
+	}
 }
 
 section[class*="tern_"] h2 {

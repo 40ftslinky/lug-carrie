@@ -36,7 +36,12 @@
 /* header */
 
 #configure header {
-    background-color: #202020;
+    background-color: #ffffff;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+}
+
+#configure header::before {
+    background: none;
 }
 
 
@@ -203,13 +208,6 @@
 #configure .checkbox {
   border-radius: 8px;
 }
-#configure .checkbox.is_disabled {
-    opacity: 0.5;
-}
-
-#configure .checkbox:last-of-type {
-    margin-bottom: 100px;
-}
 
 @media screen and (max-width:1080px){    
     #configure .checkbox {
@@ -243,6 +241,23 @@
     margin: 0.5rem 0;
 }
 
+
+#configure .checkbox-group .checkbox:last-of-type,
+#configure .checkbox-group .checkbox.bike_family_GSD:last-of-type,
+#configure .checkbox-group .checkbox.bike_family_HSD:last-of-type,
+#configure .checkbox-group .outer_accessories_checkbox .checkbox:last-of-type
+{
+    margin-bottom: 10rem;
+}
+
+#configure .bikes_checkbox .checkbox:last-of-type {
+	margin-bottom: 0.5rem;
+}
+
+#configure .checkbox.is_disabled {
+	opacity: 0.5;
+}
+
 #configure .checkbox-group-legend {
   font-size: 1.5rem;
   font-weight: 700;
@@ -269,12 +284,17 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: var(--highlight);
 }
+
 .checkbox-input:checked + .checkbox-tile:before {
   transform: scale(1);
   opacity: 1;
   background-color: var(--highlight);
   border-color: var(--highlight);
 }
+.checkbox.is_disabled .checkbox-input:checked + .checkbox-tile:before {
+	opacity: 0;
+}
+
 .checkbox-input:checked + .checkbox-tile .checkbox-thumb,
 .checkbox-input:checked + .checkbox-tile .checkbox-label {
   color: var(--highlight);
@@ -287,11 +307,11 @@
   border-color: var(--highlight);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
 }
+
 .checkbox-input:focus + .checkbox-tile:before {
   transform: scale(1);
   opacity: 1;
 }
-
 
 .checkbox-tile {
   display: flex;
@@ -313,6 +333,12 @@
   cursor: pointer;
   position: relative;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.checkbox.is_disabled .checkbox-tile {
+	box-shadow: none;
+	border-color: transparent;
+	cursor: initial;
 }
 
 @media screen and (max-width:1080px){    
@@ -365,6 +391,10 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+.checkbox.is_disabled .checkbox-tile:before {
+	visibility:hidden;
+}
+
 .checkbox-tile:hover {
   border-color: rgba(var(--highlight-rgb), 0.8);
 }

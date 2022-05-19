@@ -20,6 +20,10 @@
     align-items: flex-end;
     gap: 1rem;
 }
+.forms .button_wrap_right {
+    margin-top: 1rem;
+}
+
 
 [class*="button_wrap"]{
     flex-direction: row;

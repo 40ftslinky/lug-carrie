@@ -22,8 +22,17 @@ button:focus {
     margin: auto;  
 }
   
+
+.forms ._row {
+    gap: 0 1rem ;
+}
+
 .forms form {
+    width: 100%;
+    min-width: 360px;
     max-width: 500px;
+    margin: auto;
+    font-size: 0.875rem;
 }  
   
 .forms fieldset {
@@ -44,18 +53,29 @@ button:focus {
 .forms label {
     display: block;
     margin: 0 0 1rem 0;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     max-width: 100%;
     cursor: pointer;
 }
+.forms label span {
+    font-size: 0.875rem;
+}
+
+
+.forms label.radio,
+.forms label.checkbox {
+    font-size: 0.8rem;
+}
+
 .forms label.radio.lrg,
 .forms label.checkbox.lrg {
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
 
 .forms label {
     display: flex;
     flex-direction: column;
+    width:100%;
 }
 
 form label input:not([type=radio]),
@@ -83,7 +103,7 @@ form label input:not([type=checkbox]),
 .forms label input:not([type=checkbox]) {
     display: block;
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 300;
     position: relative;
     padding: 0.25em 0.4em;
@@ -112,7 +132,7 @@ input:not([type=radio]),
 input:not([type=checkbox]) {
     display: block;
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 300;
 }
 
@@ -161,7 +181,7 @@ label, input {
 .forms label input[type=checkbox] {
     display: inline-block !important;
     width: max-content !important;
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
 .forms label input[type=checkbox],
 .forms label input[type=radio] {
@@ -171,6 +191,10 @@ label, input {
     vertical-align: bottom;
     position: relative;
     top: -3px;
+}
+.forms .select_group label input[type=checkbox] {
+    top: 0;
+
 }
 
 .forms ._group label input[type=checkbox] {
@@ -215,8 +239,10 @@ label, input {
 [class*="_group"] label.checkbox {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     align-content: flex-start;
+}
+[class*="select_group"] label.checkbox {
+    align-items: center;
 }
   
 /* ------------------------------------------------ */
