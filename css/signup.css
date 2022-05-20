@@ -7,6 +7,19 @@
 /* hero */
 
 
+#signup header {
+    background-color: #ffffff;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+}
+
+
+#signup header::before {
+    background: none;
+}
+
+/* ------------------------------------------- */
+/* hero */
+
 #signup .signup_intro {
     margin-top: var(--header_height);
     background: var(--gray-100);
