@@ -241,10 +241,15 @@ label, input {
     flex-direction: row;
     align-content: flex-start;
 }
-[class*="select_group"] label.checkbox {
+[class*="select_group"] label.checkbox,
+[class*="select_group"] label.radio {
     align-items: center;
 }
-  
+.forms [class*="select_group"] label input[type=radio]  {
+    top: -5px;
+}
+
+
 /* ------------------------------------------------ */
   
 select,
