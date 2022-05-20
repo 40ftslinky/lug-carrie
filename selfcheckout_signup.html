@@ -289,7 +289,7 @@
                                         </label> 
                                     </div>
                                     <div class="button_wrap_right">
-                                        <a href="#stage_two" class="button white_btn">Next</a>
+                                        <a href="#stage_two" class="button white_btn goto"  data-offset="80">Next</a>
                                     </div>
                                 </fieldset>
                             </form>
@@ -439,8 +439,8 @@
                                     </div>
 
                                     <div class="button_wrap_right">
-                                        <a  href="#stage_one" class="button naked_black">back</a>
-                                        <a  href="#stage_three" class="button white_btn">Next</a>
+                                        <a  href="#stage_one" class="button naked_black goto"  data-offset="80">back</a>
+                                        <a  href="#stage_three" class="button white_btn goto"  data-offset="80">Next</a>
                                     </div>
                                     
                                 </fieldset>
@@ -511,8 +511,8 @@
                                     </div>
 
                                     <div class="button_wrap_right">
-                                        <a  href="#stage_two" class="button naked_black">back</a>
-                                        <a  href="#stage_four" class="button white_btn">Next</a>
+                                        <a  href="#stage_two" class="button naked_black goto"  data-offset="80">back</a>
+                                        <a  href="#stage_four" class="button white_btn goto"  data-offset="80">Next</a>
                                     </div>
                                 </fieldset>
                             </form>
@@ -577,8 +577,8 @@
                                     </div>
 
                                     <div class="button_wrap_right">
-                                        <a  href="#stage_three" class="button naked_black">back</a>
-                                        <a  href="#stage_five" class="button white_btn">Next</a>
+                                        <a  href="#stage_three" class="button naked_black goto"  data-offset="80">back</a>
+                                        <a  href="#stage_five" class="button white_btn goto"  data-offset="80">Next</a>
                                     </div>
 
                                 </fieldset>
@@ -677,8 +677,8 @@
                                     
 
                                     <div class="button_wrap_right">
-                                        <button href="#stage_four" class="button naked_black">back</button>
-                                        <button href="#stage_six" class="button white_btn">Next</button>
+                                        <a href="#stage_four" class="button naked_black"  data-offset="80">back</a>
+                                        <a href="#stage_six" class="button white_btn"  data-offset="80">Next</a>
                                       </div>
                                     
                                 </fieldset>
@@ -814,8 +814,8 @@
                                     <!-- repeat above if checked -->
 
                                     <div class="button_wrap_right">
-                                        <button href="#stage_five" class="button naked_black">back</button>
-                                        <button href="#stage_success" class="button white_btn">Next</button>
+                                        <a href="#stage_five" class="button naked_black goto" data-offset="80">back</a>
+                                        <a href="#stage_success" class="button white_btn goto" data-offset="80">Next</a>
                                       </div>
                                     
                                 </fieldset>
@@ -999,6 +999,22 @@
                 easing: 'ease-in-out',
             }
         );
+    </script>
+
+    <!-- scroll to ".goto" -->
+
+    <script>
+        $('.goto').on('click',function(e) {
+            e.preventDefault();
+            var offset = 0;
+            var target = this.hash;
+            if ($(this).data('offset') != undefined) offset = $(this).data('offset');
+            $('html, body').stop().animate({
+                'scrollTop': $(target).offset().top - offset
+            }, 500, 'swing', function() {
+                // window.location.hash = target;
+            });
+        });
     </script>
 
 
