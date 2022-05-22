@@ -87,7 +87,7 @@
 	var geojson;
 
 	function resetHighlight(e) {
-		geojson.resetStyle(e.target);
+		// geojson.resetStyle(e.target);
 		info.update();
 	}
 
