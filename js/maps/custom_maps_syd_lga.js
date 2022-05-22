@@ -135,13 +135,13 @@ sydmap.attributionControl.addAttribution(
 'Delivery data &copy; <a href="http://lug-carrie.com.au/">Lug+Carrie</a>');
 
 
-// var popup = L.popup();
+var popupSyd = L.popup();
 
-// function onMapClick(event) {
-// 	popup
-// 		.setLatLng(event.latlng)
-// 		.setContent("You clicked the map at " + e.latlng.toString())
-// 		.openOn(sydmap);
-// }
+function onMapClick(event) {
+	popupSyd
+		.setLatLng(event.latlng)
+        .setContent("You have clicked outside our Sydney service area.<br> Please contact us to discuss further.")
+		.openOn(sydmap);
+}
 
 sydmap.on('click', onMapClick);

@@ -102,7 +102,7 @@
 		layer.on({
 			// mouseover: highlightFeature,
 			// mouseout: resetHighlight,
-			click: zoomToFeature
+			// click: zoomToFeature
 		});
         // layer.bindPopup("This is the "+feature.properties.name+ " region. <br/> <div class='button_wrap_sm'><button class='button btn_small ghost_red'>Learn More</button> <button class='button btn_small red_btn '>Book Region</button></div>");
         // layer.bindPopup("You clicked the map at " + e.latlng.toString());
