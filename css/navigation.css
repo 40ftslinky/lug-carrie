@@ -12,7 +12,7 @@
 
 @media screen and ( max-width: 1080px ) {
     :root {
-        /* --header_height:80px; */
+        --header_height:80px;
     }
     .shrink {
         --header_height:60px;
@@ -26,7 +26,7 @@ header {
     width:100%;
     background-color: rgba(var(--white-rgb),0.0);
     position: fixed;
-    z-index: 999;
+    z-index: 9999;
     padding: 0 var(--gutter);
     justify-content: space-between;
     align-content: center;
@@ -70,6 +70,25 @@ header.onscroll::before {
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
 }
+
+.no_header header#header {
+    background:none;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+}
+.no_header header#header::before {
+    background:none;
+    background-image:none;
+}
+
+.no_header .hero.bg_cover {
+    background-image: none;
+}
+.no_header .hero.bg_cover::before {
+    background:none;
+    background-image:none;
+}
+
 
 
 

@@ -72,6 +72,39 @@
   padding-bottom:5rem;
 }
 
+
+/* ------------------------------------------- */
+/* operational */
+
+#operational {}
+
+/* #operational section:first-of-type {
+  padding-top: 3rem;
+  padding-bottom:5rem;
+} */
+
+#operational .hero {
+  height: calc(45vh - var(--header_height));
+  background: none;
+  background-color: #fff;
+  color: var(--black);
+  padding-top: var(--header_height);
+}
+
+#operational .hero h1 {
+    --min-fs: 1;
+    --max-fs: 3.75;
+    letter-spacing: -0.5;
+}
+
+#operational .hero::before {
+  background: none;
+}
+
+#operational header::before {
+  background: none;
+}
+
 /* ------------------------------------------- */
 /*  */
 

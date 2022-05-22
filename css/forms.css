@@ -34,6 +34,11 @@ button:focus {
     margin: auto;
     font-size: 0.875rem;
 }  
+@media  screen and (max-width: 440px) {
+    .forms form {
+        min-width: unset;
+    }
+}
   
 .forms fieldset {
     padding: 1em 1em;

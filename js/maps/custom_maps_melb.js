@@ -20,91 +20,11 @@
 	L.marker([-37.7978513, 144.9804056]).addTo(mymap_melb)
 		.bindPopup("<b>Lug+Carrie</b><br />Head Office.").openPopup();
 
-	// L.circle([-37.7978513, 144.9804056], 25000, {
-	// 	color: 'rgba(103, 202, 220, 1)',
-	// 	fillColor: 'rgba(103, 202, 220, 0.0)',
-    //     dashArray: '5',
-	// 	fillOpacity: 0.5
-	// }).addTo(mymap_melb).bindPopup("Inside the Melbourne delivery area.");
-
-	// control that shows state info on hover
-	var infomelb = L.control();
-
-	// infomelb.onAdd = function (mymap_melb) {
-	// 	this._div = L.DomUtil.create('div.melb', 'info');
-	// 	this.update();
-	// 	return this._div;
-	// };
-
-	// infomelb.update = function (props) {
-	// 	this._div.innerHTML = '<h4>Delivery Area</h4>' +  (props ?
-	// 		'<b>' + props.name + '</b><br />' + props.households.toLocaleString("en-US") + ' Households</b><br />' + props.population.toLocaleString("en-US") + ' Viewers'
-	// 		: 'Click to test your region');
-	// };
-
-	infomelb.addTo(mymap_melb);
-
-
-	function styleMelb(feature) {
-		return {
-			// weight: 2,
-			opacity: 0.2,
-			// color: '#d00000',
-			// dashArray: '0',
-			// fillOpacity: 0.7,
-			// fillColor: getColor(feature.properties.population)
-            fillColor: 'rgba(103, 202, 220, 0.0)'
-		};
-	}
-
-	function highlightFeature(ev) {
-		var layermelb = ev.target;
-
-		layermelb.setStyle({
-			// weight: 2,
-			// opacity: 1,
-			// color: 'white',
-			// dashArray: '',
-			// fillOpacity: 0.2
-		});
-
-		if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-			layermelb.bringToFront();
-		}
-
-		info.update(layermelb.feature.properties);
-	}
-
-	var geojsonmelb;
-
-	function resetHighlight(ev) {
-		geojsonmelb.resetStyle(ev.target);
-		info.update();
-	}
-
-	function zoomToFeature(ev) {
-		// mymap_melb.fitBounds(ev.target.getBounds());
-
-	 	// delivery_region_selected(ev.target.feature.id);	
-        // call to ross custom function
-	}
-
-	function onEachFeature(feature, layermelb) {
-		layermelb.on({
-			// mouseover: highlightFeature,
-			// mouseout: resetHighlight,
-			click: zoomToFeatureMelb
-		});
-        // layermelb.bindPopup("This is the "+feature.properties.name+ " region. <br/> <div class='button_wrap_sm'><button class='button btn_small ghost_red'>Learn More</button> <button class='button btn_small red_btn '>Book Region</button></div>");
-        // layermelb.bindPopup("You clicked the map at " + ev.latlng.toString());
-	}
-
-	geojsonmelb = L.geoJson(deliveryData, {
-		style: style,
-		onEachFeature: onEachFeature
-	}).addTo(mymap_melb);
-
-    mymap_melb.attributionControl.addAttribution('');
+	
+    mymap_melb.attributionControl.addAttribution(
+	'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+	'Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>, ' + 
+	'Details &copy; <a href="http://lug-carrie.com.au/">Lug+Carrie</a>');
 
 
 	var popup3 = L.popup();

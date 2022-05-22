@@ -24,7 +24,7 @@
 // $.noConflict();
 jQuery(document).ready(function( $ ) {
 
-	var do_not_reverse = Array('configure','signup','accessory');
+	var do_not_reverse = Array('configure','signup','accessory','operational','about');
 	var body_id = jQuery("body").attr("id");
 	console.log(body_id);
 
@@ -33,22 +33,22 @@ jQuery(document).ready(function( $ ) {
 		$("#header").addClass("reverse");		
 	} else {
 		console.log(body_id);
+    $("body").addClass("no_header");
 	}
 
     $(window).scroll(function() {
       if ($(this).scrollTop() > 20){
-          $("#header").addClass("onscroll");
-		  if(jQuery.inArray(body_id, do_not_reverse) == -1) {
-			$("#header").removeClass("reverse");
-		  }
+        $("#header").addClass("onscroll");
+        if(jQuery.inArray(body_id, do_not_reverse) == -1) {
+          $("#header").removeClass("reverse");
+        }
           $("#header").addClass("shrink");
-
       }
       else{
-          $("#header").removeClass("onscroll");
-		  if(jQuery.inArray(body_id, do_not_reverse) == -1) {
-			$("#header").addClass("reverse");
-		  }
+        $("#header").removeClass("onscroll");
+        if(jQuery.inArray(body_id, do_not_reverse) == -1) {
+          $("#header").addClass("reverse");
+        }
           $("#header").removeClass("shrink");
       }
       if ($(this).scrollTop() > 200){

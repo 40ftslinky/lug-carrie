@@ -369,7 +369,7 @@ section:last-of-type {
 
 @media screen and ( max-width: 1080px ) {
     [class*="_block"] {
-        padding: 0;
+        /* padding: 0; */
         min-width: 100%;
     }
 
@@ -418,6 +418,8 @@ section:last-of-type {
     justify-content: center !important;
     align-items: center;
     /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .center_row {
