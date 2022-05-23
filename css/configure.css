@@ -62,6 +62,7 @@
     #configure section.configure_sect { 
         height: unset;
         margin-top: var(--header_height);
+        padding-bottom: 0;
     }
 }
 
