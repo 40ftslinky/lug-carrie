@@ -140,7 +140,7 @@ h3 {
 }
 
 h4 {
-	margin-top: 0.67em;
+	margin-top: 0;
 	margin-bottom: 0.67em;
 }
 
@@ -269,6 +269,12 @@ h4,
     letter-spacing: 0.25;
 }
 
+#lifestyle h4 {
+    --min-fs: 1.5;
+    --max-fs: 1.75;
+    letter-spacing: 0.25;
+}
+
 h5,
 .h5 {
     --min-fs: 1;
@@ -295,7 +301,7 @@ h6,
     letter-spacing: 0.5;
 }
 
-.normal {
+p, .normal {
     --min-fs: 0.8;
     --max-fs: 1;
     letter-spacing: 0.5;

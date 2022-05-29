@@ -83,14 +83,39 @@
   aspect-ratio: 3 / 2;
   background-color: var(--gray-100);
 }
+#lifestyle .blog-single ._group {
+  height:100%;
+}
 
+#lifestyle .blog-single .text_block {
+  padding:2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#lifestyle .blog-single .text_block p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 /* ------------------------------------------- */
 /* lifestyle articles */
 
 
 .lifestyle_article .hero {
-  height: calc(100vh - var(--header_height));
+/*   height: calc(65vh - var(--header_height)); */
+}
+
+.lifestyle_article .hero h1 {
+	--min-fs: 2.25;
+	--max-fs: 4;
+}
+
+[class*="_article"] .blog-single {
+	padding-top: 3rem;
 }
 
 [class*="_article"] .blog-single .column_60 {
@@ -101,6 +126,11 @@
   [class*="_article"] .blog-single .column_60 {
     min-width: unset;
   }
+}
+
+
+[class*="_article"] .wp-block-image {
+    margin: 2rem 0 3rem;
 }
 
 [class*="_article"] .blog-single .wp-block-image figure,

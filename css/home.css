@@ -75,6 +75,10 @@ video:after {
     box-sizing: border-box;    
 }
 
+#home .hero {
+    background-image: url('../img/Lug_Carrie_hero_poster.jpg');
+}
+
 
 /* ------------------------------------------- */
 /* play video */
@@ -136,34 +140,34 @@ video:after {
 /* ------------------------------------------- */
 /* why subscribe */
 
-.why_subscribe {
+section.why_subscribe {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.why_subscribe [class*="row"] {
+section.why_subscribe [class*="row"] {
     gap:3rem;
 }
 
-.why_subscribe .img_wrap {
+section.why_subscribe .img_wrap {
     margin-top: 0;
     margin-bottom: 0;
 }
-.why_subscribe .img_wrap img {
+section.why_subscribe .img_wrap img {
     height: 70vh;
 }
 @media screen and ( max-width: 1080px ) {
-    .why_subscribe .img_wrap img {
+    section.why_subscribe .img_wrap img {
         /* height: 90vw; */
     }
 }
 
 
-.why_subscribe [class*="column_60"] {
+section.why_subscribe [class*="column_60"] {
     max-width: calc((100vw * var(--columns)/10) - var(--columns) * 1rem ) ;
 }
 @media screen and ( max-width: 1080px ) {
-    .why_subscribe [class*="column_60"] {
+    section.why_subscribe [class*="column_60"] {
         max-width: 90vw;
     }
 }
@@ -544,16 +548,14 @@ section[class*="tern_"] h2 {
 /* service & support */
 
 
-.service {
+section.service {
     background-image: url("../img/service_fullpage_bg.jpg") ;
     width:100%;
     height: 100%;
     padding-top: 5rem;
 }
 
-
-
-.bg_cover::before {
+section.service.bg_cover::before {
     background: rgba(32,32,32,0.5);
     background: linear-gradient(
                 90deg, 
