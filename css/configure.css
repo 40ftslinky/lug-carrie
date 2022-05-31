@@ -130,6 +130,7 @@
     .selection {
         height: unset;
         width: 100%;
+        overflow:unset;
     }
 }
 
@@ -138,6 +139,11 @@
     overflow-y: scroll;
     margin-bottom: 10rem;
     padding: 0 calc(var(--gutter) * 1.5);
+}
+@media screen and (max-width:1080px){    
+    .col_right_wrap {
+        overflow:unset;
+    }
 }
 
 .config_img_block {
@@ -727,12 +733,18 @@
     padding: 1rem;
     background-color: white;
     margin-bottom: 10rem;
+    max-width: 580px;
 }
 @media screen and ( max-width: 1080px ){
     .triage_wrap {
+        margin-bottom: 0;
+        max-width: unset;
         flex-direction: row;
         flex-wrap: wrap;
     }
+}
+.triage_wrap p {
+    color: var(--gray-600);
 }
 @media screen and (max-width: 550px){
     .triage_wrap p {
