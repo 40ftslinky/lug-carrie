@@ -14,6 +14,7 @@
     display: flex;
     gap: 1rem;
 }
+
 .button_wrap_right {
     width: 100%;
     justify-content: flex-end;

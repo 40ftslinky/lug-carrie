@@ -716,3 +716,50 @@
 .subtotal_panel [class*="button_"] {
     justify-content: space-between;
 }
+
+
+/*  */
+
+
+.triage_wrap {
+    display:flex;
+    gap:1rem;
+    padding: 1rem;
+    background-color: white;
+    margin-bottom: 10rem;
+}
+@media screen and ( max-width: 1080px ){
+    .triage_wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.wrap_wide {
+    display: flex;
+    flex-direction: row;
+    max-width: unset;
+    gap: 1rem;
+    justify-content: space-between;
+    align-content: center;
+}
+@media screen and ( max-width: 1080px ){
+    .wrap_wide {
+        width:100%;
+        max-width: 400px;
+        margin: auto;
+    }
+}
+@media screen and ( max-width: 880px ){
+    .wrap_wide {
+        width:100%;
+        max-width: 800px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 550px){
+    .wrap_wide {
+        flex-direction: column;
+        width: 100%;
+    }
+}
