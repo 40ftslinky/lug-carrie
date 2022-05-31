@@ -162,7 +162,8 @@ p {
 /* ----------------------------- */
 /* variations */
 
-.large  { font-weight: var(--large-font-weight); }
+/* .large  { font-weight: var(--large-font-weight); } */
+.large  { font-weight: var(--base-font-weight); }
 .normal { font-weight: var(--base-font-weight); }
 .small  { margin-top: 0; }
 .micro  { line-height: 150%; }
