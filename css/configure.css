@@ -734,6 +734,12 @@
         flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 550px){
+    .triage_wrap p {
+        margin-bottom: 0.5rem;
+    }
+}
+
 
 .wrap_wide {
     display: flex;
@@ -761,5 +767,18 @@
     .wrap_wide {
         flex-direction: column;
         width: 100%;
+        gap: 0.5rem
+    }
+}
+
+.triage_button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0 0
+}
+@media screen and (max-width: 550px){
+    .triage_button {
+        margin: 0;
     }
 }
