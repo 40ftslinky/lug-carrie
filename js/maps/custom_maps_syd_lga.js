@@ -21,12 +21,12 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 // L.marker([-36.5, 145.5]).addTo(sydmap)
 // 	.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
 
-L.circle([-33.8756125,151.1929], 15500, {
-    color: 'rgba(255, 255, 255, 1)',
-    fillColor: 'rgba(255, 255, 255, 0.2)',
-    dashArray: '5',
-    fillOpacity: 1
-}).addTo(sydmap).bindPopup("Approximately inside the Sydney delivery area.");
+// L.circle([-33.8756125,151.1929], 15500, {
+//     color: 'rgba(255, 255, 255, 1)',
+//     fillColor: 'rgba(255, 255, 255, 0.2)',
+//     dashArray: '5',
+//     fillOpacity: 1
+// }).addTo(sydmap).bindPopup("Approximately inside the Sydney delivery area.");
 
 // L.polygon([
 // 	// [51.509, -0.08],

@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/custom.css">
 
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-
 
     <meta name="theme-color" content="#fafafa">
     </head>
@@ -351,19 +349,30 @@
     
         </section>
 
-        <section class="why_tern centered blue_bg ">
+        <section id="pinned-anim" class="why_tern centered blue_bg ">
             
             <!-- https://medium.com/elegant-seagulls/parallax-and-scroll-triggered-animations-with-the-intersection-observer-api-and-gsap3-53b58c80b2fa -->
             <!-- https://codepen.io/celli/pen/mdVMOjr -->
             <!--  -->
-
-            <div class="_row " >   
+            <div class="_row _fixed" >   
                 <!-- <div class="_row ">    -->
-                    <div class="column_40 centered">
+                    <div class="column_70 left">
     
                     <div class="_wrap">
                         <div class="text_block center">
                             <h6 class="white">Why a Tern eBike?</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="_row " >   
+                <!-- <div class="_row ">    -->
+                    <div class="column_40 centered articles">
+    
+                    <div class="_wrap slide-1">
+                        <div class="text_block center ">
+                            <h6 class="gray_300">Why a Tern eBike?</h6>
                             <h2 class="navy">Your second car has two wheels</h2>
                             <!-- <div class="large _regular"> -->
                                 
@@ -374,25 +383,24 @@
                                     
                         </div>
                     </div>
-    
-                </div>
-                
-                <div class="column_60">
-                    <div class="img_wrap">
-                        <img data-aos="fade-up" data-aos-mirror="true" class="cover" src="./img/family/family_why_tern.jpg" loading="lazy"/>
-                    </div>
-                </div>
-            </div> 
 
-            <!--  -->
-            
-            <div class="_row " >   
-                <!-- <div class="_row ">    -->
-                    <div class="column_40 centered">
-    
-                    <div class="_wrap">
+                    <div class="_wrap slide-2">
                         <div class="text_block center">
-                            <h6 class="white">Why a Tern eBike?</h6>
+                            <h2 class="navy">
+                                A Tern vs other eBikes
+                            </h2>
+                            <!-- <div class="large _regular"> -->
+                                
+                            <p class="normal navy">
+                                We’ve ridden them all. In our opinion Tern is the best. And we’ve specced it with the best brakes, derailleurs, engines you name it. If things change and a better option hits the market we’ll stock that and you can choose to swap out your current bike.
+                            </p>
+                            <!-- </div> -->
+                            
+                        </div>
+                    </div>
+
+                    <div class="_wrap slide-3">
+                        <div class="text_block center">
                             <h2 class="navy">
                                 A Tern vs other eBikes
                             </h2>
@@ -407,38 +415,18 @@
                     </div>
     
                 </div>
+                            
                 
                 <div class="column_60">
                     <div class="img_wrap">
-                        <img data-aos="fade-in" data-aos-mirror="true" class="cover" src="./img/family/family_why_tern_frame_blue.jpg" loading="lazy"/>
+                        <img class="cover" src="./img/family/family_why_tern.jpg" loading="lazy"/>
                     </div>
-                </div>
-            </div> 
-
-            <!--  -->
-
-            <div class="_row ">   
-                <!-- <div class="_row ">    -->
-                    <div class="column_40 centered">
-    
-                    <div class="_wrap">
-                        <div class="text_block center">
-                            <h6 class="white">Why a Tern eBike?</h6>
-                            <h2 class="navy">What if it gets stolen?</h2>
-                            <!-- <div class="large _regular"> -->
-                                
-                            <p class="normal navy">
-                                Theft is extremely rare due to the built in alarm and locking systems. However, if professionals really go to the trouble of taking your bike, you will just have to pay an excess fee and we will give you another bike.
-                            </p>
-                            <!-- </div> -->
-                            
-                                    
-                        </div>
-                    </div>
-    
-                </div>
                 
-                <div class="column_60">
+            
+                    <div class="img_wrap">
+                        <img class="cover" src="./img/family/family_why_tern_frame_blue.jpg" loading="lazy"/>
+                    </div>
+                
                     <div class="img_wrap">
                         <img class="cover" src="./img/family/family_why_tern_under_blue.jpg" loading="lazy"/>
                     </div>
@@ -479,7 +467,7 @@
         </section>
 
 
-        <section class="how_it_works _no-flex">
+        <section class="how_it_works">
 
             <div class="_row _no-margin">   
                 <!-- <div class="column_10"></div>      -->
@@ -851,20 +839,10 @@
     <script src="./js/active_tabs.js"></script>
     <script src="./js/getstarted_add_active.js"></script>
 
-    <!-- https://flickity.metafizzy.co/ -->
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-    <!-- AOS animate -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init(
-            {
-                duration: 750,
-                easing: 'ease-in-out',
-            }
-        );
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+    <script src="./js/gsap_pin.js"></script>
 
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

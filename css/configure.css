@@ -44,6 +44,11 @@
     background: none;
 }
 
+#configure[id*="stage"] {
+    margin-top: var(--header_height);
+}
+
+
 
 
 /* --------------------------------------------------- */
@@ -203,7 +208,7 @@
 @media screen and (max-width:1350px){    
     #configure form {
         max-width: calc((100vw*5/2));
-        margin-bottom: 15rem;
+        /* margin-bottom: 15rem; */
     }
 }
 
@@ -486,6 +491,7 @@
 }
 .product-head .product-price {
     font-weight: 500;
+    margin-left: 1rem;
 }
 
 .checkbox-label .product-desc{
@@ -509,6 +515,9 @@
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
+}
+.checkbox-label .product-ext:hover  {
+    color: var(--blue);
 }
 .checkbox-label .product-ext .fa-solid {
     font-size: 14px;
