@@ -24,7 +24,7 @@
 // $.noConflict();
 jQuery(document).ready(function( $ ) {
 
-	var do_not_reverse = Array('configure','signup','accessory','operational','about');
+	var do_not_reverse = Array('configure','signup','accessory','operational','operational-zone','about', 'self-checkout-signup');
 	var body_id = jQuery("body").attr("id");
 	console.log(body_id);
 

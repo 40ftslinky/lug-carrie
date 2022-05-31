@@ -33,6 +33,15 @@
 
 
 /* ------------------------------------------- */
+/* sections */
+
+section[id*="stage"] {
+    margin-top: var(--header_height);
+}
+
+
+
+/* ------------------------------------------- */
 /* timeline */
 
 @media screen and (max-width:1080px){    
@@ -41,6 +50,45 @@
         
     }
 }
+
+/* ------------------------------------------- */
+/* form alts */
+
+ 
+.select_group { }
+.select_wrap { }
+.select_query {margin-bottom:0.5rem;}
+
+
+.outer_reason_label{ 
+    margin-left: 1.35rem;
+}
+/* label.radio, */
+.reason_label {
+    font-size: 0.8rem;
+}
+
+/* label.lrg, */
+.reason_label.lrg {
+    font-size: 0.875rem;
+}
+
+
+/* .forms label[class*="radio"], */
+.forms label[class*="reason_label"] {
+    display: inline-block;
+    width: fit-content;
+}
+
+/* [class*="select_group"] label.radio, */
+[class*="select_group"] label.reason_label {
+    align-items: center;
+    text-indent: -1.35rem;
+}
+.forms label.reason_label input[type=radio] {
+    margin-right: 0.5rem;
+}
+
 
 
 /* ------------------------------------------- */
