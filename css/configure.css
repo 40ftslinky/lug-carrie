@@ -143,6 +143,8 @@
 @media screen and (max-width:1080px){    
     .col_right_wrap {
         overflow:unset;
+        /* margin-bottom: 3rem; */
+        height: unset
     }
 }
 
@@ -687,6 +689,12 @@
     box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),1);
     border-bottom: 1px solid var(--gray-200);
 }
+@media screen and (max-width:1080px){    
+    .subtotal_panel::before {
+        box-shadow: 0 -1rem 1rem 0 rgba(var(--white-rgb),1);
+    }
+}
+
 .info_wrap {
     display: flex;
 
@@ -737,7 +745,7 @@
 }
 @media screen and ( max-width: 1080px ){
     .triage_wrap {
-        margin-bottom: 0;
+        margin-bottom: 5rem;
         max-width: unset;
         flex-direction: row;
         flex-wrap: wrap;
