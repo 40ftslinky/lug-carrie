@@ -7,12 +7,14 @@
 /* hero */
 
 
+body[id*="signup"],
+#self-checkout-signup header,
 #signup header {
     background-color: #ffffff;
     box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
 }
 
-
+body[id*="signup"] header::before,
 #signup header::before {
     background: none;
 }
@@ -20,6 +22,8 @@
 /* ------------------------------------------- */
 /* hero */
 
+[id*="book-a-"] section[id*="stage_"],
+[id*="signup"] section[id*="stage_"]
 #signup .signup_intro {
     margin-top: var(--header_height);
     background: var(--gray-100);
@@ -39,7 +43,14 @@ section[id*="stage"] {
     margin-top: var(--header_height);
 }
 
+section[id*="stage_"] .white_bg p {
+    margin-bottom: 0;
+}
 
+
+label.right {
+	font-size: 0.75rem;
+}
 
 /* ------------------------------------------- */
 /* timeline */
@@ -88,6 +99,16 @@ section[id*="stage"] {
 .forms label.reason_label input[type=radio] {
     margin-right: 0.5rem;
 }
+
+
+
+/* ------------------------------------------- */
+/* congrats */
+
+section#stage_7 {
+	min-height: calc(100vh - var(--header_height));
+}
+
 
 
 

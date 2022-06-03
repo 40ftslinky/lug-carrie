@@ -2,6 +2,9 @@
 
 #home.home {}
 
+#home ._row:first-of-type {
+    margin-bottom: 7rem;
+}
 
 /* ------------------------------------------- */
 /* hero */
@@ -29,6 +32,10 @@ video {
     -o-background-position: center;
     background-position: center;
     object-position: center center;
+}
+
+video[poster] {
+    width:100%;
 }
 
 #backgroundVideo {
@@ -76,7 +83,8 @@ video:after {
 }
 
 #home .hero {
-    background-image: url('../img/Lug_Carrie_hero_poster.jpg');
+    /* background-image: url('../img/Lug_Carrie_hero_poster.jpg'); */
+    background-image: none;
 }
 
 

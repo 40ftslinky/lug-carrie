@@ -6,6 +6,7 @@
 
 #why_subscribe .hero {
     background-image: url('../img/why_subscribe/Lug_Carrie_why_subscribe_hero_poster.jpg');
+    height: 85vh;
 }
 
 #why_subscribe .hero h1 {

@@ -24,7 +24,7 @@
 // $.noConflict();
 jQuery(document).ready(function( $ ) {
 
-	var do_not_reverse = Array('configure','signup','accessory','operational','operational-zone','about', 'self-checkout-signup');
+	var do_not_reverse = Array('configure','signup','accessory','operational','operational-zone','about', 'self-checkout-signup', 'book-a-test-ride', 'book-a-consultation');
 	var body_id = jQuery("body").attr("id");
 	console.log(body_id);
 

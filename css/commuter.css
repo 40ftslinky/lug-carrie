@@ -6,6 +6,7 @@
 
 #commuter .hero {
     background-image: url('../img/commuter/Lug_Carrie_commuter_hero_poster.jpg');
+    height: 85vh;
 }
 
 #commuter .hero.bg_cover::before {

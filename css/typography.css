@@ -2,6 +2,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/fontawesome.min.css');
 
@@ -26,7 +27,10 @@
     --font-awesome: 'FontAwesome';
 }
 
+html {font-size: 100%;} /*14px*/
+
 body {
+    font-family: 'Poppins';
     font-family: var(--base-font-family);
     font-weight: 400;
     font-weight: var(--base-font-weight);
@@ -38,29 +42,15 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     font-style: normal;
-	font-weight: 600;
+    font-weight: 600;
 	line-height: 1.2;
 	font-family: var(--base-font-family);
 }
-
-html {font-size: 100%;} /*14px*/
-
-body {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-family: var(--base-font-family);
-    
-    /* font-size: 14px; */
-    /* font-size: var(--base-font-size); */
-    line-height: 1.6;
-    line-height: var(--base-line-height); 
-    font-weight: 400;
- }
  
- h1, h2, h3, h4, h5, strong {
-     font-weight: 500;
- }
+h1, h2, h3, h4, h5, strong {
+    font-family: var(--base-font-family);
+    font-weight: 600;
+}
  
  /* ----------------------------- */
  /* LINKS */
@@ -311,7 +301,7 @@ p, .normal {
 .small {
     --min-fs: 0.65;
     --max-fs: 0.75;
-    letter-spacing: 1;
+    /* letter-spacing: 1; */
 }
 
 .micro {
