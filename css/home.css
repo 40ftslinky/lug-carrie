@@ -2,6 +2,9 @@
 
 #home.home {}
 
+#home ._row:first-of-type {
+    margin-bottom: 7rem;
+}
 
 /* ------------------------------------------- */
 /* hero */
@@ -29,6 +32,10 @@ video {
     -o-background-position: center;
     background-position: center;
     object-position: center center;
+}
+
+video[poster] {
+    /* width:100%; */
 }
 
 #backgroundVideo {
@@ -76,7 +83,8 @@ video:after {
 }
 
 #home .hero {
-    background-image: url('../img/Lug_Carrie_hero_poster.jpg');
+    /* background-image: url('../img/Lug_Carrie_hero_poster.jpg'); */
+    background-image: none;
 }
 
 
@@ -519,6 +527,12 @@ section[class*="tern_"] h2 {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+
+#home .testimonials ._row:first-of-type {
+    margin-bottom: 1rem;
+}
+
 
 .testimonials .column_third ._group {
     padding: 1rem;

@@ -5,7 +5,9 @@
 /* hero */
 
 #family .hero {
-    background-image: url('../img/family/family_fullpage_bg.jpg');
+    /* background-image: url('../img/family/family_fullpage_bg.jpg'); */
+    background: none;;
+    height: 85vh;
 }
 
 #family .hero.bg_cover::before {
@@ -186,3 +188,32 @@
 #family .testimonials {
     margin-bottom:5rem
 }
+
+/* pinned-anim */
+
+#pinned-anim {
+    max-width: 100vw;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+.articles {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+  }
+  [id*="slide-"] {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+  }
