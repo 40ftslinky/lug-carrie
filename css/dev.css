@@ -3,10 +3,16 @@
 	max-width: 90vw;
 	max-height: 90vh;		
 }
-#video_modal iframe{
-	max-width: calc( 90vw - 2rem );	
-	max-height: calc( 90vh - 2rem );		
+
+:root {
+	--aspect-ratio: calc(16 / 9 );
 }
+
+#video_modal iframe{
+	max-height: calc( 90vh - 4rem );		
+	max-width: calc( (90vh - 4rem )  * var(--aspect-ratio) );	
+}
+
 
 #video_modal_outer{
 	z-index: 99999;

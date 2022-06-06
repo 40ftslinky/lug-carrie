@@ -30,7 +30,6 @@
 html {font-size: 100%;} /*14px*/
 
 body {
-    font-family: 'Poppins';
     font-family: var(--base-font-family);
     font-weight: 400;
     font-weight: var(--base-font-weight);
@@ -41,16 +40,30 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-style: normal;
-    font-weight: 600;
-	line-height: 1.2;
+    font-family: 'Poppins';
 	font-family: var(--base-font-family);
+    font-style: normal;
+	font-weight: 600;
+	line-height: 1.2;
 }
- 
-h1, h2, h3, h4, h5, strong {
+
+html {font-size: 100%;} /*14px*/
+
+body {
+    font-family: 'Poppins';
     font-family: var(--base-font-family);
-    font-weight: 600;
-}
+    font-style: normal;
+    font-weight: 400;  
+    /* font-size: 14px; */
+    /* font-size: var(--base-font-size); */
+    line-height: 1.6;
+    line-height: var(--base-line-height); 
+    font-weight: 400;
+ }
+ 
+ h1, h2, h3, h4, h5, strong {
+     font-weight: 600;
+ }
  
  /* ----------------------------- */
  /* LINKS */
@@ -104,7 +117,6 @@ i {
 
  h1, h2, h3, h4, h5, h6 {
     margin: 3rem 0 1.38rem;
-    font-family: 'Montserrat', sans-serif;
     line-height: 1.1;
     letter-spacing: -0.025em;
 }
