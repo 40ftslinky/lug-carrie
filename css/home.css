@@ -3,7 +3,7 @@
 #home.home {}
 
 #home ._row:first-of-type {
-    margin-bottom: 7rem;
+    /* margin-bottom: 7rem; */
 }
 
 /* ------------------------------------------- */
@@ -577,3 +577,22 @@ section.service.bg_cover::before {
                 rgba(var(--black-rgb),0.66) 100%);
 }
 
+/*  */
+
+
+
+ .how_it_works .gallery-cell:nth-of-type(1) .bg_cover {
+    background-image: url('../img/why_subscribe/why_subscribe_how_it_works_consultant.jpg');
+}
+
+ .how_it_works .gallery-cell:nth-of-type(2) .bg_cover {
+    background-image: url('../img/why_subscribe/why_subscribe_how_it_works_delivery.jpg');
+}
+
+ .how_it_works .gallery-cell:nth-of-type(3) .bg_cover {
+    background-image: url('../img/why_subscribe/why_subscribe_how_it_works_service.jpg');
+}
+
+ .how_it_works .gallery-cell:nth-of-type(4) .bg_cover {
+    background-image: url('../img/why_subscribe/why_subscribe_how_it_works_accessories.jpg');
+}

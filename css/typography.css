@@ -198,6 +198,10 @@ p,
     margin-right: auto;
 }
 
+._no_char {
+    max-width: unset;
+}
+
 /* ----------------------------- */
 /*  */
 

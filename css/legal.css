@@ -85,6 +85,31 @@ li li {
     /* firefox only */
 }
 
+/* h3.alpha {
+  counter-increment: h3;
+  display: list-item;
+}
+
+h3.alpha::marker {
+  display: list-item;
+  content: counter(h3) ". ";
+}
+
+body {
+  counter-reset: h3;
+} */
+.gallery-cell:first-of-type h3.alpha::before {
+  content: "1. ";
+}
+.gallery-cell:nth-of-type(2) h3.alpha::before {
+  content: "2. ";
+}
+.gallery-cell:nth-of-type(3) h3.alpha::before {
+  content: "3. ";
+}
+.gallery-cell:nth-of-type(4) h3.alpha::before {
+  content: "4. ";
+}
 
 /* ------------------------------------------- */
 /* Contract */

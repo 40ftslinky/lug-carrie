@@ -40,7 +40,10 @@ body[id*="signup"] header::before,
 /* sections */
 
 section[id*="stage"] {
+    justify-content: flex-start !important;
     margin-top: var(--header_height);
+    margin-bottom: 5rem;
+    min-height: calc(100vh - var(--header_height) - var(--footer-height) - 4.9rem);
 }
 
 section[id*="stage_"] .white_bg p {
