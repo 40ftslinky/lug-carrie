@@ -23,37 +23,18 @@ get_header(); ?>
 <main>
 
         <section class="hero bg_cover ">
-        <!-- autoplay -->
-        <!-- <video  muted loop id="backgroundVideo">
-            <source src="./video/rain.mp4" type="video/mp4">
-        </video> -->
-
-        <!-- <div class="overlay"></div> -->
-        <!-- <div class=""> -->
+        
             <div class="_row">        
                 <div class="column_50">
 
                     <div class="_wrap">
                         <div class="text_block center">
-                            <h1>The GSD.<br>
+                            <h1>The Tern GSD.<br>
                                 Hey big lifter.</h1>
                             <div class="large _regular">
-                                A couple kids, a friend or a load of veggies from the market. Whatever you need to carry, the GSD has you sorted with up to 200kgs of cargo capacity. 
+                                A couple of kids to school or your partner for date night. Wherever you need to go and whatever you need to carry. 
                             </div>
-                            <div class="button_wrap_center">
-                            <!-- 
-                            <div class="play_button" id="playBtn" onclick="videoControl()"  >
-                                <svg class="play" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                <path class="circle" d="M26.584 53.168C41.266 53.168 53.168 41.2676 53.168 26.584C53.168 11.9023 41.266 0 26.584 0C11.902 0 0 11.9023 0 26.584C0 41.2676 11.902 53.168 26.584 53.168Z" fill="#00C1DC"/>
-                                <path class="arrow"  d="M36.1075 26.9304L21.2863 35.167C21.1149 35.2637 20.9684 35.2749 20.8453 35.2004C20.7228 35.126 20.6613 34.9922 20.6613 34.7988V18.3701C20.6613 18.1768 20.7228 18.0427 20.8453 17.9683C20.9684 17.8941 21.1149 17.9053 21.2863 18.002L36.1075 26.2385C36.2789 26.3352 36.3644 26.4504 36.3644 26.5845C36.3644 26.7183 36.2789 26.8337 36.1075 26.9304V26.9304Z" fill="white"/>
-                                </g>                    
-                                </svg>                    
-                            </div>
-
-                            <div class="" id="buttonText">Play Video</div>
-                            -->
-                            </div>            
+                                       
                         </div>
                     </div>
 
@@ -70,80 +51,28 @@ get_header(); ?>
                 </div>
             </div>
 
-        <!-- </div> -->
         </section>
 
 
-        <section class="meet_gsd centered gray_100_bg">
-        <!-- <div class=""> -->
-            <div class="_row _no-margin">   
-                <div class="column_40 centered">
 
-                    <div class="_wrap">
-                        <div class="text_block center">
-                            <h3 class="blue">The fastest shopping trolley in the world.</h3>
+        <section class="meet_gsd centered ">
+            <div class="_row ">             
+                                
 
-                            <p class="normal ">
-                                Why waste time looking for a parking spot on your next shopping expedition. The GSD will change the way you get around your city. It’s not only convenient and cheap, the GSD is the same length as a regular bike, so it’s super easy to ride. Our ecosystem of accessories includes a huge range of cargo-carrying options designed to keep your load secure and stable.
-                            </p>                  
-
-                        </div>
-
-                        <div class="button_wrap_center_vert">
-                            <button class="button blue_btn getstarted">Get Started</button>
-                        </div>
-
-                    </div>
-
-                </div>
-                
                 <div class="column_60">
                     <div class="video_wrap">
                         <!-- autoplay -->
-                        <video  muted loop id="inlineVideo" preload="none" poster="<?php echo $child_theme_dir_file; ?>/img/bikes/GSD_shopping.jpg">
-                            <source src="<?php echo $child_theme_dir_file; ?>/video/rain.mp4" type="video/mp4">
-                        </video>
-
-                        <div class="video_overlay_wrap">
-                            <div class="play_button" id="playBtn_white" onclick="videoControlInline()"  >                    
-                                <svg class="play" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g >
-                                        <path class="circle" d="M52.168 26.584C52.168 40.7153 40.7137 52.168 26.584 52.168C12.4542 52.168 1 40.7152 1 26.584C1 12.4546 12.4543 1 26.584 1C40.7137 1 52.168 12.4546 52.168 26.584Z" stroke="white" stroke-width="2"/>
-                                        <path class="arrow" d="M36.1075 26.9304L21.2863 35.167C21.1149 35.2637 20.9684 35.2749 20.8453 35.2004C20.7228 35.126 20.6613 34.9922 20.6613 34.7988V18.3701C20.6613 18.1768 20.7228 18.0427 20.8453 17.9683C20.9684 17.8941 21.1149 17.9053 21.2863 18.002L36.1075 26.2385C36.2789 26.3352 36.3644 26.4504 36.3644 26.5845C36.3644 26.7183 36.2789 26.8337 36.1075 26.9304V26.9304Z" fill="white"/>
-                                    </g>                        
-                                </svg>                                            
-                            </div>
-
-                            <div class="white" id="buttonText_white">Watch Video</div>
-                        </div>                    
-
-                    
+                        <video autoplay muted loop id="inlineVideo" class="loop" preload="none" poster="./video/GSD_loop.gif">
+                            <source src="<?php echo $child_theme_dir_file; ?>/video/GSD_loop.mp4" type="video/mp4">
+                        </video>                                                               
                     </div>
                 </div>
-            </div>        
-
-        <!-- </div> -->
-        </section>
-
-        <section class="meet_gsd centered ">
-            <!-- <div class=""> -->
-            <div class="_row ">             
-                
-                <div class="column_60">                
-					<div class="video_wrap">
-						<!-- autoplay -->
-						<video autoplay muted loop id="inlineVideo" preload="none" poster="<?php echo $child_theme_dir_file; ?>/img/bikes/GSD_meet_the_gsd.jpg" loading="lazy">
-							<source src="<?php echo $child_theme_dir_file; ?>/video/GSD_loop.mp4" type="video/mp4">
-						</video>                                                               
-					</div>
-				</div>
-
     
                 <div class="column_40 centered">
     
                 <div class="_wrap">
                     <div class="left">
-                    <h3 class="blue">Meet the GSD</h3>
+                    <h3 class="blue">Meet the Tern GSD</h3>
                     <!-- <p class="normal">
                         One of the most important parts of any electric bike are the electrics. Bosch is one of the top names in the business of e-bike motors and batteries. These deliver a ride that’s smooth and comfortable. The&nbsp;battery charges easily and quickly, and can charge fully in around 4&nbsp;hours. A full charge will last for up to 110km of riding, depending on how much pedal assistance you are using.
                     </p> -->
@@ -178,8 +107,8 @@ get_header(); ?>
                     
                     <div class="button_wrap_left_vert">
     
-                        <button class="button blue_btn">Configure GSD</button>      
-                        <button class="button ghost_naked_btn">Learn More ></button>      
+                        <button class="button blue_btn getstarted">Configure your Tern GSD</button>      
+                        <button class="button ghost_naked_btn">See the accessories</button>      
     
                     </div>            
                     </div>
@@ -190,6 +119,47 @@ get_header(); ?>
     
         </section>
 
+        <section class="meet_gsd best centered gray_100_bg">
+            <div class="_row _no-margin">   
+                <div class="column_40 centered">
+
+                    <div class="_wrap">
+                        <div class="text_block center">
+                            <h3 class="blue">Tern. Only the best.</h3>
+
+                            <p class="normal ">
+                                Lug+Carrie uses only award-winning Tern&nbsp;eBikes.
+                            </p>
+                            <p class="normal ">
+                                It’s because they’re fully customisable, designed to be fit with seats, bags, and racks.  
+                            </p>
+                            <p class="normal ">
+                                The Tern GSD is also adaptable - it comes equipped with adjustable handlebars and a telescopic seat post, allowing the bike to accommodate riders between 150 - 195 cm tall. This means everyone in the household can experience the Lug+Carrie lifestyle.
+                            </p>                  
+
+                        </div>
+
+                        <div class="button_wrap_center_vert">
+                            <button class="button blue_btn">Get Started</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="column_60">
+                    
+                    <div class="column_60">
+                        <div class="img_wrap">
+                          <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/bikes/GSD_shopping.jpg" loading="lazy"/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>        
+
+        </section>
+
         <section class="options bg_cover centered ">
 
             <div class="_row ">
@@ -198,17 +168,21 @@ get_header(); ?>
       
                     <div class="_wrap">
                       <div class="text_block center">
-                        <!-- <div class="large _regular"> -->
-                          <h2 class="white">
-                            Bike options
-                          </h2>
-                          <p class="normal white">
-                            Go on, try on the eCargo life with a Tern GSD. You can access our configurator here. 100% of our reviews are 5 star and the majority of people who try a subscription never look back. You’ll love it too.
-                          </p>
-                        <!-- </div> -->
+                            <h2 class="white">
+                                Stable. Safe. Super.
+                            </h2>
+                            <p class="normal white">
+                                Whether you’re riding solo or carrying a load, you’ll feel safe doing it on the Tern GSD. 
+                            </p>
+                            <p class="normal white">
+                                Design features like smaller wheels make it easy to ride, and the Atlas Lockstand keeps the bike solid when parked. Oversized Schwalbe tyres and Magura hydraulic brakes keep you in control.
+                            </p>
+                            <p class="normal white">
+                                It’s all about making you confident, and looking forward to that next ride.
+                            </p>
                         <div class="button_wrap_center_vert">
           
-                          <button class="button blue_btn">Configure GSD</button>
+                          <button class="button blue_btn">Configure your Tern GSD</button>
           
                         </div>            
                       </div>
@@ -221,108 +195,102 @@ get_header(); ?>
                 </div>
               
             </div>      
-          </section>
+        </section>
 
-        <section class="testimonials centered ">
-            <!-- <div class=""> -->
-              <div class="_row ">             
+        <section class="testimonials centered gray_100_bg">
+            <div class="_row ">             
                 
                 <div class="column_100">
-                  <div class="_wrap ">
-                    <div class="text_block center">
-                      <h2 class="navy">5 star reviews</h2>
+                    <div class="_wrap ">
+                        <div class="text_block center">
+                            <h2 class="navy">5 star reviews</h2>
+                            <p class="large">
+                                Over 1,000 customers have made the decision to leave the car at home more often, most of them new to riding and carrying children.
+                            </p>
+                            <p class="large">
+                                See what they have to say about the Tern GSD. 
+                            </p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="_row _max_width_1600 three_col">             
+            </div>
+
+            <div class="_row _max_width_1600 three_col">             
                 
-                <div class="column_third _x2-padding">
+                <div class="column_third ">
                   
       
-                  <div class="_panel white_bg">
-                    <div class="text_block left">
-                      <h5 class="navy">Gaurav Bhasin</h5>
-                      <h6 class="navy">Description</h6>
-                      <div class="stars yellow">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-      
-                      <!-- <div class="large _regular"> -->
-                        <p class="normal">                   
-                          For someone who has not ridden the bike for 
-      last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                        </p>                  
-                      <!-- </div> -->                         
+                    <div class="_group white_bg">
+                        <div class="text_block left">
+                        <h5 class="navy">Gaurav Bhasin</h5>
+                        <h6 class="navy">Description</h6>
+                        <div class="stars yellow">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+        
+                            <p class="normal">                   
+                            For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
+                            </p>                  
+                        </div>
                     </div>
+      
+                </div>
+      
+                <div class="column_third ">
+                  
+      
+                  <div class="_group white_bg">
+                        <div class="text_block left">
+                            <h5 class="navy">Gaurav Bhasin</h5>
+                            <h6 class="navy">Description</h6>
+                            <div class="stars yellow">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+            
+                            <p class="normal">                   
+                            For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
+                            </p>                  
+                        </div>
                   </div>
       
                 </div>
       
-                <div class="column_third _x2-padding">
+                <div class="column_third ">
                   
       
-                  <div class="_panel white_bg">
-                    <div class="text_block left">
-                      <h5 class="navy">Gaurav Bhasin</h5>
-                      <h6 class="navy">Description</h6>
-                      <div class="stars yellow">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-      
-                      <!-- <div class="large _regular"> -->
-                        <p class="normal">                   
-                          For someone who has not ridden the bike for 
-      last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                        </p>                  
-                      <!-- </div> -->                         
+                    <div class="_group white_bg">
+                        <div class="text_block left">
+                            <h5 class="navy">Gaurav Bhasin</h5>
+                            <h6 class="navy">Description</h6>
+                            <div class="stars yellow">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+        
+                            <p class="normal">                   
+                                For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
+                            </p>                  
+                        </div>
                     </div>
-                  </div>
-      
+        
                 </div>
-      
-                <div class="column_third _x2-padding">
-                  
-      
-                  <div class="_panel white_bg">
-                    <div class="text_block left">
-                      <h5 class="navy">Gaurav Bhasin</h5>
-                      <h6 class="navy">Description</h6>
-                      <div class="stars yellow">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-      
-                      <!-- <div class="large _regular"> -->
-                        <p class="normal">                   
-                          For someone who has not ridden the bike for 
-      last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                        </p>                  
-                      <!-- </div> -->                         
-                    </div>
-                  </div>
-      
-                </div>
-      
-              </div>        
-      
-          </section>
-      
-
-
-
-        </main>
+    
+            </div>        
+    
+        </section>
+           
+    </main>
 
 <!--  end of template -->
 
