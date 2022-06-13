@@ -252,7 +252,7 @@ section.why_subscribe [class*="column_60"] {
 [class*="set_up-"] .gallery-cell.is-selected img {
     /* padding: 0 2%; */
     height:53vh;
-    height: calc(var(--calc_mx_height) - 5vh - 265px);
+    height: calc(var(--calc_mx_height) - 5vh - 255px);
     object-fit: cover;
     -webkit-transition: all 0.5s ease-in-out ;
         transition: all 0.5s ease-in-out ;
@@ -289,13 +289,14 @@ section.why_subscribe [class*="column_60"] {
     opacity: 1;
 }
 
-[class*="set_up-"] .gallery-cell h3 {
+[class*="set_up-"] .gallery-cell h5 {
     color: var(--blue);
-    margin-top: 0;
-    margin-bottom: 1rem;
+    margin: 0 auto 0.5rem;
+    text-align: center;
+
 } 
 @media screen and ( max-width: 1080px ) {
-    [class*="set_up-"] .gallery-cell h3 {
+    [class*="set_up-"] .gallery-cell h5 {
         --min-fs: 1;
         --max-fs: 3;
     }
@@ -540,7 +541,7 @@ section[class*="tern_"] h2 {
 }
 
 .testimonials h2 {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .testimonials h5 {
@@ -595,4 +596,11 @@ section.service.bg_cover::before {
 
  .how_it_works .gallery-cell:nth-of-type(4) .bg_cover {
     background-image: url('../img/why_subscribe/why_subscribe_how_it_works_accessories.jpg');
+}
+
+
+/*  */
+
+.hsd .options {
+    background-image: url('../img/bikes/HSD_safety.jpg');
 }

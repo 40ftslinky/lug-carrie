@@ -256,14 +256,16 @@ h1,
 h2,
 .h2 {
     --min-fs: 1;
-    --max-fs: 3.75;
+    --max-fs: 3.5;
     letter-spacing: -0.5;
 }
 
 h3,
 .h3 {
-    --min-fs: 2;
-    --max-fs: 3;
+    /* --min-fs: 2;
+    --max-fs: 3; */
+    --min-fs: 1.75;
+    --max-fs: 2.5;
     letter-spacing: 0;
 }
 

@@ -5,8 +5,10 @@
 /* hero */
 
 #commuter .hero {
-    background-image: url('../img/commuter/Lug_Carrie_commuter_hero_poster.jpg');
-    height: 85vh;
+    /* background-image: url('../img/commuter/Lug_Carrie_commuter_hero_poster.jpg'); */
+    /* background-image: url('../img/commuter/commuter_poster.jpg'); */
+    background-image    : none;
+    height: 95vh;
 }
 
 #commuter .hero.bg_cover::before {
@@ -61,7 +63,7 @@
 
 
 .why_tern { 
-    gap: 10rem;
+    /* gap: 10rem; */
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
