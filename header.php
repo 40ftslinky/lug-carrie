@@ -87,19 +87,20 @@ wp_head();
     <div class="nav_wrap">      
       <nav class="navigation">        
         <ul class="menu">
-          <li class="menu-item"><a class="menu-link" href="/why-subscribe">Why subscribe?</a</li>
+          <li class="menu-item"><a class="menu-link" href="/why-subscribe">Why subscribe?</a></li>
           <li class="menu-item"><a class="menu-link" href="/family">Family</a></li>
           <li class="menu-item "><a class="menu-link" href="/commuter">Commuter</a></li>
           <li class="menu-item "><a class="menu-link has-sub" href="#">Products</a>
-              <div class="dropdown"></div>
+          <div class="dropdown"></div>
 
-              <ul class="sub_menu">
-                <li class="sub_menu-item"><a class="sub_menu-link" href="/tern-gsd">Tern&nbsp;GSD</a></li>
-                <li class="sub_menu-item"><a class="sub_menu-link" href="/tern-hsd">Tern&nbsp;HSD</a></li>
-				<li class="sub_menu-item"><a class="sub_menu-link" href="/accessories">Accessories</a></li>
-              </ul>
+            <ul class="sub_menu">
+              <li class="sub_menu-item"><a class="sub_menu-link" href="/tern-gsd">Tern&nbsp;GSD</a></li>
+              <li class="sub_menu-item"><a class="sub_menu-link" href="/tern-hsd">Tern&nbsp;HSD</a></li>
+              <li class="sub_menu-item"><a class="sub_menu-link" href="/accessories">Accessories</a></li>
+            </ul>
           </li>
           <li class="menu-item"><a class="menu-link" href="/faq">FAQ</a></li>
+          <li class="menu-item"><a class="menu-link" href="/customer-support">Support</a></li>
         </ul>
       </nav>
     </div>
@@ -122,9 +123,9 @@ wp_head();
                   </svg>
               </div>
 
-              <strong class="navy">Get help</strong>
+              <strong class="navy">Talk to us</strong>
               <p class="normal">
-                  Drop us a line and we’ll make sure the right person gets back to you.
+                  Let one of our team answer any questions to help get you started.
               </p>
               <div class="button_wrap_center _no-margin_vert">
                   <a href="book-a-consultation" class="button blue_btn">Book a consultation</a>
@@ -149,7 +150,7 @@ wp_head();
 
               <strong class="navy">Book a test ride</strong>
               <p class="normal">
-                  Most customers that test ride our bikes are sold! Book a test ride today.
+                  Find out for yourself how much fun you can have on a Lug+Carrie.
               </p>
               <div class="button_wrap_center _no-margin_vert">
                   <a href="book-a-test-ride" class="button blue_btn">Book a test ride</a>
@@ -171,12 +172,12 @@ wp_head();
                     </svg>                   
                 </div>
 
-                <strong class="navy">Configure your bike</strong>
+                <strong class="navy">Build your own bike</strong>
                 <p class="normal">
-                    We have accessories that suit all requirements and lifestyles. 
+                    Use the Lug+Carrie Bike Builder to accessorise a bike that’s tailored to your lifestyle.  
                 </p>
                 <div class="button_wrap_center _no-margin_vert">
-                    <a href="/configure-your-bike" class="button blue_btn">Configure your bike</a>
+                    <a href="/configure-your-bike" class="button blue_btn">Build your bike</a>
                 </div>              
               <!-- </div> -->                         
               </div>

@@ -132,3 +132,172 @@
 .the_beach_buggy_HSD{
 	display: none !important;
 }
+
+
+/* reviews */
+
+.event-excerpt {
+	margin-bottom: 0;
+}
+.event-excerpt span {
+	display: block;
+	margin-top: 0.5rem;
+}
+
+.event-excerpt span:hover {
+	text-decoration: underline;
+}
+
+/* ---------------------------------- */
+/* waiting (footer.php) */
+
+.waiting_for_response{
+	width:50%;
+	height: auto;
+	min-height:25vh;
+	z-index:999999;
+	position: fixed;
+	top:20%;
+	left:25%;
+	background-color: white;
+	
+}
+.inner_waiting_for_response{
+	text-align: center;
+	padding:20px;
+	margin:10px;
+	font-weight: bold;
+}
+
+.button.disabled, .goto.disabled{
+	opacity:0.33;
+	background-color:light-gray;
+}
+
+
+/* ---------------------------------- */
+/* calendar */
+
+.hidden{ display:none }
+
+.mb-4 { margin-bottom: 1rem; } 
+.px-4 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.ml-auto {margin-left: auto;}
+
+
+.w-64{ width:16rem }
+@media screen and (max-width:1080px){    
+	.w-64{ width:100% }
+}
+
+.overflow-y-scroll {
+	overflow-y:scroll
+}
+
+.space-x-1>:not([hidden])~:not([hidden]){
+	--tw-space-x-reverse:0;
+	margin-right:calc(0.25rem*var(--tw-space-x-reverse));
+	margin-left:calc(0.25rem*(1 - var(--tw-space-x-reverse)))
+}
+.space-x-2>:not([hidden])~:not([hidden]){
+	--tw-space-x-reverse:0;
+	margin-right:calc(0.5rem*var(--tw-space-x-reverse));
+	margin-left:calc(0.5rem*(1 - var(--tw-space-x-reverse)))
+}
+
+
+/*  */
+
+@media screen and (max-width:1080px){    
+	.content_calendar_outer {
+		min-width: unset;
+	}
+}
+
+/* Calendar--table" */
+
+.Quiz--calendar,
+.Calendar--calendar {
+	gap: 3rem;
+}
+@media screen and (max-width:1080px){    
+	.Quiz--calendar,
+	.Calendar--calendar {
+		gap: 2rem;
+		flex-direction: column;
+		max-width: 350px;
+		max-height: unset !important;
+		margin: auto;
+	}
+}
+
+
+.calendarTable {}
+.calendarTable caption{
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.inline-flex {
+	display: inline-flex;
+}
+
+.items-center {
+	align-items: center;
+}
+
+
+/* available_slots */
+
+#available_slots {
+	max-height: 346px;
+    overflow: hidden;
+    min-width: 270px;
+}
+.slot_list {
+	max-height: 346px;
+}
+
+.Quiz--calendar ul {
+	list-style: none;
+	padding-left: 0;
+	padding-right: 1rem;
+}
+
+.Quiz--calendar ul li label{
+/* min-width: 256px */
+}
+
+.Quiz--calendar ul li button {}
+/* button */
+.confirm_booking_time {
+	min-width: unset;
+	padding: 0.75rem;
+    max-height: unset;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.Calendar--calendar input[type=radio] label {
+	width: 100%;
+}
+.Calendar--calendar input[type=radio]:checked label {
+	width:50%;
+}
+
+.Calendar--calendar input[type=radio] .confirm_booking_time,
+.Quiz--calendar ul li input+div .button {
+	width: 50%;
+	opacity: 0;
+    margin-right: -100%;
+}
+
+.Calendar--calendar input[type=radio]:checked .confirm_booking_time,
+.Quiz--calendar ul li input:checked+div .button {
+    width: 100%;
+}

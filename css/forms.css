@@ -190,7 +190,7 @@ label, input {
 }
 .forms label input[type=checkbox],
 .forms label input[type=radio] {
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
 }
 .forms label input[type=checkbox] {
     vertical-align: bottom;
@@ -198,8 +198,7 @@ label, input {
     top: -3px;
 }
 .forms .select_group label input[type=checkbox] {
-    top: 0;
-
+    top: -5px;
 }
 
 .forms ._group label input[type=checkbox] {

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the homepage.
+ * The template for displaying the HSD page.
  *
  * This page template will display any functions hooked into the `homepage` action.
  * By default this includes a variety of product displays and the page content itself. To change the order or toggle these components
@@ -104,8 +104,8 @@ get_header(); ?>
                             
                             <div class="button_wrap_left_vert">
             
-                                <button class="button blue_btn">Configure HSD</button>      
-                                <button class="button ghost_naked_btn">Learn More ></button>      
+                                <button class="button blue_btn">Configure your Tern HSD</button>      
+                                <a href="/accessories?=hsd" class="button ghost_naked_btn">See the accessories</a>      
             
                             </div>            
                         </div>
@@ -227,8 +227,7 @@ get_header(); ?>
     
                     <!-- <div class="large _regular"> -->
                         <p class="normal">                   
-                        For someone who has not ridden the bike for 
-    last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
+                        For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
                         </p>                  
                     <!-- </div> -->                         
                     </div>
@@ -253,8 +252,7 @@ get_header(); ?>
     
                     <!-- <div class="large _regular"> -->
                         <p class="normal">                   
-                        For someone who has not ridden the bike for 
-    last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
+                        For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
                         </p>                  
                     <!-- </div> -->                         
                     </div>
@@ -279,8 +277,7 @@ get_header(); ?>
     
                     <!-- <div class="large _regular"> -->
                         <p class="normal">                   
-                        For someone who has not ridden the bike for 
-    last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
+                        For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
                         </p>                  
                     <!-- </div> -->                         
                     </div>

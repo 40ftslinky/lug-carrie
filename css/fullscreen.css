@@ -120,7 +120,7 @@ pop up
     transition: all .25s ease-in-out;
 }
 #fullscreen .close:hover::after {
-    transform: rotate(180deg) translateY(7px);
+    transform: rotate(135deg) translateY(0px);
     transform-origin: center center;
 }
 

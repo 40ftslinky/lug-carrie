@@ -24,7 +24,7 @@ get_header(); ?>
         <section class="hero bg_cover ">
             <!-- autoplay -->
             
-            <video class="lazy" autoplay muted loop playsinline poster="./img/commuter/Lug_Carrie_commuter_hero_poster.jpg" id="backgroundVideo">
+            <video class="lazy" autoplay muted loop playsinline poster="<?php echo $child_theme_dir_file; ?>/img/commuter/Lug_Carrie_commuter_hero_poster.jpg" id="backgroundVideo">
                 <source data-src="<?php echo $child_theme_dir_file; ?>/video/Lug_Carrie_Commuter_06sec.mp4" type="video/mp4">
             </video>
 
@@ -180,6 +180,13 @@ get_header(); ?>
                             <p class="normal navy">
                                 The best thing of all, you get to try on the lifestyle before you buy. The vast majority of our customers love their new life on an L+C bike. For the small group that don’t, they can cancel their subscription and hand the bike back rather than having a five to eight thousand dollar high performance dust gatherer in their garage.
                             </p>
+
+                            <div class="button_wrap_center_vert">
+      
+                                <button class="button blue_btn getstarted">Get Started</button>
+                                <a href="/why-subscribe/" class="button naked">Learn more</a>      
+              
+                            </div>
                                 
                         </div>
                         

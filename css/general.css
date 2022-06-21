@@ -27,9 +27,18 @@
 #contact .hero {
   background-image: url('../img/general/contact_fullpage_bg.jpg');
 }
+#customer-support .hero,
 #service .hero {
   background-image: url('../img/general/service_fullpage_bg.jpg');
 }
+#customer-support .hero.bg_cover::before {
+  background: rgba(32,32,32,0.5);
+  background: linear-gradient(
+              90deg, 
+              rgba(var(--black-rgb),0) 0%, 
+              rgba(var(--black-rgb),0.66) 100%);
+}
+
 #consult .hero {
   background-image: url('../img/general/consult_fullpage_bg.jpg');
   background-position: center 25%;

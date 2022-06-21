@@ -25,7 +25,7 @@ get_header(); ?>
 
         <section class="hero bg_cover ">
             <!-- autoplay -->
-            <video class="lazy" autoplay muted loop playsinline poster="./img/family/family_fullpage_bg.jpg" id="backgroundVideo">
+            <video class="lazy" autoplay muted loop playsinline poster="<?php echo $child_theme_dir_file; ?>/img/family/family_fullpage_bg.jpg" id="backgroundVideo">
                 <source data-src="<?php echo $child_theme_dir_file; ?>/video/Lug_Carrie_Family_06sec.mp4" type="video/mp4">
             </video>
 
@@ -284,7 +284,7 @@ get_header(); ?>
                             <!-- <div class="large _regular"> -->
                                 
                             <p class="normal navy">
-                                The <a href="" >average cost</a> of car ownership is $7,774 annually in Australia. 
+                                The <a href="https://autocosts.info/au"  target="blank">average cost</a> of car ownership is $7,774 annually in Australia. 
                             </p>
                             <p class="normal navy">
                                 A Lug+Carrie is a simpler way to get around, and it helps the planet. Imagine life without the traffic jams, parking hassles, insurance, rego, depreciation, unpredictable fuel prices and the Sasquatch sized carbon footprint! 
@@ -307,9 +307,7 @@ get_header(); ?>
         </section>
 
         <section class="why_subscribe centered ">
-            <!-- <div class=""> -->
             <div class="_row ">   
-                <!-- <div class="column_10"></div>      -->           
                 
                 <div class="column_60">
                 <div class="img_wrap">
@@ -330,7 +328,7 @@ get_header(); ?>
                             <div class="button_wrap_center_vert">
       
                                 <button class="button blue_btn getstarted">Get Started</button>
-                                <button class="button naked">Learn more</button>      
+                                <a href="/why-subscribe/" class="button naked">Learn more</a>      
               
                             </div>
 
@@ -340,9 +338,7 @@ get_header(); ?>
                     </div>
                 </div>        
     
-            <!-- </div> -->
         </section>
-
 
         <section class="how_it_works _no-flex white_bg">
 

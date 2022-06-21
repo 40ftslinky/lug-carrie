@@ -456,6 +456,7 @@ section:last-of-type {
 
 .top {
     justify-content: flex-start !important;
+    align-items: flex-start;
 }
 .bottom {
     justify-content: flex-end !important;
@@ -571,6 +572,15 @@ section:last-of-type {
 .hero.medium_bg {
     height: unset;
     min-height: calc(75vh - var(--header_height));
+}
+
+.no_bg {
+    height: unset;
+    min-height: calc(45vh - var(--header_height));
+    padding-top: var(--header_height);
+    padding-bottom: 2rem;
+    /* color: white; */
+    background: none;
 }
 
 

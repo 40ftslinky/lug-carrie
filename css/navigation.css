@@ -89,7 +89,9 @@ header.onscroll::before {
     background-image:none;
 }
 
-
+.no_header h1  {
+    color: var(--blue);
+}
 
 
 /* ------------------------------------------- */

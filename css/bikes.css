@@ -4,17 +4,19 @@
 /* ------------------------------------------- */
 /* hero */
 
+[id*=tern][class*=gsd] .hero,
 #bikes.gsd .hero {
     background-image: url('../img/bikes/GSD_fullpage_bg.jpg');
     background-position: center center;
 }
 
+[id*=tern][class*=hsd] .hero,
 #bikes.hsd .hero {
     background-image: url('../img/bikes/HSD_fullpage_bg.jpg');
     background-position: center center;
 }
 
-
+[id*=tern] .hero.bg_cover::before,
 #bikes .hero.bg_cover::before {
     background: rgba(15,15,15,0.5);
     background: linear-gradient(
@@ -23,6 +25,7 @@
                 rgba(var(--navy-rgb),0.75) 100%);
 }
 @media screen and ( max-width: 1080px ) {
+    [id*=tern] .hero.bg_cover::before,
     #bikes .hero.bg_cover::before {
         background: rgba(32,32,32,0.5);
         background: linear-gradient(
@@ -32,7 +35,7 @@
     }
 }
 
-
+[id*=tern] .hero,
 #bikes .hero {
     width: 100%;    
     height: 100vh;
@@ -56,6 +59,7 @@
 /* ------------------------------------------- */
 /* loop */
 
+[class*="meet"] .video_wrap,
 .meet_gsd .video_wrap {
     margin: 0;
     min-height: 500px;
@@ -70,6 +74,7 @@
     transform: translate(-50%, -50%);
 }
 @media screen and ( max-width: 1080px ) {
+    [class*="meet"] .video_wrap,
     .meet_gsd .video_wrap {
         /* min-height: 300px; */
     }
@@ -78,6 +83,7 @@
     }   
 }
 @media screen and ( max-width: 680px ) {
+    [class*="meet"] .video_wrap,
     .meet_gsd .video_wrap {
         min-height: 300px;
     } 
@@ -162,6 +168,10 @@ section.best .img_wrap img {
     width:100%;
     height: var(--calc_mx_height);
 }
+.hsd .options {
+    background-image: url("../img/bikes/HSD_safety.jpg");
+}
+
 
 
 .options.bg_cover::before {
@@ -174,6 +184,7 @@ section.best .img_wrap img {
 }
 
 @media screen and ( max-width: 1080px ) {
+    [id*=tern] .bg_cover::before,
     #bikes .bg_cover::before {
         background: rgba(32,32,32,0.5);
         background: linear-gradient(
@@ -187,7 +198,8 @@ section.best .img_wrap img {
 /* ------------------------------------------- */
 /*  */
 
+[id*=tern] .testimonials,
 #bikes .testimonials {
-    /* margin-bottom:5rem */
+    /* margin-b ottom:5rem */
 }
 

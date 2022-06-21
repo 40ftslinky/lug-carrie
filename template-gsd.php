@@ -83,22 +83,22 @@ get_header(); ?>
                         <div class="list_wrap">
                             <ul class="icon_list">
                                 <li class="icon_cargo">
-                                    Precious Cargo x2
+                                Carry precious cargo x2, or up to 200kg
                                 </li>
                                 <li class="icon_parking">
-                                    FlatFold and Vertical Parking (only takes 5 secs)
+                                  20+ available accessories and add-ons
                                 </li>
                                 <li class="icon_range">
-                                    Battery Range – 250Km
+                                  Optional dual battery w/ range of up to 200km
                                 </li>
                                 <li class="icon_power">
-                                    Bosch Power - 85 Nm of torque
+                                  Bosch Cargo Line motor w/ +400% support
                                 </li>
                                 <li class="icon_comfortable">
-                                    Comfortable Suspension
+                                  Suspension, built-in 190 lumen light + mudguards
                                 </li>
                                 <li class="icon_solar">
-                                    Carbon Neutral with your Solar Home  
+                                  Small wheels = low centre of gravity + stability
                                 </li>
                             </ul>
                         </div>                   
@@ -108,7 +108,7 @@ get_header(); ?>
                     <div class="button_wrap_left_vert">
     
                         <button class="button blue_btn getstarted">Configure your Tern GSD</button>      
-                        <button class="button ghost_naked_btn">See the accessories</button>      
+                        <a href="/accessories?=gsd" class="button ghost_naked_btn">See the accessories</a>      
     
                     </div>            
                     </div>

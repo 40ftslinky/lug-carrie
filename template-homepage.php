@@ -21,7 +21,7 @@ get_header(); ?>
   <main>
 
     <section class="hero ">
-      <!-- autoplay src="./video/rain.mp4" -->
+      <!-- autoplay src="<?php echo $child_theme_dir_file; ?>/video/rain.mp4" -->
       <video class="lazy" autoplay muted loop playsinline poster="<?php echo $child_theme_dir_file; ?>/img/Lug_Carrie_hero_poster.jpg" id="backgroundVideo">
         <source data-src="<?php echo $child_theme_dir_file; ?>/video/Lug_Carrie_Hero_10%20sec.mp4" type="video/mp4">
       </video>
@@ -268,29 +268,6 @@ get_header(); ?>
           <div class="gallery-cell">
             <div class="cell">
               <div class="img_wrap">
-                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Commuter.jpg" loading="lazy"/>
-              </div>
-              <div class="text_wrap">
-                <h3 class="title center">The Professional </h3>
-                <div class="desc">
-                  <strong>Tern HSD - from $44 per week</strong>
-                  <p class="normal">The commute, no sweat.<br> 
-                    Beat the bus, for the same price. </p>
-                </div>
-                <div class="button_wrap_center_vert">
-
-                  <button class="button blue_btn getstarted">Get Started</button>
-                  <button class="button naked">Learn more</button>      
-
-                </div> 
-              </div>
-              
-            </div>                
-          </div>
-          <!-- commuter 02 -->
-          <div class="gallery-cell">
-            <div class="cell">
-              <div class="img_wrap">
                 <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Entrepreneur.jpg" loading="lazy"/>
               </div>
               <div class="text_wrap">
@@ -312,7 +289,7 @@ get_header(); ?>
               
             </div>                
           </div>
-          <!-- commuter 03 -->
+          <!-- commuter 02 -->
           <div class="gallery-cell">
             <div class="cell">
               <div class="img_wrap">
@@ -337,7 +314,7 @@ get_header(); ?>
               </div>
               
             </div>                
-          </div>
+          </div>          
          
        </div>
         
@@ -633,7 +610,7 @@ get_header(); ?>
                   <div class="_panel bg_cover ">
                       
                       <!-- <div class="bg_image_panel">
-                          <img src="./img/family/how_it_works_consultant.jpg">
+                          <img src="<?php echo $child_theme_dir_file; ?>/img/family/how_it_works_consultant.jpg">
                       </div> -->
 
                       <div class="text_wrap white _x2-padding">
@@ -654,7 +631,7 @@ get_header(); ?>
                   <div class="_panel bg_cover">
                       
                       <!-- <div class="bg_image_panel">
-                          <img src="./img/family/how_it_works_consultant.jpg">
+                          <img src="<?php echo $child_theme_dir_file; ?>/img/family/how_it_works_consultant.jpg">
                       </div> -->
 
                       <div class="text_wrap white _x2-padding">
@@ -676,7 +653,7 @@ get_header(); ?>
                   <div class="_panel bg_cover">
                       
                       <!-- <div class="bg_image_panel">
-                          <img src="./img/family/how_it_works_consultant.jpg">
+                          <img src="<?php echo $child_theme_dir_file; ?>/img/family/how_it_works_consultant.jpg">
                       </div> -->
 
                       <div class="text_wrap white _x2-padding">
