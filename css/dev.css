@@ -71,7 +71,7 @@
 	width: 90vw;
 	position:absolute;
 	top: 50%;
-	left:calc(50% - 3rem);
+	left:calc(50% - 2.5vw);
 	transform:translate(-50%,-50%);
 }
 

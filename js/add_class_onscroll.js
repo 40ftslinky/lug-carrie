@@ -24,7 +24,7 @@
 // $.noConflict();
 jQuery(document).ready(function( $ ) {
 
-	var do_not_reverse = Array('configure','signup','accessory','operational','operational-zone','about', 'review', 'book-a-test-ride', 'book-a-consultation', 'self-checkout-signup', 'manual-checkout', 'sign-up', 'stripe');
+	var do_not_reverse = Array('configure', 'build-your-bike', 'configure-your-bike','signup','accessory','operational','operational-zone','about', 'review', 'book-a-test-ride', 'book-a-consultation', 'self-checkout-signup', 'manual-checkout', 'sign-up', 'stripe');
 	var body_id = jQuery("body").attr("id");
 	console.log(body_id);
 
