@@ -24,13 +24,13 @@ get_header(); ?>
     <main>
 
         <section class="hero bg_cover ">
-        <!-- autoplay -->
-        <!-- <video  muted loop id="backgroundVideo">
-            <source src="./video/rain.mp4" type="video/mp4">
-        </video> -->
+            <!-- autoplay -->
+            <video class="lazy" autoplay muted loop playsinline poster="<?php echo $child_theme_dir_file; ?>/img/family/family_fullpage_bg.jpg" id="backgroundVideo">
+                <source data-src="<?php echo $child_theme_dir_file; ?>/video/Lug_Carrie_Family_06sec.mp4" type="video/mp4">
+            </video>
 
-        <!-- <div class="overlay"></div> -->
-        <!-- <div class=""> -->
+            <div class="overlay"></div>
+        
             <div class="_row">        
                 <div class="column_50">
 
@@ -41,22 +41,9 @@ get_header(); ?>
                                 adventure</h1>
                             <div class="large _regular">
                                 Easy to ride from the first pedal, our Tern eBike options
-                                for 1 or 2 children bring joy back to the school run.
+                                for 1 or 2 children bring joy back to the school&nbsp;run.
                             </div>
-                            <div class="button_wrap_center">
-                            <!-- 
-                            <div class="play_button" id="playBtn" onclick="videoControl()"  >
-                                <svg class="play" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                <path class="circle" d="M26.584 53.168C41.266 53.168 53.168 41.2676 53.168 26.584C53.168 11.9023 41.266 0 26.584 0C11.902 0 0 11.9023 0 26.584C0 41.2676 11.902 53.168 26.584 53.168Z" fill="#00C1DC"/>
-                                <path class="arrow"  d="M36.1075 26.9304L21.2863 35.167C21.1149 35.2637 20.9684 35.2749 20.8453 35.2004C20.7228 35.126 20.6613 34.9922 20.6613 34.7988V18.3701C20.6613 18.1768 20.7228 18.0427 20.8453 17.9683C20.9684 17.8941 21.1149 17.9053 21.2863 18.002L36.1075 26.2385C36.2789 26.3352 36.3644 26.4504 36.3644 26.5845C36.3644 26.7183 36.2789 26.8337 36.1075 26.9304V26.9304Z" fill="white"/>
-                                </g>                    
-                                </svg>                    
-                            </div>
-
-                            <div class="" id="buttonText">Play Video</div>
-                            -->
-                            </div>            
+                                        
                         </div>
                     </div>
 
@@ -73,21 +60,164 @@ get_header(); ?>
                 </div>
             </div>
 
-        <!-- </div> -->
         </section>
 
 
-        <section class="why_subscribe centered gray_100_bg">
-        <!-- <div class=""> -->
-            <div class="_row _no-margin">   
+        <section class="_x2-padding _no_padding_bot _no-margin gray_100_bg centered">
+            <div class="_row _no-margin">                             
+              <div class="column_100">
+      
+                <div class="_wrap">
+                  <div class="text_block">
+                    
+                    <h3 class="h3 center blue _no_char">
+                      A Lug+Carrie to Suit Any&nbsp;Lifestyle
+                    </h3>
+                    <h4 class="center navy _no_char">Our Most Popular Family Set Ups</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+    
+    
+        <section class=" set_up-family_sect _no-flex">
+            <div class=""> 
+                <!-- Flickity HTML init -->
+                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                
+                    <!-- family 01 -->
+                    <div class="gallery-cell">
+                        <div class="cell">
+                            <div class="img_wrap ">
+                                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/GSD_School_Bus.jpg" loading="lazy"/>
+                            </div>
+                            <div class="text_wrap">
+                                <h5 class="title ">
+                                    The School Bus
+                                </h5>
+                                <div class="desc">
+                                    <strong>Tern GSD - from $71 per week</strong>
+                                    <p class="normal">
+                                    All the school bags+rock star parking - bring the joy back to the school run. Will comfortably transport 1-2 larger children (26+kg and appx 130 cm tall). 
+                                    </p>
+                                </div>
+                                <div class="button_wrap_center_vert">
+                
+                                    <button class="button blue_btn getstarted">Get Started</button>
+                                    <button class="button naked">Learn more</button>      
+                
+                                </div> 
+                            </div>
+                            
+                        </div>                
+                    </div>
+        
+                    <!-- family 02 -->
+                    <div class="gallery-cell">
+                        <div class="cell">
+                            <div class="img_wrap">
+                                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Kinder_Surprise.jpg" loading="lazy"/>
+                            </div>
+                            <div class="text_wrap">
+                                <h5 class="title ">
+                                    The Kinder Surprise
+                                </h5>
+                                <div class="desc">
+                                    <strong>Tern HSD - from $51 per week</strong>
+                                    <p class="normal">
+                                        The surprise? The kinder run can be fun. Comfortably transport 1 younger child up to 22kg in weight.
+                                    </p>
+                                </div>
+                                <div class="button_wrap_center_vert">
+                
+                                    <button class="button blue_btn getstarted">Get Started</button>
+                                    <button class="button naked">Learn more</button>      
+                
+                                </div> 
+                            </div>
+                            
+                        </div>                
+                    </div>
+
+                    <!-- family 03 -->
+                    <div class="gallery-cell">
+                        <div class="cell">
+                            <div class="img_wrap">
+                                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/GSD_Adventurer.jpg" loading="lazy"/>
+                            </div>
+                            <div class="text_wrap">
+                                <h5 class="title ">
+                                    The Adventurer
+                                </h5>
+                                <div class="desc">
+                                    <strong>Tern GSD - from $77 per week</strong>
+                                    <p class="normal">
+                                    Perfect for taking both little ones and all their kit on an adventure. Suits 2 adventurers, 1 weighing less than 22kg in the child seat, 1 bigger kid over 18kg.
+                                    </p>
+                                </div>
+                                <div class="button_wrap_center_vert">
+                
+                                    <button class="button blue_btn getstarted">Get Started</button>
+                                    <button class="button naked">Learn more</button>      
+                
+                                </div> 
+                            </div>
+                            
+                        </div>                
+                    </div>
+
+                    <!-- family 04 -->
+                    <div class="gallery-cell">
+                        <div class="cell">
+                            <div class="img_wrap">
+                                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Mini_Bus.jpg" loading="lazy"/>
+                            </div>
+                            <div class="text_wrap">
+                                <h5 class="title">
+                                    The Mini Bus
+                                </h5>
+                                <div class="desc">
+                                    <strong>Tern HSD - from $51 per week</strong>
+                                    <p class="normal">
+                                        The school run has never been so fun! Packed lunches + 1 child of 18kg and up and between 110-140cm in height.
+                                    </p>
+                                </div>
+                                <div class="button_wrap_center_vert">
+            
+                                    <button class="button blue_btn getstarted">Get Started</button>
+                                    <button class="button naked">Learn more</button>      
+                
+                                </div> 
+                            </div>
+                        
+                        </div>                
+                    </div>
+            
+                </div>
+            
+            </div>        
+    
+        </section>
+
+        <section class="why_tern centered blue_bg ">
+            
+            <!-- https://medium.com/elegant-seagulls/parallax-and-scroll-triggered-animations-with-the-intersection-observer-api-and-gsap3-53b58c80b2fa -->
+            <!-- https://codepen.io/celli/pen/mdVMOjr -->
+            <!--  -->
+
+            <div class="_row ">   
                 <div class="column_40 centered">
 
                     <div class="_wrap">
                         <div class="text_block center">
-                            <h2 class="blue">An eBike <br>to grow with</h2>
+                            <h6 class="white">Why a Tern eBike?</h6>
+                            <h3 class="navy">
+                                An eBike <br>to grow with
+                            </h3>
 
                             <p class="normal ">
-                            The low centre of gravity will make you and your kids feel safe so you can enjoy the ride. If your kids ride a scooter they will love a L+C ride. School bags, shopping and the laptop for work get easily swallowed by our flexible accessories options. There’s 37 of them to make your ride perfect for your family.
+                                A Lug+Carrie grows with your family. It can be shared between parents, it is adjustable in  moments for riders of all sizes, and it is easy to swap accessories or bikes to accommodate new family members.
                             </p>                  
 
                         </div>
@@ -100,27 +230,10 @@ get_header(); ?>
 
                 </div>
                 
-                <div class="column_60">
+                <div data-aos="fade-in" data-aos-mirror="true" class="column_60">
                     <div class="video_wrap">
-                        <!-- autoplay -->
-<!--                         <video  muted loop id="inlineVideo" preload="none" poster="<?php echo $child_theme_dir_file; ?>/img/family/family_poster.jpg">
-                            <source src="<?php echo $child_theme_dir_file; ?>/video/rain.mp4" type="video/mp4">
-                        </video>
-
-                        <div class="video_overlay_wrap">
-                            <div class="play_button" id="playBtn_white" onclick="videoControlInline(); video_modal('family');" >                    
-                                <svg class="play" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g >
-                                        <path class="circle" d="M52.168 26.584C52.168 40.7153 40.7137 52.168 26.584 52.168C12.4542 52.168 1 40.7152 1 26.584C1 12.4546 12.4543 1 26.584 1C40.7137 1 52.168 12.4546 52.168 26.584Z" stroke="white" stroke-width="2"/>
-                                        <path class="arrow" d="M36.1075 26.9304L21.2863 35.167C21.1149 35.2637 20.9684 35.2749 20.8453 35.2004C20.7228 35.126 20.6613 34.9922 20.6613 34.7988V18.3701C20.6613 18.1768 20.7228 18.0427 20.8453 17.9683C20.9684 17.8941 21.1149 17.9053 21.2863 18.002L36.1075 26.2385C36.2789 26.3352 36.3644 26.4504 36.3644 26.5845C36.3644 26.7183 36.2789 26.8337 36.1075 26.9304V26.9304Z" fill="white"/>
-                                    </g>                        
-                                </svg>                                            
-                            </div>
-
-                            <div class="white" id="buttonText_white">Watch Video</div>
-                        </div>                     -->
-						
-						<div style="padding:56.25% 0 0 0;position:relative;">
+                        
+                        <div style="padding:56.25% 0 0 0;position:relative;">
                             <iframe src="https://player.vimeo.com/video/712687310?h=f822326454&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Lug &amp;amp; Carrie - Family - 30 sec.mp4"></iframe>
                         </div>
                         <script src="https://player.vimeo.com/api/player.js"></script>
@@ -128,150 +241,30 @@ get_header(); ?>
                     
                     </div>
                 </div>
-            </div>        
-
-        <!-- </div> -->
-        </section>
-
-        <section class="compare centered ">
-            <!-- <div class=""> -->
-            <div class="_row ">             
-                
-                <div class="column_60">
-                <div class="img_wrap"><!-- ??????TEST???? -->
-						<!--  dir = <?php echo $child_theme_dir_file; ?> -->
-                    <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/why_choose_quality.jpg" loading="lazy"/>
-                </div>
-                </div>
-    
-                <div class="column_40 centered">
-    
-                <div class="_wrap">
-                    <div class="tab_block center">
-                    <h2 class="blue">Compare the bikes</h2>
-                    <!-- <p class="normal">
-                        One of the most important parts of any electric bike are the electrics. Bosch is one of the top names in the business of e-bike motors and batteries. These deliver a ride that’s smooth and comfortable. The&nbsp;battery charges easily and quickly, and can charge fully in around 4&nbsp;hours. A full charge will last for up to 110km of riding, depending on how much pedal assistance you are using.
-                    </p> -->
-                    
-                    <div class="tabs family_compare">
-                        <div class=" tab-item active"><a href="#tabs-gsd">Tern GSD</a></div>
-                        <div class=" tab-item"><a href="#tabs-hsd">Tern HSD</a></div>                    
-                    </div>
-                    
-                    <div class="tab-content">
-                        <div id="tabs-gsd" class="tab-pane active">
-                            <ul>
-                                <li>
-                                    Carry 1 or 2 kids up to 7 years old
-                                </li>
-                                <li>
-                                    Compact – similar length to a standard bike.
-                                </li>
-                                <li>
-                                    Up to 57 litres of storage or up to 200kg
-                                </li>
-                                <li>
-                                    Carry up to two kids plus groceries, or a whole lot of cargo
-                                </li>
-                                <li>
-                                    Built-in dual-battery technology lets you ride all day
-                                </li>
-                                <li>
-                                    Space-saving features like Flat Fold and Vertical Parking  
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="tabs-hsd" class="tab-pane ">
-                            <ul>
-                                <li>
-                                    Light – similar weight to a normal bike
-                                </li>
-                                <li>
-                                    Compact – shorter than  a standard bike.
-                                </li>
-                                <li>
-                                    Up to 37  litres of storage or up to 170kg 
-                                </li>
-                                <li>
-                                    Carry all you need for work, or the weeks groceries
-                                </li>
-                                <li>
-                                    Built-in dual-battery technology lets you ride all day
-                                </li>
-                                <li>
-                                    Space-saving features like Flat Fold and Vertical Parking
-                                </li>
-                            </ul>
-                        </div>                    
-                    </div>
-                    
-                    
-                    <div class="button_wrap_center_vert">
-    
-                        <button class="button blue_btn">Configure GSD</button>      
-    
-                    </div>            
-                    </div>
-                </div>
-    
-                </div>
-            </div>        
-    
-        </section>
-
-        <section class="why_tern centered blue_bg ">
-            
-            <!--  -->
-            <div class="_row " data-aos="fade-up" data-aos-mirror="true">   
-                <div class="column_40 centered">
-    
-                    <div class="_wrap">
-                        <div class="text_block center">
-                            <h6 class="white">Why a Tern eBike?</h6>
-                            <h2 class="navy">Your second car has two wheels</h2>
-                            <!-- <div class="large _regular"> -->
-                                
-                            <p class="normal navy">
-                                The annual cost of running a car in Australia is tens of thousands of dollars. And it’s rare that drivers need to carry more than what can be carried on a Tern eCargo bike. So your L+C bike can be your second car, just way more cost effective. It’s positive transport without the traffic jams, parking, servicing, insurance, rego, fuel, depreciation and big fat carbon footprint. With fuel prices only going one way, your L+C is a great way to get around and cool for the planet. 
-                            </p>
-                            <!-- </div> -->                    
-                                    
-                        </div>
-                    </div>
-    
-                </div>
-                
-                <div class="column_60">
-                    <div class="img_wrap">
-                        <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/family/family_why_tern.jpg" loading="lazy"/>
-                    </div>
-                </div>
             </div> 
 
             <!--  -->
             
-            <div class="_row " data-aos="fade-up" data-aos-mirror="true">   
-                <div class="column_40 centered">
+            <div class="_row " >   
+                    <div class="column_40 centered">
     
                     <div class="_wrap">
                         <div class="text_block center">
                             <h6 class="white">Why a Tern eBike?</h6>
-                            <h2 class="navy">
-                                A Tern vs other eBikes
-                            </h2>
-                            <!-- <div class="large _regular"> -->
+                            <h3 class="navy">
+                                A reassuring ride
+                            </h3>
                                 
                             <p class="normal navy">
-                                We’ve ridden them all. In our opinion Tern is the best. And we’ve specced it with the best brakes, derailleurs, engines you name it. If things change and a better option hits the market we’ll stock that and you can choose to swap out your current bike.
+                                Our bikes come with kickstands that allow you to easily load wriggling kids and the shopping at the same time, the smaller wheels give you confidence inspiring stability, and the cargo capacity combined with the powerful Bosch motor means you can flatten hills and leave the car at home.
                             </p>
-                            <!-- </div> -->
                             
                         </div>
                     </div>
     
                 </div>
                 
-                <div class="column_60">
+                <div data-aos="fade-in" data-aos-mirror="true" class="column_60">
                     <div class="img_wrap">
                         <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/family/family_why_tern_frame_blue.jpg" loading="lazy"/>
                     </div>
@@ -280,17 +273,21 @@ get_header(); ?>
 
             <!--  -->
 
-            <div class="_row " data-aos="fade-up" data-aos-mirror="true">   
-                <div class="column_40 centered">
+            <div class="_row ">   
+                <!-- <div class="_row ">    -->
+                    <div class="column_40 centered">
     
                     <div class="_wrap">
                         <div class="text_block center">
                             <h6 class="white">Why a Tern eBike?</h6>
-                            <h2 class="navy">What if it gets stolen?</h2>
+                            <h3 class="navy">Your second car is a Lug+Carrie</h3>
                             <!-- <div class="large _regular"> -->
                                 
                             <p class="normal navy">
-                                Theft is extremely rare due to the built in alarm and locking systems. However, if professionals really go to the trouble of taking your bike, you will just have to pay an excess fee and we will give you another bike.
+                                The <a href="https://autocosts.info/au" target="blank" >average cost</a> of car ownership is $7,774 annually in Australia. 
+                            </p>
+                            <p class="normal navy">
+                                A Lug+Carrie is a simpler way to get around, and it helps the planet. Imagine life without the traffic jams, parking hassles, insurance, rego, depreciation, unpredictable fuel prices and the Sasquatch sized carbon footprint! 
                             </p>
                             <!-- </div> -->
                             
@@ -300,7 +297,7 @@ get_header(); ?>
     
                 </div>
                 
-                <div class="column_60">
+                <div data-aos="fade-in" data-aos-mirror="true" class="column_60">
                     <div class="img_wrap">
                         <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/family/family_why_tern_under_blue.jpg" loading="lazy"/>
                     </div>
@@ -310,9 +307,7 @@ get_header(); ?>
         </section>
 
         <section class="why_subscribe centered ">
-            <!-- <div class=""> -->
             <div class="_row ">   
-                <!-- <div class="column_10"></div>      -->           
                 
                 <div class="column_60">
                 <div class="img_wrap">
@@ -330,21 +325,24 @@ get_header(); ?>
                                 The best thing of all, you get to try on the lifestyle before you buy. The vast majority of our customers love their new life on an L+C bike. For the small group that don’t, they can cancel their subscription and hand the bike back rather than having a five to eight thousand dollar high performance dust gatherer in their garage.
                             </p>
                             <!-- </div> -->
-                                
+                            <div class="button_wrap_center_vert">
+      
+                                <button class="button blue_btn getstarted">Get Started</button>
+                                <a href="/why-subscribe/" class="button naked">Learn more</a>      
+              
+                            </div>
+
                         </div>
                         
         
                     </div>
                 </div>        
     
-            <!-- </div> -->
         </section>
 
-
-        <section class="how_it_works _no-flex">
+        <section class="how_it_works _no-flex white_bg">
 
             <div class="_row _no-margin">   
-                <!-- <div class="column_10"></div>      -->
                 <div class="column_100 centered">
     
                     <div class="_wrap">
@@ -357,109 +355,93 @@ get_header(); ?>
                 </div>
             </div>
 
-        <div class="carousel"> 
-            <!-- Flickity HTML init -->
-            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-            
-            <div class="gallery-cell">
-                <div class="cell">
-
-                    <div class="_panel bg_cover ">
-                        
-                        <!-- <div class="bg_image_panel">
-                            <img src="<?php echo $child_theme_dir_file; ?>/img/family/family_how_it_works_consultant.jpg">
-                        </div> -->
-
-                        <div class="text_wrap white _x2-padding">
-                            <h3 class="title center">Chat with our experts</h3>
-                            <div class="desc">
-                                <p class="normal white center">Our experts can talk you through all your options and help you decide on the perfect bike to suit your lifestyle needs.</p>
-                            </div>
- 
-                        </div>
-                    </div>
+            <div class="carousel"> 
+                <!-- Flickity HTML init -->
+                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                 
-                </div>                
-            </div>
+                    <div class="gallery-cell">
+                        <div class="cell">
 
-            <div class="gallery-cell">
-                <div class="cell">
+                            <div class="_panel bg_cover ">
 
-                    <div class="_panel bg_cover">
-                        
-                        <!-- <div class="bg_image_panel">
-                            <img src="<?php echo $child_theme_dir_file; ?>/img/family/family_how_it_works_delivery.jpg">
-                        </div> -->
-
-                        <div class="text_wrap white _x2-padding">
-                            <h3 class="title center">Door to door delivery</h3>
-                            <div class="desc">
-                                <p class="normal white center">Complementary delivery includes a 40 minute orientation on your new bike.</p>
+                                <div class="text_wrap white _x2-padding">
+                                    <h3 class="title center alpha" >Chat with our team</h3>
+                                    <div class="desc">
+                                        <p class="normal white center">Our experts can talk you through all your options and help you decide on the perfect bike to suit your lifestyle needs.</p>
+                                    </div>
+        
+                                </div>
                             </div>
- 
-                        </div>
-                    </div>
-                
-                </div>                
-            </div>
-
-
-            <div class="gallery-cell">
-                <div class="cell">
-
-                    <div class="_panel bg_cover">
                         
-                        <!-- <div class="bg_image_panel">
-                            <img src="<?php echo $child_theme_dir_file; ?>/img/family/family_how_it_works_service.jpg">
-                        </div> -->
-
-                        <div class="text_wrap white _x2-padding">
-                            <h3 class="title center">Here when you need us</h3>
-                            <div class="desc">
-                                <p class="normal white center">
-                                    For peace of mind we include locks, an alarm and roadside assistance. If you have maintenance issues, we’ll come to you, so you’ll never be stranded.
-                                </p>
-                            </div>
- 
-                        </div>
+                        </div>                
                     </div>
-                
-                </div>                
-            </div>
 
-            <div class="gallery-cell">
-                <div class="cell">
+                    <div class="gallery-cell">
+                        <div class="cell">
 
-                    <div class="_panel bg_cover">
+                            <div class="_panel bg_cover">
+
+                                <div class="text_wrap white _x2-padding">
+                                    <h3 class="title center alpha">Door to door delivery</h3>
+                                    <div class="desc">
+                                        <p class="normal white center">Complementary delivery includes a 40 minute orientation on your new bike.</p>
+                                    </div>
+        
+                                </div>
+                            </div>
                         
-                        <!-- <div class="bg_image_panel">
-                            <img src="<?php echo $child_theme_dir_file; ?>/img/family/family_how_it_works_accessories.jpg">
-                        </div> -->
-
-                        <div class="text_wrap white _x2-padding">
-                            <h3 class="title center">When life changes</h3>
-                            <div class="desc">
-                                <p class="normal white center">
-                                    As your kids grow, your needs can change. That’s why your subscription is flexible. Swap accessories or upgrade your bike, at any time.
-                                </p>
-                            </div>
- 
-                        </div>
+                        </div>                
                     </div>
-                
-                </div>                
-            </div>
 
-            
-        </div>
-            
-        </div>        
+
+                    <div class="gallery-cell">
+                        <div class="cell">
+
+                            <div class="_panel bg_cover">
+
+                                <div class="text_wrap white _x2-padding">
+                                    <h3 class="title center alpha">Here when you need&nbsp;us</h3>
+                                    <div class="desc">
+                                        <p class="normal white center">
+                                            For peace of mind we include locks, an alarm and roadside assistance. If you have maintenance issues, we’ll come to you, so you’ll never be stranded.
+                                        </p>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        
+                        </div>                
+                    </div>
+
+                    <div class="gallery-cell">
+                        <div class="cell">
+
+                            <div class="_panel bg_cover">
+
+                                <div class="text_wrap white _x2-padding">
+                                    <h3 class="title center alpha">Flexible, for life</h3>
+                                    <div class="desc">
+                                        <p class="normal white center">
+                                            Things change, that’s why our subscription is flexible. Swap accessories or upgrade your bike at any time.
+                                        </p>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        
+                        </div>                
+                    </div>
+
+                    
+                </div>
+                
+            </div>        
 
         </section>
 
 
 
-        </main>
+    </main>
 <!--  end of template -->
 
     <!-- https://flickity.metafizzy.co/ -->

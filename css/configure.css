@@ -205,7 +205,7 @@
 
 .progress_intro {
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     color: var(--gray-600);
 }
 
@@ -256,7 +256,7 @@
 
 #configure .checkbox-group,
 #build-your-bike .checkbox-group {
-        display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
@@ -398,17 +398,20 @@
 
 .lrg .checkbox-tile {
     width: calc(100vw/6 - 2.5rem);
-    height: 100%;
-    padding: 0.5rem;
+/*     height: 100%; */
+	max-height: calc((100vw/6 - 2.5rem) * 0.85 );
+	padding: 0.5rem;
 }
 @media screen and (max-width:1350px){    
     .lrg .checkbox-tile {
         width: calc(100vw/5 - 2.5rem);
+        max-height: calc((100vw/5 - 2.5rem) * 0.85 );
     }
 }
 @media screen and (max-width:1080px){    
     .lrg .checkbox-tile {
         width: 100%;
+        max-height: calc((100vw/2 - 2.5rem) * 0.85 );
     }
 }
 
@@ -502,11 +505,13 @@
 @media screen and (max-width:1350px){    
     .lrg .checkbox-thumb img {
         width: calc(100vw/5 - 4.5rem);
+		max-height: 110px;
     }
 }
 @media screen and (max-width:1080px){    
     .lrg .checkbox-thumb img {
         width: 100%;
+		max-height: 45vw;
     }
 }
 
@@ -570,6 +575,13 @@
   -webkit-box-orient: vertical;
 }
 
+#col_right_wrap_Bikes .product-desc {
+    -webkit-line-clamp: unset;
+}
+
+#col_right_wrap_Bikes .product-ext {
+    display:none;
+}
 .checkbox-label .product-ext  {
   font-size: 12px;  
   margin-top: 0.75rem;

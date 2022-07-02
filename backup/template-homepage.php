@@ -21,7 +21,7 @@ get_header(); ?>
   <main>
 
     <section class="hero ">
-      <!-- autoplay src="./video/rain.mp4" -->
+      <!-- autoplay src="<?php echo $child_theme_dir_file; ?>/video/rain.mp4" -->
       <video class="lazy" autoplay muted loop playsinline poster="<?php echo $child_theme_dir_file; ?>/img/Lug_Carrie_hero_poster.jpg" id="backgroundVideo">
         <source data-src="<?php echo $child_theme_dir_file; ?>/video/Lug_Carrie_Hero_10%20sec.mp4" type="video/mp4">
       </video>
@@ -81,10 +81,10 @@ get_header(); ?>
                 <h2 class="navy">Why subscribe?</h2>
                 <!-- <div class="large _regular"> -->
                   <p class="normal navy">
-                    A subscription is more flexible than owning a bike, because life changes and your needs might change. You can swap accessories, upgrade, downsize or give the bike back. You’ll never pay for service, and our team can come to you for most repairs. You need not worry about Insurance, locks and alarms either because those things are included in your subscription as well.
+                    A Lug+Carrie subscription gives you the freedom to explore further + ride more often knowing all your expenses are included and that we’ve got your back with roadside assistance.
                   </p>
                   <p class="normal navy">
-                    You can even buy your bike, if you fall in love. It happens.
+                    A Lug+Carrie grows with your lifestyle, If one child turns into 2, or Rex wants to ride shotgun, we’re a phone call away from coming to your place and swapping bikes, seats and accessories to suit.
                   </p>
                 <!-- </div> -->
                 <div class="button_wrap_center_vert">
@@ -108,6 +108,23 @@ get_header(); ?>
       <!-- </div> -->
     </section>
 
+    <section class="_x2-padding _no_padding_bot _no-margin gray_100_bg centered">
+      <div class="_row _no-margin">                             
+        <div class="column_100">
+
+          <div class="_wrap">
+            <div class="text_block">
+              
+              <h3 class="h3 center blue _no_char">
+                A Lug+Carrie to Suit Any&nbsp;Lifestyle
+              </h3>
+              <h4 class="center navy _no_char">Our Most Popular Family Set Ups</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="set_up-family_sect _no-flex">
 
         <div class=""> 
@@ -118,14 +135,17 @@ get_header(); ?>
             <div class="gallery-cell">
               <div class="cell">
                 <div class="img_wrap">
-                  <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/GSD_Beach-Buggy.jpg" loading="lazy"/>
+                  <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/GSD_School_Bus.jpg" loading="lazy"/>
                 </div>
                 <div class="text_wrap">
-                  <h3 class="title center">The Beach Buggy</h3>
+                  <h5 class="title">
+                    The School Bus
+                  </h5>
                   <div class="desc">
-                    <strong>Tern GSD - from $44 per week</strong>
-                    <p class="normal">Adventures with the whole gang. <br>
-                      1 or 2 kids + the toy collection</p>
+                    <strong>Tern GSD - from $71 per week</strong>
+                    <p class="normal">
+                      All the school bags+rock star parking - bring the joy back to the school run. Will comfortably transport 1-2 larger children (26+kg and appx 130 cm tall). 
+                    </p>
                   </div>
                   <div class="button_wrap_center_vert">
 
@@ -142,13 +162,17 @@ get_header(); ?>
             <div class="gallery-cell">
               <div class="cell">
                 <div class="img_wrap">
-                  <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Only-Child.jpg" loading="lazy"/>
+                  <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Kinder_Surprise.jpg" loading="lazy"/>
                 </div>
                 <div class="text_wrap">
-                  <h3 class="title center">The Favourite Child</h3>
+                  <h5 class="title">
+                    The Kinder Surprise
+                  </h5>
                   <div class="desc">
-                    <strong>Tern HSD - from $61 per week</strong>
-                    <p class="normal">Forget queues at the school. Speedy drop offs for 1 kid + School bags</p>
+                    <strong>Tern HSD - from $51 per week</strong>
+                    <p class="normal">
+                      The surprise? The kinder run can be fun. Comfortably transport 1 younger child up to 22kg in weight.
+                    </p>
                   </div>
                   <div class="button_wrap_center_vert">
 
@@ -165,14 +189,17 @@ get_header(); ?>
             <div class="gallery-cell">
               <div class="cell">
                 <div class="img_wrap">
-                  <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/GSD_School-Bus.jpg" loading="lazy"/>
+                  <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/GSD_Adventurer.jpg" loading="lazy"/>
                 </div>
                 <div class="text_wrap">
-                  <h3 class="title center">The School Bus</h3>
+                  <h5 class="title">
+                    The Adventurer
+                  </h5>
                   <div class="desc">
-                    <strong>Tern GSD - from $61 per week</strong>
-                    <p class="normal">Music lessons and school sports?
-                      1 or 2 kids + trumpets and twirling batons</p>
+                    <strong>Tern GSD - from $77 per week</strong>
+                    <p class="normal">
+                      Perfect for taking both little ones and all their kit on an adventure. Suits 2 adventurers, 1 weighing less than 22kg in the child seat, 1 bigger kid over 18kg.
+                    </p>
                   </div>
                   <div class="button_wrap_center_vert">
 
@@ -189,13 +216,17 @@ get_header(); ?>
             <div class="gallery-cell">
                 <div class="cell">
                   <div class="img_wrap">
-                    <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Dinker.jpg" loading="lazy"/>
+                    <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Mini_Bus.jpg" loading="lazy"/>
                   </div>
                   <div class="text_wrap">
-                    <h3 class="title center">The Dinker</h3>
+                    <h5 class="title ">
+                      The Mini Bus
+                    </h5>
                     <div class="desc">
-                      <strong>Tern HSD - from $61 per week</strong>
-                      <p class="normal">The school run has never been more fun. Cargo eBikes for 1 or 2 kids.</p>
+                      <strong>Tern HSD - from $51 per week</strong>
+                      <p class="normal">
+                        The school run has never been so fun! Packed lunches + 1 child of 18kg and up and between 110-140cm in height.
+                      </p>
                     </div>
                     <div class="button_wrap_center_vert">
 
@@ -214,6 +245,20 @@ get_header(); ?>
 
     </section>
 
+    <section class="_x2-padding _no_padding_bot _no-margin centered">
+      <div class="_row _no-margin">                             
+        <div class="column_100">
+
+          <div class="_wrap">
+            <div class="text_block">
+              
+              <h4 class="center navy _no_char">Our Most Popular Commuter Set Ups</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="set_up-commuter_sect _no-flex">
 
       <div class=""> 
@@ -223,13 +268,15 @@ get_header(); ?>
           <div class="gallery-cell">
             <div class="cell">
               <div class="img_wrap">
-                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Commuter.jpg" loading="lazy"/>
+                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Entrepreneur.jpg" loading="lazy"/>
               </div>
               <div class="text_wrap">
-                <h3 class="title center">The Professional </h3>
+                <h5 class="title">
+                  The Professional 
+                </h5>
                 <div class="desc">
-                  <strong>Tern HSD - from $44 per week</strong>
-                  <p class="normal">The commute, no sweat.<br> 
+                  <strong>Tern HSD - from $50 per week</strong>
+                  <p class="normal">
                     Beat the bus, for the same price. </p>
                 </div>
                 <div class="button_wrap_center_vert">
@@ -246,14 +293,17 @@ get_header(); ?>
           <div class="gallery-cell">
             <div class="cell">
               <div class="img_wrap">
-                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Gym_Junkie.jpg" loading="lazy"/>
+                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Scoot.jpg" loading="lazy"/>
               </div>
               <div class="text_wrap">
-                <h3 class="title center">The Gym Junkie</h3>
+                <h5 class="title ">
+                  The Scoot
+                </h5>
                 <div class="desc">
-                  <strong>Tern HSD - from $44 per week</strong>
-                  <p class="normal">Like to workout before work?<br>
-                    50+ km of charge + dumbells for your PT session.</p>
+                  <strong>Tern HSD - from $50 per week</strong>
+                  <p class="normal">
+                    From the shops to the bottle-o, for scootin around town and getting things done.  
+                  </p>
                 </div>
                 <div class="button_wrap_center_vert">
 
@@ -264,36 +314,13 @@ get_header(); ?>
               </div>
               
             </div>                
-          </div>
-          <!-- commuter 03 -->
-          <div class="gallery-cell">
-            <div class="cell">
-              <div class="img_wrap">
-                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Entrepreneur.jpg" loading="lazy"/>
-              </div>
-              <div class="text_wrap">
-                <h3 class="title center">The Entrepreneur</h3>
-                <div class="desc">
-                  <strong>Tern HSD - from $44 per week</strong>
-                  <p class="normal">Run a business and the local deliveries?<br>
-                    The ute of electric bikes.</p>
-                </div>
-                <div class="button_wrap_center_vert">
-
-                  <button class="button blue_btn getstarted">Get Started</button>
-                  <button class="button naked">Learn more</button>      
-
-                </div> 
-              </div>
-              
-            </div>                
-          </div>
+          </div>          
          
        </div>
         
       </div>        
 
-  </section>
+    </section>
   
 
     <section class="why_choose centered blue_bg">
@@ -354,87 +381,7 @@ get_header(); ?>
 
     </section>
 
-    <!-- needs to be carousel - populated from accessories page content -->
-    <section class="accessories centered yellow_bg">
-      <!-- <div class=""> -->
-        <div class="_row ">             
-          
-          <div class="column_100">
-            <div class="_wrap">
-              <div class="text_block center">
-                <h2 class="navy">Accessories for all life’s needs</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="_row _max_width_1600 three_col">             
-          
-          <div class="column_third _x2-padding">
-            <div class="img_wrap">
-             <a href="/accessory/"><img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/accessories/cargo_hold_37_panniers.jpg" loading="lazy"/></a>
-            </div>
-
-            <div class="_group">
-              <div class="text_block left">
-                <h6 class="navy">$3 PER WEEK</h6>
-                <h5 class="navy">Cargo Hold 37 Panniers</h5>
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    The Bike-Trunk: The Cargo Hold Panniers are like a trunk for your bike.                   
-                  </p>                  
-                <!-- </div> -->                         
-              </div>
-            </div>
-
-          </div>
-
-          <div class="column_third _x2-padding">
-            <div class="img_wrap">
-              <a href="/accessory/"><img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/accessories/sidekick_seat_pad.jpg" loading="lazy" /></a>
-            </div>
-
-            <div class="_group ">
-              <div class="text_block left ">
-                <h6 class="navy">$2 PER WEEK</h6>
-                <h5 class="navy">Sidekick Seat Pad</h5>
-                <!-- <div class="large _regular"> -->
-                <p class="normal">                   
-                  Foam cushion provides comfort for passengers. 
-                </p>                  
-                <!-- </div> -->                        
-              </div>
-            </div>
-
-          </div>
-
-          <div class="column_third _x2-padding">
-            <div class="img_wrap">
-              <a href="/accessory/"><img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/accessories/captains_chair_bundle.jpg" loading="lazy"/></a>
-            </div>
-
-            <div class="_group">
-              <div class="text_block left">
-                <h6 class="navy">$4 PER WEEK</h6>
-                <h5 class="navy">The Captain’s Chair Bundle</h5>
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    Bundle includes seat, bars & foot pegs.
-                  </p>                  
-                <!-- </div> -->                        
-              </div>
-            </div>
-
-          </div>
-
-          <div class="button_wrap_center_vert">
-
-            <a href="/accessories/"><button class="button naked_white">See all 28 accessories ></button></a>      
-
-          </div> 
-        </div>        
-
-    </section>
-
+    
     <section class="tern_gsd centered gray_100_bg ">
       <!-- <div class=""> -->
         <div class="_row ">   
@@ -450,7 +397,7 @@ get_header(); ?>
                   </h4>
                   <p class="normal gray_800">
                     Loaded with features. <br> 
-The ultimate nimble cargo ebike.
+                    The ultimate nimble cargo ebike.
                   </p>
                 <!-- </div> -->
                 <div class="button_wrap_center_vert">
@@ -519,94 +466,84 @@ The ultimate nimble cargo ebike.
             <div class="_wrap ">
               <div class="text_block center">
                 <h2 class="navy">5 star reviews</h2>
+                <p class="large">Join over 1,000 customers that have made the decision to leave the car at home more often</p>
               </div>
             </div>
           </div>
         </div>
         <div class="_row _max_width_1600 three_col">             
           
+
+
+            
+
+        <?php
+				$posts = get_posts(array(
+					'numberposts'	=> 3,
+					'post_type'		=> 'review'
+				));										
+
+		if( $posts ){ 
+		 foreach( $posts as $post ){
+			$post_id= get_the_ID();
+
+			$title = get_the_title();
+			$rating = get_field("rating",$post_id);
+			$subheading = get_field("subheading",$post_id);
+			
+			
+		
+		?>
           <div class="column_third _x2-padding">
             
 
             <div class="_group white_bg">
               <div class="text_block left">
-                <h5 class="navy">Gaurav Bhasin</h5>
-                <h6 class="navy">Description</h6>
+                <h5 class="navy"><?php echo $title; ?></h5>
+                <h6 class="navy"><?php echo $subheading; ?></h6>
                 <div class="stars yellow">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+				
+					<?php if($rating>=1){ ?><i class="fa-solid fa-star"></i><?php } ?>
+                  <?php if($rating>=2){ ?><i class="fa-solid fa-star"></i><?php } ?>
+                  <?php if($rating>=3){ ?><i class="fa-solid fa-star"></i><?php } ?>
+                  <?php if($rating>=4){ ?><i class="fa-solid fa-star"></i><?php } ?>
+                  <?php if($rating>=5){ ?><i class="fa-solid fa-star"></i><?php } ?>
                 </div>
 
                 <!-- <div class="large _regular"> -->
                   <p class="normal">                   
-                    For someone who has not ridden the bike for 
-last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                  </p>                  
+                    <?php
+							$exc = get_the_excerpt($post_id);
+
+							//$posta = get_the_content();
+							
+							$c1 = strlen($exc);
+
+							$excer =expandable_excerpt($exc,$post_id);
+							echo $excer;
+							
+							//echo $posta;
+						?>
+                  </p>
+
+						<!-- <a href="/?p=<?php echo $post_id; ?>">Read more</a> -->
+						<!-- <?php echo $c1; ?>   -->
+		
                 <!-- </div> -->                         
               </div>
             </div>
 
           </div>
-
-          <div class="column_third _x2-padding">
-            
-
-            <div class="_group white_bg">
-              <div class="text_block left">
-                <h5 class="navy">Gaurav Bhasin</h5>
-                <h6 class="navy">Description</h6>
-                <div class="stars yellow">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    For someone who has not ridden the bike for 
-last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                  </p>                  
-                <!-- </div> -->                         
-              </div>
-            </div>
-
-          </div>
-
-          <div class="column_third _x2-padding">
-            
-
-            <div class="_group white_bg">
-              <div class="text_block left">
-                <h5 class="navy">Gaurav Bhasin</h5>
-                <h6 class="navy">Description</h6>
-                <div class="stars yellow">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    For someone who has not ridden the bike for 
-last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                  </p>                  
-                <!-- </div> -->                         
-              </div>
-            </div>
-
-          </div>
+		  <?php
+		 }// end for each 
+		} // end if 
+		
+		?>
 
         </div>        
 
     </section>
-
+<!-- 
     <section class="service bg_cover centered ">
 
       <div class="_row ">   
@@ -619,14 +556,12 @@ last twenty years, getting an e-bike was a game changer. It’s so easy to ride 
 
           <div class="_wrap">
             <div class="text_block center">
-              <!-- <div class="large _regular"> -->
                 <h2 class="white">
                   Service and support
                 </h2>
                 <p class="normal white">
                   No matter where you ride, we have you and your bike covered. With a range of services to support you at every turn, you can protect your bike against theft, be alerted if someone tries to snatch it, and get help whenever and wherever you need it.
                 </p>
-              <!-- </div> -->
               <div class="button_wrap_center_vert">
 
                 <button class="button blue_btn">Book a time</button>
@@ -639,26 +574,122 @@ last twenty years, getting an e-bike was a game changer. It’s so easy to ride 
         </div>
       </div>      
     </section>
+ -->
+    
+    <section class="how_it_works _no-flex white_bg">
 
-    <!-- 
-    <section class="buttons">
-      <div class="_wrap">
-        <div class="text_block">
-          
-          <div class="intro">
-            Try some buttons
+      <div class="_row _no-margin">   
+            <!-- <div class="column_10"></div>      -->
+            <div class="column_100 centered">
+
+                <div class="_wrap">
+                    <div class="text_block center">
+                        <h2 class="blue">An eBike to grow with</h2>
+                    </div>
+
+                </div>
+
+            </div>
+      </div>
+
+      <div class="carousel"> 
+        <!-- Flickity HTML init -->
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+
+          <div class="gallery-cell">
+              <div class="cell">
+
+                  <div class="_panel bg_cover ">
+                      
+                      <!-- <div class="bg_image_panel">
+                          <img src="<?php echo $child_theme_dir_file; ?>/img/family/how_it_works_consultant.jpg">
+                      </div> -->
+
+                      <div class="text_wrap white _x2-padding">
+                          <h3 class="title center alpha" >Chat with our team</h3>
+                          <div class="desc">
+                              <p class="normal white center">Our experts can talk you through all your options and help you decide on the perfect bike to suit your lifestyle needs.</p>
+                          </div>
+
+                      </div>
+                  </div>
+              
+              </div>                
           </div>
 
-          <div class="button_wrap_left">
-            <button class="button white_btn">Get Started</button>
-            <button class="button ghost_white">Learn more</button>
-        </div>
+          <div class="gallery-cell">
+              <div class="cell">
+
+                  <div class="_panel bg_cover">
+                      
+                      <!-- <div class="bg_image_panel">
+                          <img src="<?php echo $child_theme_dir_file; ?>/img/family/how_it_works_consultant.jpg">
+                      </div> -->
+
+                      <div class="text_wrap white _x2-padding">
+                          <h3 class="title center alpha">Door to door delivery</h3>
+                          <div class="desc">
+                              <p class="normal white center">Complementary delivery includes a 40 minute orientation on your new bike.</p>
+                          </div>
+
+                      </div>
+                  </div>
+              
+              </div>                
+          </div>
+
+
+          <div class="gallery-cell">
+              <div class="cell">
+
+                  <div class="_panel bg_cover">
+                      
+                      <!-- <div class="bg_image_panel">
+                          <img src="<?php echo $child_theme_dir_file; ?>/img/family/how_it_works_consultant.jpg">
+                      </div> -->
+
+                      <div class="text_wrap white _x2-padding">
+                          <h3 class="title center alpha">Here when you need&nbsp;us</h3>
+                          <div class="desc">
+                              <p class="normal white center">
+                                  For peace of mind we include locks, an alarm and roadside assistance. If you have maintenance issues, we’ll come to you, so you’ll never be stranded.
+                              </p>
+                          </div>
+
+                      </div>
+                  </div>
+              
+              </div>                
+          </div>
+
+          <div class="gallery-cell">
+            <div class="cell">
+
+              <div class="_panel bg_cover">                                        
+
+                <div class="text_wrap white _x2-padding">
+
+                  <h3 class="title center alpha">Flexible, for life</h3>
+                  <div class="desc">
+                      <p class="normal white center">
+                          Things change, that’s why our subscription is flexible. Swap accessories or upgrade your bike at any time.
+                      </p>
+                  </div>
+
+                </div>
+              </div>
+                
+            </div>                
+          </div>
 
 
         </div>
-      </div>
-    </section> 
-    -->
+
+      </div>        
+
+    </section>
+
+
 
   </main>
 

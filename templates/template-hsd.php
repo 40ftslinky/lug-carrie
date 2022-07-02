@@ -104,8 +104,8 @@ get_header(); ?>
                             
                             <div class="button_wrap_left_vert">
             
-                                <button class="button blue_btn">Configure your Tern HSD</button>      
-                                <a href="/accessories?=hsd" class="button ghost_naked_btn">See the accessories</a>      
+                                <button class="button blue_btn configure_hsd">Configure your Tern HSD</button>      
+                                <a href="/accessories?type=hsd" class="button ghost_naked_btn">See the accessories</a>      
             
                             </div>            
                         </div>
@@ -162,7 +162,7 @@ get_header(); ?>
                 <div class="column_40 centered">
     
                     <div class="_wrap">
-                    <div class="text_block center">
+                        <div class="text_block center">
 
                             <h2 class="white">
                                 Big Features. Small Package.
@@ -176,10 +176,10 @@ get_header(); ?>
 
                             <div class="button_wrap_center_vert">
         
-                            <button class="button blue_btn">Configure HSD</button>
+                                <button class="button blue_btn configure_hsd">Configure your Tern HSD</button>      
         
-                        </div>            
-                    </div>
+                            </div>            
+                        </div>
                     </div>
         
                 </div>

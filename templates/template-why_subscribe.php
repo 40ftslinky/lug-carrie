@@ -390,7 +390,7 @@ get_header(); ?>
     
                     <div class="_wrap">
                         <div class="text_block center">
-                            <h2 class="blue">An eBike to grow with</h2>
+                            <h2 class="blue">How it works</h2>
                         </div>
         
                     </div>
@@ -462,7 +462,7 @@ get_header(); ?>
                             <div class="_panel bg_cover">
 
                                 <div class="text_wrap white _x2-padding">
-                                    <h3 class="title center alpha">Flexible, for life</h3>
+                                    <h3 class="title center alpha">When life changes</h3>
                                     <div class="desc">
                                         <p class="normal white center">
                                             Things change, that’s why our subscription is flexible. Swap accessories or upgrade your bike at any time.

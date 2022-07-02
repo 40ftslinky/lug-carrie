@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the homepage.
+ * The template for displaying the HSD page.
  *
  * This page template will display any functions hooked into the `homepage` action.
  * By default this includes a variety of product displays and the page content itself. To change the order or toggle these components
@@ -19,37 +19,19 @@ get_header(); ?>
 
 <main>
 
-        <section class="hero bg_cover ">
-        <!-- autoplay -->
-        <!-- <video  muted loop id="backgroundVideo">
-            <source src="./video/rain.mp4" type="video/mp4">
-        </video> -->
-
-        <!-- <div class="overlay"></div> -->
-        <!-- <div class=""> -->
+<section class="hero bg_cover ">
+            
             <div class="_row">        
                 <div class="column_50">
 
                     <div class="_wrap">
                         <div class="text_block center">
-                            <h1>The HSD.<br>
+                            <h1>The Tern HSD.<br>
                                 Petite power.</h1>
                             <div class="large _regular">
-                                The ultimate urban mobility option for riders looking for a more positive way to get around. With a top speed of 25 km and 170kgs, experts agree the HSD could easily replace a car in the city.                            </div>
-                            <div class="button_wrap_center">
-                            <!-- 
-                            <div class="play_button" id="playBtn" onclick="videoControl()"  >
-                                <svg class="play" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g>
-                                <path class="circle" d="M26.584 53.168C41.266 53.168 53.168 41.2676 53.168 26.584C53.168 11.9023 41.266 0 26.584 0C11.902 0 0 11.9023 0 26.584C0 41.2676 11.902 53.168 26.584 53.168Z" fill="#00C1DC"/>
-                                <path class="arrow"  d="M36.1075 26.9304L21.2863 35.167C21.1149 35.2637 20.9684 35.2749 20.8453 35.2004C20.7228 35.126 20.6613 34.9922 20.6613 34.7988V18.3701C20.6613 18.1768 20.7228 18.0427 20.8453 17.9683C20.9684 17.8941 21.1149 17.9053 21.2863 18.002L36.1075 26.2385C36.2789 26.3352 36.3644 26.4504 36.3644 26.5845C36.3644 26.7183 36.2789 26.8337 36.1075 26.9304V26.9304Z" fill="white"/>
-                                </g>                    
-                                </svg>                    
+                                The ultimate urban option for riders looking for a more efficient way to get around. With a top speed of 25 km/hour and the ability to carry all your stuff, the Tern HSD could positively replace a car in the city.
                             </div>
-
-                            <div class="" id="buttonText">Play Video</div>
-                            -->
-                            </div>            
+                                    
                         </div>
                     </div>
 
@@ -67,124 +49,110 @@ get_header(); ?>
             </div>
 
         <!-- </div> -->
+        </section>        
+
+        <section class="meet_gsd centered ">
+            <div class="_row ">             
+                
+                
+                <div class="column_60">
+                    <div class="video_wrap">
+                        <video autoplay muted loop id="inlineVideo" preload="none" poster="./img/bikes/HSD_meet_the_gsd.jpg">
+                            <source src="<?php echo $child_theme_dir_file; ?>/video/HSD_loop.mp4" type="video/mp4">
+                        </video>                                                               
+                    </div>
+                </div> 
+        
+                
+    
+                <div class="column_40 centered">
+    
+                    <div class="_wrap">
+                        <div class="left">
+                            <h3 class="blue">Meet the Tern HSD</h3>
+                            <!-- <p class="normal">
+                                One of the most important parts of any electric bike are the electrics. Bosch is one of the top names in the business of e-bike motors and batteries. These deliver a ride that’s smooth and comfortable. The&nbsp;battery charges easily and quickly, and can charge fully in around 4&nbsp;hours. A full charge will last for up to 110km of riding, depending on how much pedal assistance you are using.
+                            </p> -->
+                            
+                            
+                            
+                            <div class="">
+                                <div class="list_wrap">
+                                    <ul class="icon_list">
+                                        <li class="icon_cargo">
+                                            Carry precious cargo x1, or up to 170kg
+                                        </li>
+                                        <li class="icon_parking">
+                                            20+ available accessories and add-ons
+                                        </li>
+                                        <li class="icon_range">
+                                            Bosch battery w/ range of up to 110km
+                                        </li>
+                                        <li class="icon_power">
+                                            Bosch Active Line Plus motor w/ 270% support
+                                        </li>
+                                        <li class="icon_comfortable">
+                                            Suspension, 190-lumen built-in light + mudguards
+                                        </li>
+                                        <li class="icon_solar">
+                                            Gates belt drive. Smooth ride, no grease
+                                        </li>
+                                    </ul>
+                                </div>                   
+                            </div>
+                            
+                            
+                            <div class="button_wrap_left_vert">
+            
+                                <button class="button blue_btn configure_hsd">Configure your Tern HSD</button>      
+                                <a href="/accessories?type=hsd" class="button ghost_naked_btn">See the accessories</a>      
+            
+                            </div>            
+                        </div>
+                    </div>
+    
+                </div>
+            </div>        
+    
         </section>
 
-
         <section class="meet_hsd centered gray_100_bg">
-        <!-- <div class=""> -->
             <div class="_row _no-margin">   
                 <div class="column_40 centered">
 
                     <div class="_wrap">
                         <div class="text_block center">
                             <h3 class="blue">
-                                Cheaper than a weekly PT ticket.
+                                Tern. Only the best.
                             </h3>
 
                             <p class="normal ">
-                                If the stop-start of trams, trams, buses, red lights and traffic jams are getting you down, enjoy the bike lane with the HSD. It’s invariably faster and easier and the light exercise will give have you arriving ready to go. You can store the bike on it’s tail at either end of your commute. A single key locks the wheel and the engine for security. The HSD is shorter that a regular bike, so it super easy to ride and store.
+                                Lug+Carrie uses only award-winning Tern eBikes.
+                            </p>
+                            <p class="normal ">
+                                It’s because they’re fully customisable, designed to be fit with seats, bags and racks. 
+                            </p>
+                            <p class="normal ">
+                                And because the designs are smart. The Tern HSD is the same size as a regular bicycle, but can carry a big load: it has passed European cargo bike testing standards, meaning it can handle your work gear + a happy passenger, and still ride like a dream. 
                             </p>                  
 
                         </div>
 
                         <div class="button_wrap_center_vert">
-                            <button class="button blue_btn getstarted">Get Started</button>
+                            <button class="button blue_btn">Get Started</button>
                         </div>
 
                     </div>
 
                 </div>
-                
+                                
                 <div class="column_60">
-                    <div class="video_wrap">
-                        <!-- autoplay -->
-                        <video  muted loop id="inlineVideo" preload="none" poster="<?php echo $child_theme_dir_file; ?>/img/bikes/HSD_cheaper.jpg">
-                            <source src="./video/rain.mp4" type="video/mp4">
-                        </video>
-
-                        <div class="video_overlay_wrap">
-                            <div class="play_button" id="playBtn_white" onclick="videoControlInline()"  >                    
-                                <svg class="play" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g >
-                                        <path class="circle" d="M52.168 26.584C52.168 40.7153 40.7137 52.168 26.584 52.168C12.4542 52.168 1 40.7152 1 26.584C1 12.4546 12.4543 1 26.584 1C40.7137 1 52.168 12.4546 52.168 26.584Z" stroke="white" stroke-width="2"/>
-                                        <path class="arrow" d="M36.1075 26.9304L21.2863 35.167C21.1149 35.2637 20.9684 35.2749 20.8453 35.2004C20.7228 35.126 20.6613 34.9922 20.6613 34.7988V18.3701C20.6613 18.1768 20.7228 18.0427 20.8453 17.9683C20.9684 17.8941 21.1149 17.9053 21.2863 18.002L36.1075 26.2385C36.2789 26.3352 36.3644 26.4504 36.3644 26.5845C36.3644 26.7183 36.2789 26.8337 36.1075 26.9304V26.9304Z" fill="white"/>
-                                    </g>                        
-                                </svg>                                            
-                            </div>
-
-                            <div class="white" id="buttonText_white">Watch Video</div>
-                        </div>                    
-
-                    
+                    <div class="img_wrap">
+                    <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/bikes/HSD_cheaper.jpg" loading="lazy"/>
                     </div>
                 </div>
             </div>        
 
-        <!-- </div> -->
-        </section>
-
-        <section class="meet_gsd centered ">
-            <!-- <div class=""> -->
-            <div class="_row ">             
-                
-                <div class="column_60">                
-					<div class="video_wrap">
-						<!-- autoplay -->
-						<video autoplay muted loop id="inlineVideo" preload="none" poster="<?php echo $child_theme_dir_file; ?>/img/bikes/HSD_meet_the_gsd.jpg" loading="lazy">
-							<source src="<?php echo $child_theme_dir_file; ?>/video/HSD_loop.mp4" type="video/mp4">
-						</video>                                                               
-					</div>
-				</div>
-    
-                <div class="column_40 centered">
-    
-                <div class="_wrap">
-                    <div class="left">
-                    <h3 class="blue">Meet the HSD</h3>
-                    <!-- <p class="normal">
-                        One of the most important parts of any electric bike are the electrics. Bosch is one of the top names in the business of e-bike motors and batteries. These deliver a ride that’s smooth and comfortable. The&nbsp;battery charges easily and quickly, and can charge fully in around 4&nbsp;hours. A full charge will last for up to 110km of riding, depending on how much pedal assistance you are using.
-                    </p> -->
-                    
-                    
-                    
-                    <div class="">
-                        <div class="list_wrap">
-                            <ul class="icon_list">
-                                <li class="icon_cargo">
-                                    Precious Cargo x1
-                                </li>
-                                <li class="icon_parking">
-                                    FlatFold and Vertical Parking (only takes 5 secs)
-                                </li>
-                                <li class="icon_range">
-                                    Battery Range – 110Km
-                                </li>
-                                <li class="icon_power">
-                                    Bosch Power - 85 Nm of torque
-                                </li>
-                                <li class="icon_comfortable">
-                                    Comfortable Suspension
-                                </li>
-                                <li class="icon_solar">
-                                    Carbon Neutral with your Solar Home  
-                                </li>
-                            </ul>
-                        </div>                   
-                    </div>
-                    
-                    
-                    <div class="button_wrap_left_vert">
-    
-                        <button class="button blue_btn">Configure HSD</button>      
-                        <button class="button ghost_naked_btn">Learn More ></button>      
-    
-                    </div>            
-                    </div>
-                </div>
-    
-                </div>
-            </div>        
-    
         </section>
 
         <section class="options bg_cover centered ">
@@ -192,134 +160,139 @@ get_header(); ?>
             <div class="_row ">
                 
                 <div class="column_40 centered">
-      
+    
                     <div class="_wrap">
-                      <div class="text_block center">
-                        <!-- <div class="large _regular"> -->
+                    <div class="text_block center">
+
                             <h2 class="white">
-                                Bike options
+                                Big Features. Small Package.
                             </h2>
                             <p class="normal white">
-                                Configure your HSD just the way you want it. Our ecosystem of accessories includes a huge range of cargo-carrying options designed to keep your load secure and stable. You can access our configurator here.
+                                The Tern HSD has everything you need to do life by bike in the city. Those small wheels build confidence by keeping the bike nimble, and stable.
+                                </p>
+                                <p class="normal white">
+                                Rugged Schwalbe tyres protect against punctures, and Magura hydraulic brakes will have you feeling in charge.
                             </p>
-                        <!-- </div> -->
-                        <div class="button_wrap_center_vert">
-          
+
+                            <div class="button_wrap_center_vert">
+        
                             <button class="button blue_btn">Configure HSD</button>
-          
+        
                         </div>            
-                      </div>
                     </div>
-          
-                  </div>
+                    </div>
+        
+                </div>
                 
                 <div class="column_60">
                     
                 </div>
-              
+            
             </div>      
-          </section>
+        </section>
 
         <section class="testimonials centered ">
-            <!-- <div class=""> -->
-              <div class="_row ">             
+            <div class="_row ">             
                 
                 <div class="column_100">
-                  <div class="_wrap ">
+                <div class="_wrap ">
                     <div class="text_block center">
-                      <h2 class="navy">5 star reviews</h2>
+                        <h2 class="navy">5 star reviews</h2>
+                        <p class="large">
+                            Over 1,000 customers have made the decision to leave the car at home more often and try an Lug+Carrie eBike.
+                        </p>
+                        <p class="large">
+                            See what they have to say about the Tern HSD. 
+                        </p>
                     </div>
-                  </div>
                 </div>
-              </div>
-              <div class="_row _max_width_1600 three_col">             
+                </div>
+            </div>
+            <div class="_row _max_width_1600 three_col">             
                 
-                <div class="column_third _x2-padding">
-                  
-      
-                  <div class="_panel white_bg">
+                <div class="column_third ">
+                
+    
+                <div class="_panel white_bg">
                     <div class="text_block left">
-                      <h5 class="navy">Gaurav Bhasin</h5>
-                      <h6 class="navy">Description</h6>
-                      <div class="stars yellow">
+                    <h5 class="navy">Gaurav Bhasin</h5>
+                    <h6 class="navy">Description</h6>
+                    <div class="stars yellow">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                      </div>
-      
-                      <!-- <div class="large _regular"> -->
-                        <p class="normal">                   
-                          For someone who has not ridden the bike for 
-      last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                        </p>                  
-                      <!-- </div> -->                         
                     </div>
-                  </div>
-      
+    
+                    <!-- <div class="large _regular"> -->
+                        <p class="normal">                   
+                        For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
+                        </p>                  
+                    <!-- </div> -->                         
+                    </div>
                 </div>
-      
-                <div class="column_third _x2-padding">
-                  
-      
-                  <div class="_panel white_bg">
+    
+                </div>
+    
+                <div class="column_third ">
+                
+    
+                <div class="_panel white_bg">
                     <div class="text_block left">
-                      <h5 class="navy">Gaurav Bhasin</h5>
-                      <h6 class="navy">Description</h6>
-                      <div class="stars yellow">
+                    <h5 class="navy">Gaurav Bhasin</h5>
+                    <h6 class="navy">Description</h6>
+                    <div class="stars yellow">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                      </div>
-      
-                      <!-- <div class="large _regular"> -->
-                        <p class="normal">                   
-                          For someone who has not ridden the bike for 
-      last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                        </p>                  
-                      <!-- </div> -->                         
                     </div>
-                  </div>
-      
+    
+                    <!-- <div class="large _regular"> -->
+                        <p class="normal">                   
+                        For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
+                        </p>                  
+                    <!-- </div> -->                         
+                    </div>
                 </div>
-      
-                <div class="column_third _x2-padding">
-                  
-      
-                  <div class="_panel white_bg">
+    
+                </div>
+    
+                <div class="column_third ">
+                
+    
+                <div class="_panel white_bg">
                     <div class="text_block left">
-                      <h5 class="navy">Gaurav Bhasin</h5>
-                      <h6 class="navy">Description</h6>
-                      <div class="stars yellow">
+                    <h5 class="navy">Gaurav Bhasin</h5>
+                    <h6 class="navy">Description</h6>
+                    <div class="stars yellow">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                      </div>
-      
-                      <!-- <div class="large _regular"> -->
-                        <p class="normal">                   
-                          For someone who has not ridden the bike for 
-      last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                        </p>                  
-                      <!-- </div> -->                         
                     </div>
-                  </div>
-      
+    
+                    <!-- <div class="large _regular"> -->
+                        <p class="normal">                   
+                        For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
+                        </p>                  
+                    <!-- </div> -->                         
+                    </div>
                 </div>
-      
-              </div>        
-      
-          </section>
+    
+                </div>
+    
+            </div>        
+    
+        </section>
       
 
 
 
-        </main>
+    </main>
 
 
 <!--  end of template -->

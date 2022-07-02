@@ -1,43 +1,43 @@
 /* typography */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/fontawesome.min.css');
+    /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> */
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/fontawesome.min.css');
 
-:root {
-    --base-font-family: 'Poppins',Arial,sans-serif;
-    --base-line-height: 1.6;
-    --base-font-percent: 62.5%;
-    --base-font-size: 14px;
-    --thin-font-weight: 300;
-    --base-font-weight: 400;
-    --large-font-weight: 500;
-    --link-font-weight: 600;
-    --font-size-base: 1rem;
-    --font-size-xs: 0.6rem;
-    --font-size-sm: 0.8rem;
-    --font-size-md: 1.2rem;
-    --font-size-lg: 1.4rem;
-    --font-size-xl: 2.2rem;
-    --font-size-xxl: 2.4rem;
-    --font-size-jumbo: 7.2rem;
-    --font-size-jumbo-sm: 4.2rem;
-    --font-awesome: 'FontAwesome';
-}
+    :root {
+        --base-font-family: 'Poppins',Arial,sans-serif;
+        --base-line-height: 1.6;
+        --base-font-percent: 62.5%;
+        --base-font-size: 14px;
+        --thin-font-weight: 300;
+        --base-font-weight: 400;
+        --large-font-weight: 500;
+        --link-font-weight: 600;
+        --font-size-base: 1rem;
+        --font-size-xs: 0.6rem;
+        --font-size-sm: 0.8rem;
+        --font-size-md: 1.2rem;
+        --font-size-lg: 1.4rem;
+        --font-size-xl: 2.2rem;
+        --font-size-xxl: 2.4rem;
+        --font-size-jumbo: 7.2rem;
+        --font-size-jumbo-sm: 4.2rem;
+        --font-awesome: 'FontAwesome';
+    }
 
-html {font-size: 100%;} /*14px*/
+    html {font-size: 100%;} /*14px*/
 
-body {
-    font-family: var(--base-font-family);
-    font-weight: 400;
-    font-weight: var(--base-font-weight);
-    line-height: 1.6;
-    line-height: var(--base-line-height);
-	font-style: normal;
-    color: var(--theme-dark);
-}
+    body {
+        font-family: var(--base-font-family);
+        font-weight: 400;
+        font-weight: var(--base-font-weight);
+        line-height: 1.6;
+        line-height: var(--base-line-height);
+        font-style: normal;
+        color: var(--theme-dark);
+    }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Poppins';
@@ -255,7 +255,7 @@ h1,
 
 h2,
 .h2 {
-    --min-fs: 1;
+    --min-fs: 1.75;
     --max-fs: 3.5;
     letter-spacing: -0.5;
 }

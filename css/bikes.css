@@ -66,28 +66,36 @@
 }
 
 
-.loop {
-    position: absolute;
+.loop, video#inlineVideo {
+    /* position: absolute;
     left: 50%;
-    top: 50%;
-    width: 60vw;
+    top: 50%; */
+    /* width: 60vw; *
     transform: translate(-50%, -50%);
+    */
+    transform: scale(1.5);
 }
 @media screen and ( max-width: 1080px ) {
-    [class*="meet"] .video_wrap,
-    .meet_gsd .video_wrap {
-        /* min-height: 300px; */
+    [class*="meet"] {
+        overflow-x: hidden;
     }
-    .loop {
+    [class*="meet"] .video_wrap,
+    .meet_gsd .video_wrap,
+    [class*="meet_"] .video_loop {
+        width: 140vw
+    }
+    .loop, video#inlineVideo {
         width: 100vw;
-    }   
+        transform: scale(1);
+        margin: auto;
+    } 
 }
 @media screen and ( max-width: 680px ) {
     [class*="meet"] .video_wrap,
     .meet_gsd .video_wrap {
         min-height: 300px;
     } 
-    .loop {
+    .loop, video#inlineVideo {
         min-height: 75vw;
     }
 }
@@ -116,6 +124,15 @@ section.best .img_wrap img {
 /* meet_gsd */
 
 .meet_gsd {}
+
+@media screen and ( max-width: 1080px ) {
+    .meet_gsd {padding-top: 0;}
+}
+@media screen and ( max-width: 1080px ) {
+    .meet_gsd [class*="_row"] {
+        gap: 0;
+    }
+}
 
 .icon_list { text-align: left; padding-left: 0;}
 
@@ -157,6 +174,17 @@ section.best .img_wrap img {
 }
 
 
+/* video loop */
+
+@media screen and ( max-width: 1080px ) {
+    [class*="meet_"] .column_60 {
+        align-items: center;
+    }
+    [class*="meet_"] .video_loop {
+        width: 140vw
+    }
+}
+
 
 
 /* ------------------------------------------- */
@@ -164,12 +192,14 @@ section.best .img_wrap img {
 
 
 .options {
-    background-image: url("../img/bikes/GSD_options.jpg") ;
+    /* background-image: url("../img/bikes/GSD_options.jpg") ; */
     width:100%;
     height: var(--calc_mx_height);
 }
-.hsd .options {
-    background-image: url("../img/bikes/HSD_safety.jpg");
+.hsd .options,
+[id*=hsd]  .options {
+    /* background-image: url("../img/bikes/HSD_safety.jpg"); */
+    background-image: url("http://lug.screenrage.com.au/wp-content/uploads/2022/07/LugCarrie_11235_RET.jpg");
 }
 
 

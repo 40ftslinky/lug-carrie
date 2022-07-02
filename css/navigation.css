@@ -594,7 +594,7 @@ nav ul li ul li {
     .reverse .burger,
     .reverse .burger:after
     {
-        border-bottom: 4px solid var(--white);
+        /* border-bottom: 4px solid var(--white); */
     }
     
 }

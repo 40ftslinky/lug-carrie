@@ -23,8 +23,8 @@
 	max-height: 85vh;
 	width: 85vw;
 	position:fixed;
-	top: calc(50% - 1.5rem);
-	left:calc(50% - 1.5rem);
+	top: 50%;
+	left: 50%;
 	transform:translate(-50%,-50%);
 }
 	
@@ -59,6 +59,12 @@
 	width: 100%;
 	margin:0;
 }
+@media screen and (max-width:1080px){    
+	#fullscreen2 ._row {
+		gap: 0;
+	}
+}
+
 #fullscreen2 section {
 	padding:0;
 }
@@ -67,10 +73,11 @@
 	background-color: white;
 	padding:1.5rem;
 	margin:2.5vh 2.5vw;
-	max-height: 90vh;
-	width: 90vw;
+	max-height: 85vh;
+	width: 85vw;
+	max-width: calc((85vh - 1.5rem) / 0.5625);
 	position:absolute;
-	top: 50%;
+	top: calc(50% - 2.5vw);
 	left:calc(50% - 2.5vw);
 	transform:translate(-50%,-50%);
 }
@@ -83,7 +90,7 @@
 }
 @media screen and (max-width:600px){    
 	#fullscreen2 .accessory_detail{
-		max-width: calc(90% - 2rem);
+		max-width: calc(95% - 2rem);
 	}
 }
 
@@ -91,6 +98,7 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 	max-height: calc(85vh - 4rem);
+	display: block;
 }
 
 #fullscreen2 .accessory_detail .img_wrap{
@@ -104,11 +112,21 @@
 		/* width: 50%; */
 	}
 }
+@media screen and (max-width:1080px){    
+	#fullscreen2 .accessory_detail .text_block {
+		padding: 1rem 0;
+	}
+}
 
 #fullscreen2 h3 {
 	--max-fs: 2.5;
 }
 
+@media screen and (max-width:1080px){    
+	#fullscreen2 .accessory_detail .button_wrap_left {
+		margin-bottom: 0;
+	}
+}
 
 #fullscreen2 .close{
 	width: 2.5rem;
@@ -300,4 +318,11 @@
 .Calendar--calendar input[type=radio]:checked .confirm_booking_time,
 .Quiz--calendar ul li input:checked+div .button {
     width: 100%;
+}
+
+
+/* hide footer on config page */
+#build-your-bike footer,
+#configure footer{
+	display: none;
 }

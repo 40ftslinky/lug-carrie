@@ -79,6 +79,7 @@ section.how_it_works {
 
 #why_subscribe .how_it_works .gallery-cell:nth-of-type(4) .bg_cover {
     background-image: url('../img/why_subscribe/why_subscribe_how_it_works_accessories.jpg');
+    background-position: center right;    
 }
 
 .how_it_works .bg_cover::before {
@@ -134,6 +135,11 @@ section.how_it_works {
 
 .flexible img {
   min-height: 66vh;
+}
+@media screen and ( max-width: 1080px ) {
+  .flexible img {
+    min-height: unset;
+  }
 }
 
 /* ------------------------------------------- */

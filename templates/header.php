@@ -33,8 +33,24 @@ wp_head();
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+	<?php
+		global $post;
+		$post_slug = $post->post_name;
+		
+		if($post_slug=="book-a-test-ride" || $post_slug=="book-a-consultation"){
+		?>
+		<!-- 
+		<link rel="stylesheet"  media="all" id="css-tail-wind" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" />
+		-->
+		<link rel="stylesheet"  media="all" id="css-font-awesome"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+		<link rel="stylesheet" media="all"  id="css-leadobo"   href="/wp-content/themes/lug-carry-storefront-child/css/calendar_edit.css"/>   
+		<?php
+		}
+	?>
   <link rel="stylesheet" href="<?php echo $child_theme_dir_file; ?>/css/normalize.css">
+  
+
+  
   <link rel="stylesheet" href="<?php echo $child_theme_dir_file; ?>/css/main.css">
   <link rel="stylesheet" href="<?php echo $child_theme_dir_file; ?>/css/reset.css">
   <link rel="stylesheet" href="<?php echo $child_theme_dir_file; ?>/css/custom.css">
@@ -43,8 +59,7 @@ wp_head();
   <meta name="theme-color" content="#fafafa">
 </head>
 <?php 
-    global $post;
-    $post_slug = $post->post_name;
+
 
 	if( $post_slug=="why-subscribe"){
 		 $post_slug="why_subscribe";
@@ -67,8 +82,14 @@ wp_head();
 		$single_style="lifestyle_article";
 	}
 	
+	$pt = get_post_type();
+	
+	if($pt=="review"){
+		$page_id="review";
+	}
+	
 ?>
-<body class="<?php echo $post_slug; ?> <?php echo $single_style; ?>" id="<?php echo $page_id; ?>">
+<body class="<?php echo $post_slug; ?> <?php echo $pt; ?> <?php echo $single_style; ?>" id="<?php echo $page_id; ?>">
 
   <header id="header">
     <div class="logo_wrap">
@@ -107,7 +128,7 @@ wp_head();
 
 
     <div id="fullscreen" class="fullscreen">
-            <div class="close"></div>
+            <div class="close getstarted"></div>
       <div class="_row three_col">             
           
         <div class="column_third ">
@@ -125,7 +146,7 @@ wp_head();
 
               <strong class="navy">Talk to us</strong>
               <p class="normal">
-                  Let one of our team answer any questions to help get you started.
+              Ask us anything!<br>Let one of our team answer any questions to help get you started.
               </p>
               <div class="button_wrap_center _no-margin_vert">
                   <a href="book-a-consultation" class="button blue_btn">Book a consultation</a>

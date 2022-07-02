@@ -166,7 +166,7 @@ section.why_subscribe .img_wrap img {
 }
 @media screen and ( max-width: 1080px ) {
     section.why_subscribe .img_wrap img {
-        /* height: 90vw; */
+        height: unset;
     }
 }
 
@@ -236,12 +236,10 @@ section.why_subscribe [class*="column_60"] {
     overflow: hidden
 }
 
+
 [class*="set_up-"] .gallery-cell img {
     flex-shrink: 0;
-    /* min-width: 100%;
-    min-height: 100%; */
     height:55vh;
-    /* transform: scale(0.75) translateY(-10%); */
     -webkit-transition: all 0.5s ease-in-out ;
         transition: all 0.5s ease-in-out ;
 }
@@ -250,8 +248,6 @@ section.why_subscribe [class*="column_60"] {
 }
 
 [class*="set_up-"] .gallery-cell.is-selected img {
-    /* padding: 0 2%; */
-    height:53vh;
     height: calc(var(--calc_mx_height) - 5vh - 255px);
     object-fit: cover;
     -webkit-transition: all 0.5s ease-in-out ;
@@ -261,14 +257,37 @@ section.why_subscribe [class*="column_60"] {
 @media screen and ( max-width: 1080px ) {
     [class*="set_up-"] .gallery-cell img {
         transform: unset;
-        /* min-height: 40vh; */
         width:unset;
         max-width:100vw;
-
     }
+
     [class*="set_up-"] .gallery-cell .img_wrap {
         width: auto;
-        max-width:100vw;
+        max-width:100%;
+    }
+    [class*="set_up-"] .gallery-cell.is-selected .img_wrap {
+
+    }
+}
+@media screen and ( max-width: 1080px ) {
+    [class*="set_up-"] {
+        min-height: unset;
+    }
+    [class*="set_up-"] .flickity-viewport {
+        height: calc(75vw + var(--desc_height)) !important;
+    }
+    [class*="set_up-"] .flickity-slider {
+        height: unset !important;
+    }
+    [class*="set_up-"] .gallery-cell {
+        height: unset;
+    }
+    [class*="set_up-"] .gallery-cell .img_wrap {
+        height: unset;
+    }
+    [class*="set_up-"] .gallery-cell img,
+    [class*="set_up-"] .gallery-cell.is-selected img {        
+        height: calc(80vw);
     }
 }
 
@@ -313,7 +332,11 @@ section.why_subscribe [class*="column_60"] {
     margin-left: auto;
     margin-right: auto;
 }
-
+@media screen and ( max-width: 1080px ) {
+    [class*="set_up-"] .desc {
+        max-width: 80%;
+    }
+}
 
 [class*="set_up-"] button[class*=".flickity"],
 [class*="set_up-"] .flickity-prev-next-button {
@@ -343,6 +366,11 @@ section.why_subscribe [class*="column_60"] {
 .why_choose [class*="row"] {
     gap:3rem;
 }
+@media screen and ( max-width: 1080px ) {
+    .why_choose [class*="row"] {
+        gap:1;
+    }
+}    
 
 .why_choose .img_wrap {
     
@@ -350,6 +378,11 @@ section.why_subscribe [class*="column_60"] {
 @media screen and ( max-width: 1400px ) {
     .why_choose .img_wrap img {
         height: 70vh;
+    }
+}
+@media screen and ( max-width: 1080px ) {
+    .why_choose .img_wrap img {
+        height: unset;
     }
 }
 
@@ -596,6 +629,7 @@ section.service.bg_cover::before {
 
  .how_it_works .gallery-cell:nth-of-type(4) .bg_cover {
     background-image: url('../img/why_subscribe/why_subscribe_how_it_works_accessories.jpg');
+    background-position: center right;
 }
 
 

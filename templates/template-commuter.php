@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the homepage.
  *
@@ -7,7 +8,7 @@
  * use the Homepage Control plugin.
  * https://wordpress.org/plugins/homepage-control/
  *
- * Template name: Family page - Lug & Carrie
+ * Template name: Commuter - Lug & Carrie
  *
  * @package storefront
  */
@@ -18,32 +19,28 @@ $child_theme_dir_file = "/wp-content/".$child_theme_dir_split_path[1];
 
 get_header(); ?>
 
-
-
-
     <main>
 
         <section class="hero bg_cover ">
             <!-- autoplay -->
-            <video class="lazy" autoplay muted loop playsinline poster="<?php echo $child_theme_dir_file; ?>/img/family/family_fullpage_bg.jpg" id="backgroundVideo">
-                <source data-src="<?php echo $child_theme_dir_file; ?>/video/Lug_Carrie_Family_06sec.mp4" type="video/mp4">
+            
+            <video class="lazy" autoplay muted loop playsinline poster="<?php echo $child_theme_dir_file; ?>/img/commuter/Lug_Carrie_commuter_hero_poster.jpg" id="backgroundVideo">
+                <source data-src="<?php echo $child_theme_dir_file; ?>/video/Lug_Carrie_Commuter_06sec.mp4" type="video/mp4">
             </video>
 
             <div class="overlay"></div>
-        
+
             <div class="_row">        
                 <div class="column_50">
 
                     <div class="_wrap">
                         <div class="text_block center">
-                            <h1>Make every<br>
-                                day an<br>
-                                adventure</h1>
+                            <h1>The commute to&nbsp;work?
+                                No&nbsp;sweat.</h1>
                             <div class="large _regular">
-                                Easy to ride from the first pedal, our Tern eBike options
-                                for 1 or 2 children bring joy back to the school&nbsp;run.
+                                Easy to ride from the first pedal, our Tern eBike options make trips to and from work, the gym and the supermarket your own personal headspace.
                             </div>
-                                        
+                                      
                         </div>
                     </div>
 
@@ -62,162 +59,103 @@ get_header(); ?>
 
         </section>
 
+        <section class="_x2-padding _no_padding_bot _no-margin centered">
+      <div class="_row _no-margin">                             
+        <div class="column_100">
 
-        <section class="_x2-padding _no_padding_bot _no-margin gray_100_bg centered">
-            <div class="_row _no-margin">                             
-              <div class="column_100">
-      
-                <div class="_wrap">
-                  <div class="text_block">
-                    
-                    <h3 class="h3 center blue _no_char">
-                      A Lug+Carrie to Suit Any&nbsp;Lifestyle
-                    </h3>
-                    <h4 class="center navy _no_char">Our Most Popular Family Set Ups</h4>
-                  </div>
-                </div>
-              </div>
+          <div class="_wrap">
+            <div class="text_block">
+              
+              <h4 class="center navy _no_char">Our Most Popular Commuter Set Ups</h4>
             </div>
-        </section>
-    
-    
-        <section class=" set_up-family_sect _no-flex">
-            <div class=""> 
-                <!-- Flickity HTML init -->
-                <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                
-                    <!-- family 01 -->
-                    <div class="gallery-cell">
-                        <div class="cell">
-                            <div class="img_wrap ">
-                                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/GSD_School_Bus.jpg" loading="lazy"/>
-                            </div>
-                            <div class="text_wrap">
-                                <h5 class="title ">
-                                    The School Bus
-                                </h5>
-                                <div class="desc">
-                                    <strong>Tern GSD - from $71 per week</strong>
-                                    <p class="normal">
-                                    All the school bags+rock star parking - bring the joy back to the school run. Will comfortably transport 1-2 larger children (26+kg and appx 130 cm tall). 
-                                    </p>
-                                </div>
-                                <div class="button_wrap_center_vert">
-                
-                                    <button class="button blue_btn getstarted">Get Started</button>
-                                    <button class="button naked">Learn more</button>      
-                
-                                </div> 
-                            </div>
-                            
-                        </div>                
-                    </div>
-        
-                    <!-- family 02 -->
-                    <div class="gallery-cell">
-                        <div class="cell">
-                            <div class="img_wrap">
-                                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Kinder_Surprise.jpg" loading="lazy"/>
-                            </div>
-                            <div class="text_wrap">
-                                <h5 class="title ">
-                                    The Kinder Surprise
-                                </h5>
-                                <div class="desc">
-                                    <strong>Tern HSD - from $51 per week</strong>
-                                    <p class="normal">
-                                        The surprise? The kinder run can be fun. Comfortably transport 1 younger child up to 22kg in weight.
-                                    </p>
-                                </div>
-                                <div class="button_wrap_center_vert">
-                
-                                    <button class="button blue_btn getstarted">Get Started</button>
-                                    <button class="button naked">Learn more</button>      
-                
-                                </div> 
-                            </div>
-                            
-                        </div>                
-                    </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    <!-- family 03 -->
-                    <div class="gallery-cell">
-                        <div class="cell">
-                            <div class="img_wrap">
-                                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/GSD_Adventurer.jpg" loading="lazy"/>
-                            </div>
-                            <div class="text_wrap">
-                                <h5 class="title ">
-                                    The Adventurer
-                                </h5>
-                                <div class="desc">
-                                    <strong>Tern GSD - from $77 per week</strong>
-                                    <p class="normal">
-                                    Perfect for taking both little ones and all their kit on an adventure. Suits 2 adventurers, 1 weighing less than 22kg in the child seat, 1 bigger kid over 18kg.
-                                    </p>
-                                </div>
-                                <div class="button_wrap_center_vert">
-                
-                                    <button class="button blue_btn getstarted">Get Started</button>
-                                    <button class="button naked">Learn more</button>      
-                
-                                </div> 
-                            </div>
-                            
-                        </div>                
-                    </div>
+    <section class="set_up-commuter_sect _no-flex">
 
-                    <!-- family 04 -->
-                    <div class="gallery-cell">
-                        <div class="cell">
-                            <div class="img_wrap">
-                                <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Mini_Bus.jpg" loading="lazy"/>
+        <div class=""> 
+            <!-- Flickity HTML init -->
+            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+            <!-- commuter 01 -->
+                <div class="gallery-cell">
+                    <div class="cell">
+                    <div class="img_wrap">
+                        <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Entrepreneur.jpg" loading="lazy"/>
+                    </div>
+                    <div class="text_wrap">
+                        <h5 class="title">
+                        The Professional 
+                        </h5>
+                        <div class="desc">
+                        <strong>Tern HSD - from $50 per week</strong>
+                        <p class="normal">
+                            Beat the bus, for the same price. </p>
+                        </div>
+                        <div class="button_wrap_center_vert">
+
+                        <button class="button blue_btn getstarted">Get Started</button>
+                        <!-- <button class="button naked">Learn more</button>       -->
+
+                        </div> 
+                    </div>
+                    
+                    </div>                
+                </div>
+                <!-- commuter 02 -->
+                <div class="gallery-cell">
+                    <div class="cell">
+                        <div class="img_wrap">
+                            <img class="" src="<?php echo $child_theme_dir_file; ?>/img/configure/preconfig/HSD_Scoot.jpg" loading="lazy"/>
+                        </div>
+                        <div class="text_wrap">
+                            <h5 class="title ">
+                            The Scoot
+                            </h5>
+                            <div class="desc">
+                            <strong>Tern HSD - from $50 per week</strong>
+                            <p class="normal">
+                                From the shops to the bottle-o, for scootin around town and getting things done.  
+                            </p>
                             </div>
-                            <div class="text_wrap">
-                                <h5 class="title">
-                                    The Mini Bus
-                                </h5>
-                                <div class="desc">
-                                    <strong>Tern HSD - from $51 per week</strong>
-                                    <p class="normal">
-                                        The school run has never been so fun! Packed lunches + 1 child of 18kg and up and between 110-140cm in height.
-                                    </p>
-                                </div>
-                                <div class="button_wrap_center_vert">
-            
-                                    <button class="button blue_btn getstarted">Get Started</button>
-                                    <button class="button naked">Learn more</button>      
-                
-                                </div> 
-                            </div>
+                            <div class="button_wrap_center_vert">
+
+                            <button class="button blue_btn getstarted">Get Started</button>
+                            <!-- <button class="button naked">Learn more</button>       -->
+
+                            </div> 
+                        </div>
                         
                         </div>                
-                    </div>
-            
+                    </div>          
+                    
                 </div>
-            
+                
             </div>        
-    
+
         </section>
 
-        <section class="why_tern centered blue_bg ">
-            
-            <!-- https://medium.com/elegant-seagulls/parallax-and-scroll-triggered-animations-with-the-intersection-observer-api-and-gsap3-53b58c80b2fa -->
-            <!-- https://codepen.io/celli/pen/mdVMOjr -->
-            <!--  -->
 
-            <div class="_row ">   
+        <section class="why_tern centered red_bg ">
+
+            <!--  -->
+            
+            <div class="_row " data-aos="fade-up" data-aos-mirror="true">   
                 <div class="column_40 centered">
 
                     <div class="_wrap">
                         <div class="text_block center">
                             <h6 class="white">Why a Tern eBike?</h6>
                             <h3 class="navy">
-                                An eBike <br>to grow with
+                                Beat the bus for the same price. 
                             </h3>
 
                             <p class="normal ">
-                                A Lug+Carrie grows with your family. It can be shared between parents, it is adjustable in  moments for riders of all sizes, and it is easy to swap accessories or bikes to accommodate new family members.
+                                Life in the fast lane is often the bike lane.
+                            </p>
+                            <p class="normal "></p> 
+                                Not only is travel in peak hours quicker by bike within 10km of the CBD, but it’s easier to stop for coffee on the way in, grab the milk on the way home or swing past the gywm without hassles of  parking or packed, unreliable public transport. 
                             </p>                  
 
                         </div>
@@ -232,31 +170,32 @@ get_header(); ?>
                 
                 <div data-aos="fade-in" data-aos-mirror="true" class="column_60">
                     <div class="video_wrap">
+                        <!-- autoplay -->
                         
                         <div style="padding:56.25% 0 0 0;position:relative;">
-                            <iframe src="https://player.vimeo.com/video/712687310?h=f822326454&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Lug &amp;amp; Carrie - Family - 30 sec.mp4"></iframe>
+                            <iframe src="https://player.vimeo.com/video/712687167?h=671a8bee45&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Lug &amp;amp; Carrie - Commuter - 30 sec"></iframe>
                         </div>
                         <script src="https://player.vimeo.com/api/player.js"></script>
 
                     
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <!--  -->
-            
-            <div class="_row " >   
-                    <div class="column_40 centered">
+
+            <div class="_row " data-aos="fade-up" data-aos-mirror="true">   
+                <div class="column_40 centered">
     
                     <div class="_wrap">
                         <div class="text_block center">
                             <h6 class="white">Why a Tern eBike?</h6>
                             <h3 class="navy">
-                                A reassuring ride
+                                Petite power. 
                             </h3>
                                 
                             <p class="normal navy">
-                                Our bikes come with kickstands that allow you to easily load wriggling kids and the shopping at the same time, the smaller wheels give you confidence inspiring stability, and the cargo capacity combined with the powerful Bosch motor means you can flatten hills and leave the car at home.
+                                Shorter than a regular bike and with vertical storage, the Tern HSD is perfect for city living. The powerful Bosch motor allows you to ride further and flatten hills without breaking a sweat, even in your favourite outfit.
                             </p>
                             
                         </div>
@@ -266,30 +205,26 @@ get_header(); ?>
                 
                 <div data-aos="fade-in" data-aos-mirror="true" class="column_60">
                     <div class="img_wrap">
-                        <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/family/family_why_tern_frame_blue.jpg" loading="lazy"/>
+                        <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/commuter/commuter_why_tern_frame_red.jpg" loading="lazy"/>
                     </div>
                 </div>
             </div> 
 
             <!--  -->
 
-            <div class="_row ">   
-                <!-- <div class="_row ">    -->
-                    <div class="column_40 centered">
+            <div class="_row " data-aos="fade-up" data-aos-mirror="true">   
+                <div class="column_40 centered">
     
                     <div class="_wrap">
                         <div class="text_block center">
                             <h6 class="white">Why a Tern eBike?</h6>
-                            <h3 class="navy">Your second car is a Lug+Carrie</h3>
-                            <!-- <div class="large _regular"> -->
+                            <h3 class="navy">
+                                Little impact
+                            </h3>
                                 
                             <p class="normal navy">
-                                The <a href="https://autocosts.info/au"  target="blank">average cost</a> of car ownership is $7,774 annually in Australia. 
+                                An electric bike emits 2-5 grams of CO2 per kilometre ridden. In comparison, cars emit about 143g CO2 per kilometre.
                             </p>
-                            <p class="normal navy">
-                                A Lug+Carrie is a simpler way to get around, and it helps the planet. Imagine life without the traffic jams, parking hassles, insurance, rego, depreciation, unpredictable fuel prices and the Sasquatch sized carbon footprint! 
-                            </p>
-                            <!-- </div> -->
                             
                                     
                         </div>
@@ -299,7 +234,7 @@ get_header(); ?>
                 
                 <div data-aos="fade-in" data-aos-mirror="true" class="column_60">
                     <div class="img_wrap">
-                        <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/family/family_why_tern_under_blue.jpg" loading="lazy"/>
+                        <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/commuter/commuter_why_tern_frame_under_blue.jpg" loading="lazy"/>
                     </div>
                 </div>
             </div>  
@@ -310,28 +245,27 @@ get_header(); ?>
             <div class="_row ">   
                 
                 <div class="column_60">
-                <div class="img_wrap">
-                    <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/family/family_why_subscribe.jpg" loading="lazy"/>
-                </div>
+                    <div class="img_wrap">
+                        <img class="cover" src="<?php echo $child_theme_dir_file; ?>/img/family/family_why_subscribe.jpg" loading="lazy"/>
+                    </div>
                 </div>
 
                 <div class="column_40 centered">
                     <div class="_wrap">
                         <div class="text_block center">
                             <h2 class="blue">Why subscribe?</h2>
-                            <!-- <div class="large _regular"> -->
                             
                             <p class="normal navy">
                                 The best thing of all, you get to try on the lifestyle before you buy. The vast majority of our customers love their new life on an L+C bike. For the small group that don’t, they can cancel their subscription and hand the bike back rather than having a five to eight thousand dollar high performance dust gatherer in their garage.
                             </p>
-                            <!-- </div> -->
-                            <div class="button_wrap_center_vert">
+							
+							<div class="button_wrap_center_vert">
       
                                 <button class="button blue_btn getstarted">Get Started</button>
                                 <a href="/why-subscribe/" class="button naked">Learn more</a>      
               
                             </div>
-
+                                
                         </div>
                         
         
@@ -340,6 +274,7 @@ get_header(); ?>
     
         </section>
 
+
         <section class="how_it_works _no-flex white_bg">
 
             <div class="_row _no-margin">   
@@ -347,7 +282,7 @@ get_header(); ?>
     
                     <div class="_wrap">
                         <div class="text_block center">
-                            <h2 class="blue">An eBike to grow with</h2>
+                            <h2 class="blue">How it works</h2>
                         </div>
         
                     </div>
@@ -422,7 +357,7 @@ get_header(); ?>
                                     <h3 class="title center alpha">Flexible, for life</h3>
                                     <div class="desc">
                                         <p class="normal white center">
-                                            Things change, that’s why our subscription is flexible. Swap accessories or upgrade your bike at any time.
+                                            Starting a new fitness class and need to carry more gear? Swap accessories or upgrade your bike at any time.
                                         </p>
                                     </div>
         
@@ -443,8 +378,7 @@ get_header(); ?>
 
     </main>
 <!--  end of template -->
-
-    <!-- https://flickity.metafizzy.co/ -->
+  <!-- https://flickity.metafizzy.co/ -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
@@ -458,7 +392,6 @@ get_header(); ?>
             }
         );
     </script>
-
 
 
 <?php

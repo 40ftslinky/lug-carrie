@@ -433,10 +433,11 @@ section:last-of-type {
     text-align: center;
 }
 
-.left{
+.left, .left > * {
     align-items: flex-start;
     justify-content: flex-start;
     margin-right: auto;
+    text-align: left;
 }
 
 .right{

@@ -18,7 +18,7 @@
 	}).addTo(mymap_melb);
 
 	L.marker([-37.7978513, 144.9804056]).addTo(mymap_melb)
-		.bindPopup("<b>Lug+Carrie</b><br />Head Office.").openPopup();
+		.bindPopup("<b>Lug+Carrie</b><br />Shop.").openPopup();
 
 	
     mymap_melb.attributionControl.addAttribution(
@@ -27,12 +27,12 @@
 	'Details &copy; <a href="http://lug-carrie.com.au/">Lug+Carrie</a>');
 
 
-	var popup3 = L.popup();
+	// var popup3 = L.popup();
 
-	function onMapClickMelb(ev) {
-		popup3
-			.setLatLng(ev.latlng)
-			.setContent("You clicked the map at <br>" + ev.latlng.toString())
-			.openOn(mymap_melb);
-	}
-	mymap_melb.on('click', onMapClickMelb);
+	// function onMapClickMelb(ev) {
+	// 	popup3
+	// 		.setLatLng(ev.latlng)
+	// 		.setContent("You clicked the map at <br>" + ev.latlng.toString())
+	// 		.openOn(mymap_melb);
+	// }
+	// mymap_melb.on('click', onMapClickMelb);

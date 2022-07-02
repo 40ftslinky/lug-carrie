@@ -35,8 +35,7 @@ get_header(); ?>
               <div class="text_block center">
                 <h1>Daily life, done&nbsp;better.</h1>
                 <div class="large _regular">
-                  Our quality eBikes, flexible subscription, and city wide service help you do more of life by bike.
-                </div>
+                  Our quality Tern eBikes and flexible all-inclusive subscription inspire you to do more of life by bike. From $44 per week in Melbourne + Sydney.                </div>
                 <div class="button_wrap_center">
 
                   <div class="play_button" id="playBtn" onclick="videoControl(); video_modal('home');"  >
@@ -150,7 +149,7 @@ get_header(); ?>
                   <div class="button_wrap_center_vert">
 
                     <button class="button blue_btn getstarted">Get Started</button>
-                    <button class="button naked">Learn more</button>      
+                    <!-- <button class="button naked">Learn more</button>       -->
   
                   </div> 
                 </div>
@@ -177,7 +176,7 @@ get_header(); ?>
                   <div class="button_wrap_center_vert">
 
                     <button class="button blue_btn getstarted">Get Started</button>
-                    <button class="button naked">Learn more</button>      
+                    <!-- <button class="button naked">Learn more</button>       -->
   
                   </div> 
                 </div>
@@ -204,7 +203,7 @@ get_header(); ?>
                   <div class="button_wrap_center_vert">
 
                     <button class="button blue_btn getstarted">Get Started</button>
-                    <button class="button naked">Learn more</button>      
+                    <!-- <button class="button naked">Learn more</button>       -->
   
                   </div> 
                 </div>
@@ -231,7 +230,7 @@ get_header(); ?>
                     <div class="button_wrap_center_vert">
 
                       <button class="button blue_btn getstarted">Get Started</button>
-                      <button class="button naked">Learn more</button>      
+                      <!-- <button class="button naked">Learn more</button>       -->
     
                     </div> 
                   </div>
@@ -282,7 +281,7 @@ get_header(); ?>
                 <div class="button_wrap_center_vert">
 
                   <button class="button blue_btn getstarted">Get Started</button>
-                  <button class="button naked">Learn more</button>      
+                  <!-- <button class="button naked">Learn more</button>       -->
 
                 </div> 
               </div>
@@ -308,7 +307,7 @@ get_header(); ?>
                 <div class="button_wrap_center_vert">
 
                   <button class="button blue_btn getstarted">Get Started</button>
-                  <button class="button naked">Learn more</button>      
+                  <!-- <button class="button naked">Learn more</button>       -->
 
                 </div> 
               </div>
@@ -367,12 +366,12 @@ get_header(); ?>
                   </div>
                 </div>
                 
-                
+                <!--                 
                 <div class="button_wrap_center_vert">
-
                   <button class="button naked_white">Learn more ></button>      
+                </div>   
+                -->
 
-                </div>            
               </div>
             </div>
 
@@ -403,7 +402,7 @@ get_header(); ?>
                 <div class="button_wrap_center_vert">
 
                   <button class="button blue_btn getstarted">Get Started</button>
-                  <button class="button naked">Learn more</button>      
+                  <a href="./tern-hsd" class="button naked">Learn more</a>      
 
                 </div>            
               </div>
@@ -448,7 +447,7 @@ get_header(); ?>
               <div class="button_wrap_center_vert">
 
                 <button class="button blue_btn getstarted">Get Started</button>
-                <button class="button naked">Learn more</button>      
+                <a href="./tern-gsd" class="button naked">Learn more</a>      
 
               </div>            
             </div>
@@ -466,87 +465,79 @@ get_header(); ?>
             <div class="_wrap ">
               <div class="text_block center">
                 <h2 class="navy">5 star reviews</h2>
-                <p class="large">Join over 1,000 customers that have made the decision to leave the car at home more often</p>
+                <p class="large">Join over 1,000 customers that have made the decision to leave the car at home more often. See what they have to say:</p>
               </div>
             </div>
           </div>
         </div>
         <div class="_row _max_width_1600 three_col">             
           
+
+
+            
+
+        <?php
+				$posts = get_posts(array(
+					'numberposts'	=> 3,
+					'post_type'		=> 'review'
+				));										
+
+		if( $posts ){ 
+		 foreach( $posts as $post ){
+			$post_id= get_the_ID();
+
+			$title = get_the_title();
+			$rating = get_field("rating",$post_id);
+			$subheading = get_field("subheading",$post_id);
+			
+			
+		
+		?>
           <div class="column_third _x2-padding">
             
 
             <div class="_group white_bg">
               <div class="text_block left">
-                <h5 class="navy">Gaurav Bhasin</h5>
-                <h6 class="navy">Description</h6>
+                <h5 class="navy"><?php echo $title; ?></h5>
+                <h6 class="navy"><?php echo $subheading; ?></h6>
                 <div class="stars yellow">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+				
+					<?php if($rating>=1){ ?><i class="fa-solid fa-star"></i><?php } ?>
+                  <?php if($rating>=2){ ?><i class="fa-solid fa-star"></i><?php } ?>
+                  <?php if($rating>=3){ ?><i class="fa-solid fa-star"></i><?php } ?>
+                  <?php if($rating>=4){ ?><i class="fa-solid fa-star"></i><?php } ?>
+                  <?php if($rating>=5){ ?><i class="fa-solid fa-star"></i><?php } ?>
                 </div>
 
                 <!-- <div class="large _regular"> -->
                   <p class="normal">                   
-                    For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                  </p>                  
+                    <?php
+							$exc = get_the_excerpt($post_id);
+
+							//$posta = get_the_content();
+							
+							$c1 = strlen($exc);
+
+							$excer =expandable_excerpt($exc,$post_id);
+							echo $excer;
+							
+							//echo $posta;
+						?>
+                  </p>
+
+						<!-- <a href="/?p=<?php echo $post_id; ?>">Read more</a> -->
+						<!-- <?php echo $c1; ?>   -->
+		
                 <!-- </div> -->                         
               </div>
             </div>
 
           </div>
-
-          <div class="column_third _x2-padding">
-            
-
-            <div class="_group white_bg">
-              <div class="text_block left">
-                <h5 class="navy">Gaurav Bhasin</h5>
-                <h6 class="navy">Description</h6>
-                <div class="stars yellow">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                  </p>                  
-                <!-- </div> -->                         
-              </div>
-            </div>
-
-          </div>
-
-          <div class="column_third _x2-padding">
-            
-
-            <div class="_group white_bg">
-              <div class="text_block left">
-                <h5 class="navy">Gaurav Bhasin</h5>
-                <h6 class="navy">Description</h6>
-                <div class="stars yellow">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-
-                <!-- <div class="large _regular"> -->
-                  <p class="normal">                   
-                    For someone who has not ridden the bike for last twenty years, getting an e-bike was a game changer. It’s so easy to ride with both the kids on it. For us, this has ended the need of having second car or relying on the public transport. 
-                  </p>                  
-                <!-- </div> -->                         
-              </div>
-            </div>
-
-          </div>
+		  <?php
+		 }// end for each 
+		} // end if 
+		
+		?>
 
         </div>        
 
@@ -592,7 +583,7 @@ get_header(); ?>
 
                 <div class="_wrap">
                     <div class="text_block center">
-                        <h2 class="blue">An eBike to grow with</h2>
+                        <h2 class="blue">How it works</h2>
                     </div>
 
                 </div>
@@ -677,7 +668,7 @@ get_header(); ?>
 
                 <div class="text_wrap white _x2-padding">
 
-                  <h3 class="title center alpha">Flexible, for life</h3>
+                  <h3 class="title center alpha">When life changes</h3>
                   <div class="desc">
                       <p class="normal white center">
                           Things change, that’s why our subscription is flexible. Swap accessories or upgrade your bike at any time.
