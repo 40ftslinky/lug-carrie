@@ -121,7 +121,7 @@ wp_head();
             </ul>
           </li>
           <li class="menu-item"><a class="menu-link" href="/faq">FAQ</a></li>
-          <li class="menu-item"><a class="menu-link" href="/customer-support">Support</a></li>
+          <li class="menu-item"><a class="menu-link" href="/support">Support</a></li>
         </ul>
       </nav>
     </div>

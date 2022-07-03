@@ -109,6 +109,7 @@ section.best .img_wrap {
 }
 section.best .img_wrap img {
     height: 70vh;
+    max-height: 550px;
 }
 @media screen and ( max-width: 1080px ) {
     section.best .img_wrap img {

@@ -63,6 +63,38 @@
 }
 
 /* ------------------------------------------- */
+/* contact */
+
+#contact [class*="button_wrap"] {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 551px) and (max-width: 1080px) {
+
+  #contact .info_sect ._row {
+    flex-direction: row;
+  }
+
+  #contact .info_sect .column_30 {
+    max-width: calc(100vw*0.4 - 2rem );
+  }
+  #contact [class*="button_wrap"] {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+
+  #contact .info_sect ._row {
+    flex-direction: row;
+  }
+
+  #contact .info_sect .column_30 {
+    max-width: calc(100vw*0.8 - 2rem );
+  }
+}
+
+
+/* ------------------------------------------- */
 /* lifestyle */
 
 #lifestyle {}
@@ -168,7 +200,7 @@
 }
 
 #operational .hero h1 {
-    --min-fs: 1;
+    /* --min-fs: 1; */
     --max-fs: 3.75;
     letter-spacing: -0.5;
 }
@@ -225,7 +257,7 @@
 /* ------------------------------------------- */
 /* intro */
 
-.intro_sect {
+.intro_sect, .info_sect {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -421,5 +453,29 @@
     
   }
 
+/* support */
+
+#support .triage_button a {
+  min-width: 190px;
+}
+
+/* manuals */
+
+#manuals .video_wrap {
+  margin: 0;
+  min-height: unset;
+}
+
+#manuals .video_wrap video {
+  aspect-ratio: 12/9;
+  object-fit: cover;
+}
+#manuals video#inlineVideo {
+  transform: scale(1);
+}
+
+#manuals p:not(h3+p) {
+  margin-bottom: 0.5rem;
+}
 
 /*end general*/
