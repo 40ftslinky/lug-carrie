@@ -688,6 +688,13 @@ justify-content:center;
 border-radius:9999px
 }
 
+
+.Quiz--calendar table input+label {
+    max-width: 8.5vw;
+    max-height: 8.5vw;
+}
+
+
 .Quiz--calendar table input+label.open{
 cursor:pointer;
 --tw-bg-opacity:1;
@@ -1233,7 +1240,7 @@ background-size:2rem
 }
 
 .slot_list {
-	overflow-y: auto;
+	/* overflow-y: auto; */
     max-height: 410px;
 }
 
@@ -1266,6 +1273,15 @@ background-size:2rem
 	transform: scaleX(1) translateX(0);
     transform-origin: right;
 	position:relative;
+}
+
+
+#available_slots .slot_list {
+	padding-left: 1rem;
+}
+
+#available_slots .slot_list ul li{
+	padding-right: 1rem;
 }
 
 .calendarTable {}

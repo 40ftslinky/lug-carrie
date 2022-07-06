@@ -1,0 +1,128 @@
+.content_calendar_outer{
+	min-height:300px;
+	min-width:600px;
+	width:100%;
+}
+@media screen and (max-width:1080px){    
+	.content_calendar_outer{
+		min-width:unset;
+	}
+}
+
+
+
+// Codepen does not allow @apply 
+
+.Quiz--calendar {
+    @apply flex flex-no-wrap mb-3;
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0.5rem;
+
+        caption button {
+            @apply
+            relative w-8 h-8
+            flex items-center justify-center
+            rounded-full text-gray-500
+            ;
+
+            &:enabled {
+                @apply text-blue-600;
+            }
+
+            &:enabled:hover {
+                @apply bg-blue-50;
+            }
+
+            &:focus {
+                @apply outline-none;
+            }
+        }
+
+        th, td {
+            width: calc((1 / 7) * 100%);
+        }
+
+        thead {
+            th { @apply uppercase font-light leading-none text-sm; }
+        }
+
+        input + label {
+            @apply
+                relative w-10 h-10
+                flex items-center justify-center
+                rounded-full select-none
+            ;
+
+            &.open {
+                @apply font-medium cursor-pointer text-blue-500 bg-blue-50;
+
+                &:hover {
+                    @apply bg-blue-100;
+                }
+                &:active, &.active {
+                    @apply text-white outline-none bg-blue-500;
+                }
+            }
+
+            &.today::after {
+                content: '';
+                @apply w-1 h-1 rounded-full bg-currentColor absolute left-1/2 transform -translate-x-1/2;
+                bottom: 0.2rem;
+            }
+
+            &.past {
+                @apply text-gray-400;
+            }
+        }
+
+        input:checked + label.open {
+            @apply text-white outline-none bg-blue-500;
+        }
+    }
+
+    ul {
+        @apply relative;
+
+        &::before, &::after {
+            width: 100%;
+            display: block;
+            position: absolute;
+            height: 2rem;
+            pointer-events: none;
+        }
+        &.bottom::before {
+            content: '';
+            background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+            top: 0;
+        }
+        &.top::after {
+            content: '';
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+            bottom: 0;
+        }
+
+        li {
+            label, button {
+                @apply flex items-center justify-center w-full py-3 px-2 font-semibold rounded text-center border border-solid border-blue-300 transition-all duration-1000 ease-in-out ;
+
+                &:hover, &:focus {
+                    @apply outline-none;
+                }
+            }
+
+            button {
+                @apply bg-blue-500 text-white border-blue-500 w-0 hidden;
+            }
+
+            input:checked + div label {
+                @apply bg-gray-500 text-white border-gray-500 w-1/2;
+            }
+
+            input:checked + div button {
+                @apply flex w-1/2;
+            }
+        }
+    }
+}

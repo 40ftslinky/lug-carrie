@@ -28,6 +28,7 @@ body[id*="signup"] header::before,
     margin-top: var(--header_height);
     background: var(--gray-100);
     padding-bottom: 5rem;
+    margin-bottom: 0;
 }
 
 
@@ -103,6 +104,12 @@ label.right {
     margin-right: 0.5rem;
 }
 
+#manual-checkout section#stage_6 .form_block{
+    width: 100%;
+    min-width: 360px;
+    max-width: 500px;
+    margin: auto;
+}
 
 
 /* ------------------------------------------- */
@@ -126,4 +133,29 @@ section#stage_7 {
 input#rememberme {
     width: auto;
     margin-right: 0.5rem;
+}
+
+
+/* ------------------------------------------- */
+/* book-a- */
+
+[class="*book-a-"] #stage_2 .column_40 .text_block {
+	padding:0;
+}
+
+@media screen and (min-width:680px){    
+    [class*="book-a-"] #stage_2 .column_40 {
+        min-width: 660px;
+    }
+}
+
+.booking_conf._panel {
+    margin: 0 0 3rem 0;
+}
+
+.booking_conf p {
+    margin-bottom: 0.25rem;
+}
+.booking_conf p:last-of-type {
+    margin-bottom: 0;
 }

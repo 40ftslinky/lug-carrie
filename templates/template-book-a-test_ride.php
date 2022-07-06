@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the Bookings.
+ * The template for displaying the homepage.
  *
  * This page template will display any functions hooked into the `homepage` action.
  * By default this includes a variety of product displays and the page content itself. To change the order or toggle these components
@@ -48,25 +48,23 @@ get_header(); ?>
         <!-- STAGE TWO -->
         <!-- ************************************* -->
         <section  id="stage_2"  class="signup_intro centered " style="display:none">
-            <!-- <div class=""> -->
             <div class="_row "> 
                 <div class="column_100 ">
                     <div class="_wrap center">
                         <div class="progress_timeline">
                             <ol class="progress_list">
-                                <li>Personal Information</li>
-                                <li class="current">Pick a Date & Time</li>                                
+                                <li >Stage One</li>
+                                <li class="current">Stage Two</li>
 									<?php
 									if($book_type!="email-design"){
 										?>
-										<li>Thank You</li>
+										<li>Stage Three</li>
 										<?php
 									}
 									?>
                                 <!-- <li>Stage Four</li> -->
                             </ol>
                         </div>
-
                     </div>
                 </div> 
             </div>
@@ -74,86 +72,97 @@ get_header(); ?>
                 <div class="column_100">                    
                     <div class="_wrap">
                         <div class="text_block centered">
-						<?php
-						if($book_type=="testride"){
-						?>	
-                            <h4 class="blue">Book a Test Ride  : Pick a date</h4>
-						<?php
-						} else {
-						?>
-							<h4 class="blue">Book a Consultation  : Pick a date</h4>
-						<?php
-						}
-						?>	
+                            <?php
+                            if($book_type=="testride"){
+                            ?>	
+                                <h4 class="blue">Book a Test Ride</h4>
+                            <?php
+                            } else {
+                            ?>
+                                <h4 class="blue">Book a Consultation</h4>
+                            <?php
+                            }
+                            ?>	
                         </div>
                     </div>
                 
-						<div class="column_40 centered">       							
-							<div class="_wrap">
-								<div class="text_block left">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis dictum nisl. Vestibulum dapibus turpis non ornare iaculis. Curabitur tempor lacus quis nisl condimentum, scelerisque convallis risus semper. Quisque lobortis in sapien eget faucibus. Sed gravida nunc a justo hendrerit, id bibendum nisi imperdiet. Donec et neque condimentum nisi pharetra hendrerit. Maecenas maximus magna et pretium blandit. Donec sapien mauris, feugiat ac mauris eu, tempor facilisis dui. Mauris bibendum eleifend sapien ac eleifend. Mauris accumsan dictum purus sit amet commodo.</p>
-								</div>	   
-								</div>  
-						</div>		
-
-						<div class="column_40 centered">       							
-							<div class="_wrap form_block">
-									<div class="text_block right">
-										<form>
-												<?php
-													print "<!-- POST::::: ";
-													print_r($_POST);
-													print " -->";
-													foreach($_POST as $key=>$post){
-														print "\n";
-														if(strstr($key,"price_")){
-															print "<input type=hidden class='product_price' name='$key' id='$key' value='$post'>";
-														} else {
-															print "<input type=hidden class='product_id' name='$key' id='$key' value='$key'>";
-														}
-														print "\n";
-													}
-												?>										
-											<fieldset>
-											<!-- <div class="input_date"><input id="booking_date" name="booking_date" type="date" value="2022-06-01"></div> -->
-											<div class="content_calendar_outer">
-												<?php
-													include "content-calendar.php";
-												?>
-											</div>
-											<div class="button_wrap_right">
-                                        <a href="#stage_two" onclick="form_next(3);" class="button white_btn goto"  data-offset="80">Next</a>
-                                    </div>
-										</fieldset>
+                    <div class="column_40 centered">       							
+                        <div class="_wrap">
+                            <div class="text_block left">
+								<?php
+									if($book_type=="testride"){
+									?>	  
+										<h5>Pick a date & time</h5>
 										
-										</form>
-									</div>
-							</div>  
-					</div>		
+									<?php
+									} else {
+									?>
+										<h5>Pick a date & time</h5>
+<!-- 										<p> Consultation - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis dictum nisl. Vestibulum dapibus turpis non ornare iaculis. Curabitur tempor lacus quis nisl condimentum, scelerisque convallis risus semper. </p> -->
+									<?php
+									}
+									?>	
+                                
+                            </div>	   
+                        </div>  
+                    </div>		
+
+                    <div class="column_40 centered">       							
+                        <div class="_wrap form_block">
+                            <div class="text_block">
+                                <form>
+                                        <?php
+                                            print "<!-- POST::::: ";
+                                            print_r($_POST);
+                                            print " -->";
+                                            foreach($_POST as $key=>$post){
+                                                print "\n";
+                                                if(strstr($key,"price_")){
+                                                    print "<input type=hidden class='product_price' name='$key' id='$key' value='$post'>";
+                                                } else {
+                                                    print "<input type=hidden class='product_id' name='$key' id='$key' value='$key'>";
+                                                }
+                                                print "\n";
+                                            }
+                                        ?>										
+                                    <fieldset>
+                                        <!-- <div class="input_date"><input id="booking_date" name="booking_date" type="date" value="2022-06-01"></div> -->
+                                        <div class="content_calendar_outer">
+                                            <?php
+                                                include "content-calendar.php";
+                                            ?>
+                                        </div>
+                                        <div class="button_wrap_right">
+                                            <a href="#stage_two" onclick="form_next(3);" class="button white_btn goto"  data-offset="80">Next</a>
+                                        </div>
+                                    </fieldset>
+                                
+                                </form>
+                            </div>
+                        </div>  
+                    </div>		
 					
-			</div>
+                </div>
 			</div>					
         </section> 
 	   
 	   
 	   
-   <!-- ************************************* -->
+        <!-- ************************************* -->
         <!-- STAGE THREE -->
         <!-- ************************************* -->
         <section  id="stage_3"  class="signup_intro centered " style="display:none">
-            <!-- <div class=""> -->
             <div class="_row "> 
                 <div class="column_100 ">
                     <div class="_wrap center">
                         <div class="progress_timeline">
                             <ol class="progress_list">
-                                <li >Peronal Information</li>
-                                <li>Pick a Date & Time</li>
-                                <li class="current">Thank You</li>
+                                <li >Stage One</li>
+                                <li>Stage Two</li>
+                                <li class="current">Stage Three</li>
                                 <!-- <li>Stage Four</li> -->
                             </ol>
                         </div>
-
                     </div>
                 </div> 
             </div>
@@ -167,41 +176,59 @@ get_header(); ?>
                         </div>
                     </div>
                 
-						<div class="column_40 centered">       							
-							<div class="_wrap">
-								<div class="text_block left">
-
-									<p>Your appointment ID is <strong><span id="appointment_id"></span></strong></p>
-									<p>Location: <strong><span id="appointment_location"></span></strong></p>
-									<p>Date: <strong><span id="appointment_date"></span></strong></p>
-									<p>Start Time: <strong><span id="appointment_start_time"></span></strong></p>
-									<p>End Time: <strong><span id="appointment_end_time"></span></strong></p>
+                    <div class="column_40 centered">       							
+                        <div class="_wrap">
+                            <div class="text_block left">
+								
+								<div class="booking_conf _panel">
 									
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis dictum nisl. Vestibulum dapibus turpis non ornare iaculis. Curabitur tempor lacus quis nisl condimentum, scelerisque convallis risus semper. Quisque lobortis in sapien eget faucibus. Sed gravida nunc a justo hendrerit, id bibendum nisi imperdiet. Donec et neque condimentum nisi pharetra hendrerit. Maecenas maximus magna et pretium blandit. Donec sapien mauris, feugiat ac mauris eu, tempor facilisis dui. Mauris bibendum eleifend sapien ac eleifend. Mauris accumsan dictum purus sit amet commodo.</p>
-								</div>	   
-								</div>  
-						</div>		
-
-
+                                <p>Your appointment ID is <strong><span id="appointment_id"></span></strong></p>
+                                <p>Location: <strong><span id="appointment_location"></span></strong></p>
+                                <p>Date: <strong><span id="appointment_date"></span></strong></p>
+                                <p>Start Time: <strong><span id="appointment_start_time"></span></strong></p>
+                                <p>End Time: <strong><span id="appointment_end_time"></span></strong></p>
+																		
+								</div>
+                                
+                                <?php
+									if($book_type=="testride"){
+									?>	  
+										<h5>Thank you!</h5>
+										<p>Your test ride is booked! Look out for an email from us confirming the date and time.  </p>
+										<p>Need to cancel or reschedule? It happens. Send an email to <a href="mailto:info@lug-carrie.com">info@lug-carrie.com</a> and we’ll help you out.
+										<p>We look forward to speaking with you!</p>
+										
+									<?php
+									} else {
+									?>
+										<h5>Thank you!</h5>
+										<p>Your consultation has been booked. Look out for an email from us confirming the date and time.  </p>
+										<p>Need to cancel or reschedule? It happens. Send an email to <a href="mailto:info@lug-carrie.com">info@lug-carrie.com</a> and we’ll help you out.
+										<p>We look forward to speaking with you!</p>
+									<?php
+									}
+									?>	
+                            </div>	   
+                        </div>  
+                    </div>		
 					
-			</div>
+                </div>
 			</div>					
         </section> 
 	   
 
- <!-- ************************************* -->
+        <!-- ************************************* -->
         <!-- STAGE FOUR -->
         <!-- ************************************* -->
         <section  id="stage_4"  class="signup_intro centered " style="display:none">
-            <!-- <div class=""> -->
             <div class="_row "> 
                 <div class="column_100 ">
                     <div class="_wrap center">
                         <div class="progress_timeline">
                             <ol class="progress_list">
-                                <li>Personal Information</li>
-                                <li>Pick a Date & Time</li>
-                                <li>Thank You</li>
+                                <li >Stage One</li>
+                                <li>Stage Two</li>
+                                <li>Stage Three</li>
                                 <!-- <li class="current">Stage Four</li>    -->
                             </ol>
                         </div>
@@ -219,17 +246,14 @@ get_header(); ?>
                         </div>
                     </div>
                 
-						<div class="column_40 centered">       							
-							<div class="_wrap">
-								<div class="text_block left">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-								</div>	   
-								</div>  
-						</div>		
-
-
-					
-			</div>
+                    <div class="column_40 centered">       							
+                        <div class="_wrap">
+                            <div class="text_block left">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>	   
+                        </div>  
+                    </div>							
+                </div>
 			</div>					
         </section> 
 	   

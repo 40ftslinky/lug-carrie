@@ -81,6 +81,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     width:100%;
+    font-weight: 400;
 }
 
 form label input:not([type=radio]),
@@ -192,12 +193,15 @@ label, input {
 .forms label input[type=radio] {
     margin-right: 0.5rem;
 }
-.forms label input[type=checkbox] {
+.forms .label input[type=checkbox] {
     vertical-align: bottom;
     position: relative;
     top: -3px;
 }
 .forms .select_group label input[type=checkbox] {
+    top: -10px;
+}
+.forms .outer_reason_label label input[type=checkbox] {
     top: -5px;
 }
 
@@ -244,16 +248,28 @@ label, input {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
+    align-items: flex-start;
 }
 [class*="select_group"] label.checkbox,
 [class*="select_group"] label.radio {
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-start;
 }
 .forms [class*="select_group"] label input[type=radio]  {
     top: -5px;
 }
-
-
+.dob_wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+.dob_group {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-right: 0.25rem;
+    width: 85px;
+}
 /* ------------------------------------------------ */
   
 select,

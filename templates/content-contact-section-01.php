@@ -1,4 +1,4 @@
- <section id="stage_1" class="signup_intro centered ">
+<section id="stage_1" class="signup_intro centered ">
             <!-- <div class=""> -->
 
 
@@ -98,6 +98,18 @@
 							 <p class="normal gray_800">We just need a photo of your driver’s licence or proof of address, and a photo of the location where you intend to store the bike.</p>
 							 <?php
 							 
+								} else if($contact_type=="Consultation"){
+                                    ?>
+                                    <p>Thanks for your interest in Lug+Carrie!</p>
+                                    <p>You’re in the right place if you’d like to book a no obligation call to:</p>
+                                    <ul>
+                                        <li>Discuss a bike setup that would work best for you. </li>
+                                        <li>Find out more about our eBike subscription.</li>
+                                        <li>Ask absolutely anything</li>
+                                        <li> Sign up for a Lug+Carrie subscription!</li></ul>
+                                    <p></p>
+                                    <?php
+                                                                
 								} else if($contact_type=="TestRide"){
 									?>
 									<p>There's no better way to get a feel for our Lug+Carrie bikes than to come ride one!</p>

@@ -39,6 +39,8 @@
 #build-your-bike header {
     background-color: #ffffff;
     box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+    -webkit-box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0 0 1rem rgb(0 0 0 / 15%);
 }
 
 #configure header::before,
@@ -160,8 +162,20 @@
 /* --------------------------------------------------- */
 /* progress */
 
+.progress_timeline {}
 
-.progress_timeline { }
+.progress_timeline.fixed {
+    position: fixed;
+    top: var(--header_height);
+    left: 0;
+    background: var(--gray-100);
+    z-index: 999;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 1rem 1rem 0 rgba(var(--white-rgb),1);
+    -webkit-box-shadow: 0 1rem 1rem 0 rgba(var(--white-rgb),1);
+    -moz-box-shadow: 0 1rem 1rem 0 rgba(var(--white-rgb),1);
+}
 
 .progress_list { 
     display: flex;
@@ -251,7 +265,9 @@
 
 #configure .checkbox:hover,
 #build-your-bike .checkbox:hover {
-  box-shadow: 0 0 8px 0 rgba(var(--highlight), 0.5);
+    box-shadow: 0 0 8px 0 rgba(var(--highlight), 0.5);
+    -webkit-box-shadow: 0 0 8px 0 rgba(var(--highlight), 0.5);
+    -moz-box-shadow: 0 0 8px 0 rgba(var(--highlight), 0.5);
 }
 
 #configure .checkbox-group,
@@ -330,6 +346,8 @@
   border-color: #9c9c9c;
     /* border-color: var(--highlight); */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: var(--highlight);
 }
 
@@ -362,6 +380,8 @@
 .checkbox-input:focus + .checkbox-tile {
   border-color: var(--highlight);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #b5c9fc;
 }
 
 .checkbox-input:focus + .checkbox-tile:before {
@@ -381,6 +401,8 @@
   border: 2px solid #dde2f2;
   background-color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   /* transition: 0.15s ease; */
   -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
@@ -734,13 +756,19 @@
     background-color: var(--gray-100);
     border-top: 1px solid var(--gray-200);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
 @media screen and (max-width:1080px){    
     .subtotal_panel {
         width:100%;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:650px){    
+    .subtotal_panel {
+        flex-direction: column;
     }
 }
 
@@ -757,18 +785,31 @@
     /* box-shadow: 0 calc(var(--gutter)*-3) calc(var(--gutter)*3) #fff; */
     /* box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),0.8) */
     box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),1);
+    -webkit-box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),1);
+    -moz-box-shadow: 0 -3rem 3rem 0 rgba(var(--white-rgb),1);
     border-bottom: 1px solid var(--gray-200);
 }
 @media screen and (max-width:1080px){    
     .subtotal_panel::before {
         box-shadow: 0 -1rem 1rem 0 rgba(var(--white-rgb),1);
+        -webkit-box-shadow: 0 -1rem 1rem 0 rgba(var(--white-rgb),1);
+        -moz-box-shadow: 0 -1rem 1rem 0 rgba(var(--white-rgb),1);
     }
 }
 
 .info_wrap {
     display: flex;
-
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
+@media screen and (max-width:450px){    
+    .info_wrap {
+        flex-direction: column;
+    }
+}
+
 
 .subtotal_wrap {
     display: flex;
@@ -778,7 +819,7 @@
     width:100%;
 }
 .sub_total, .sub_amount, .sub_period {
-    font-size: 18px;
+    font-size: 30px;
 }
 .sub_amount {
     font-weight: 600;
@@ -788,9 +829,10 @@
 }
 
 .subtotal_panel [class*="_group"] {
-    gap:0.25rem
+    /* gap:0.25rem; */
+    gap: 0;
+    margin-bottom: 0;
 }
-
 .desc_group {
     font-size: 0.675rem;
     font-weight: 300;
@@ -804,6 +846,9 @@
 
 .subtotal_panel [class*="button_"] {
     /* justify-content: space-between; */
+    margin-right: 0;
+    margin-bottom: 0;
+    flex-direction: row;
 }
 
 
@@ -817,6 +862,7 @@
     background-color: white;
     margin-bottom: 10rem;
     max-width: 580px;
+    border-radius: 7px
 }
 @media screen and ( max-width: 1080px ){
     .triage_wrap {
