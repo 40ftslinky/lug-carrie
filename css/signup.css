@@ -139,8 +139,15 @@ input#rememberme {
 /* ------------------------------------------- */
 /* book-a- */
 
-[class="*book-a-"] #stage_2 .column_40 .text_block {
+[class*="book-a-"] #stage_2 .column_40 .text_block {
 	padding:0;
+}
+
+[class*="book-a-"] #stage_3 .column_40 {
+    width: 100%;
+    min-width: 360px;
+    max-width: 500px;
+    margin: auto;
 }
 
 @media screen and (min-width:680px){    

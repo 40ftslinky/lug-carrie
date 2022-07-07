@@ -66,22 +66,27 @@ button:focus {
     font-size: 0.875rem;
 }
 
+.forms label {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    font-weight: 300;
+}
 
 .forms label.radio,
 .forms label.checkbox {
     font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* safari fix */
+input[type="checkbox"] {
+    -webkit-transform: scale(1.2, 1.2);
 }
 
 .forms label.radio.lrg,
 .forms label.checkbox.lrg {
     font-size: 0.875rem;
-}
-
-.forms label {
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    font-weight: 400;
 }
 
 form label input:not([type=radio]),
@@ -199,7 +204,8 @@ label, input {
     top: -3px;
 }
 .forms .select_group label input[type=checkbox] {
-    top: -10px;
+    /* top: -10px; */
+    top: 3px;
 }
 .forms .outer_reason_label label input[type=checkbox] {
     top: -5px;
@@ -266,9 +272,12 @@ label, input {
 .dob_group {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
-    margin-right: 0.25rem;
-    width: 85px;
+    gap: 0.25rem  !important;
+    /* margin-right: 0.25rem; */
+    width: max-content !important;
+}
+.dob_group:nth-of-type(2) {
+    width: 50px !important;
 }
 /* ------------------------------------------------ */
   
