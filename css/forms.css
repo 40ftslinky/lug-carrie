@@ -177,6 +177,18 @@ label, input {
     visibility: visible;
     opacity: 1;
 }
+
+.green_msg {
+    font-size: 0.8rem;
+    color: var(--grey-800);
+    background-color: rgba(var(--blue-rgb), 0.2) ;
+    padding: 0.25rem 0.5rem;
+    /* 
+    display: none;
+    visibility: hidden;
+    opacity: 0; 
+    */
+}
   
 /* ------------------------------------------------ */
 /* checkbox fix */

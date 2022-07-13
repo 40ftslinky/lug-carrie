@@ -48,6 +48,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 2.167rem; /* why ? */
 }
 
 #accessories .column_quarter {
@@ -74,8 +75,9 @@
 @media screen and (max-width:880px){ 
     #accessories .column_quarter {
         --columns: 10; 
-        /* max-width: calc((100vw * var(--columns)/10) - (var(--columns) * 2rem )); */ */
-        max-width: calc((100vw * var(--columns)/10) - 1rem );
+        /* max-width: calc((100vw * var(--columns)/10) - (var(--columns) * 2rem )); */
+        /* max-width: calc((100vw * var(--columns)/10) - 1rem ); */
+        max-width: unset;
         width: 100%;
     }
 }
@@ -101,7 +103,9 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;  
 }
-
+#accessories .column_quarter img {
+    aspect-ratio: 1 / 0.95;
+}
 
 /* ------------------------------------------- */
 /* accessory */

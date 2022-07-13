@@ -368,7 +368,7 @@ section.why_subscribe [class*="column_60"] {
 }
 @media screen and ( max-width: 1080px ) {
     .why_choose [class*="row"] {
-        gap:1;
+        gap:0;
     }
 }    
 
@@ -546,6 +546,9 @@ section[class*="tern_"] {
 @media screen and ( max-width: 1080px ) {
 	.tern_gsd ._row {
 		flex-direction: column-reverse;
+    }
+    section[class*="tern_"] ._row {
+        gap:0;
 	}
 }
 

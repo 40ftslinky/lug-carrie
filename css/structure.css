@@ -58,6 +58,7 @@ body { background: var(--theme-light); }
 
 main {
     /* margin-top: var(--header_height); */
+    min-height:calc(100vh - var(--header_height) - var(--footer-height));
 }
 
 article header {display:none}

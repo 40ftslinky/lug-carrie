@@ -27,7 +27,7 @@
 									
                                 <li class="current">Personal Info</li>
                                 <li>Rider Info</li>									
-								<li>Insurance + Storage</li>
+									<li>Insurance + Storage</li>
                                 <li>Ts+Cs</li>
 									<?php
 									}
@@ -36,7 +36,9 @@
 
                                 
 									<?php
-	
+
+
+										
 										if($contact_type=="order"){
 										
 										?>											
@@ -59,7 +61,7 @@
 				} else if( $contact_type=="Consultation" || $book_type=="consultation"){
 					$h4="Book a consultation";
 				} else if( $contact_type=="Email"){
-					$h4="Email my build";
+					$h4="Email my design";
 
 				} else if( $contact_type=="TestRide"){
 					$h4="Book a test ride";
@@ -73,7 +75,7 @@
 					</h4>			
 				</div>
 			</div>
-            <div class="_row top _content"> 
+            <div class="_row top"> 
                 
                 <div class="column_40 centered">                    
         
@@ -103,24 +105,39 @@
 								} else if($contact_type=="TestRide"){
 									?>
 									<p>There's no better way to get a feel for our Lug+Carrie bikes than to come ride one!</p>
-									<p>Our test rides include a short chat so we get you set up on the perfect bike, then we make sure you (and your kids, if they want to ride along) are comfortable before you set off.</p>
-									<p>Start by providing some contact information, select your location, and on the next page you’ll be able to find a time that suits.</p>
+									<p>Our test rides include a short consultation to get you set up on the perfect bike, then we make sure you (and your kids, if they want to ride along) are comfortable before you set off. </p>
+									<p>All you need to do is provide a few contact details, select your location, then pick the time that works best for you.</p>
+									<p>One of our consultants will have a bike ready for you then, and don't forget to bring a helmet if you've got one!</p>
+<!-- 									<p>*Please note: Our inventory of quality eBikes is currently very limited in Melbourne and Sydney. We will discuss availability with you when we call.</p> -->
 									<?php
 									
 								} else if($contact_type=="Email"){	
 									?>
-									<p>A few contact details are all we need in order to email the details of your build.</p>
+									<p>There's no better way to get a feel for our Lug+Carrie bikes than to come ride one!</p>
+									<p>Our test rides include a short consultation to get you set up on the perfect bike, then we make sure you (and your kids, if they want to ride along) are comfortable before you set off. </p>
+									<p>All you need to do is provide a few contact details, select your location, then pick the time that works best for you.</p>
+									<p>One of our consultants will have a bike ready for you then, and don't forget to bring a helmet if you've got one!</p>
 									<?php
 								} else {
 									?>
 									<p>Thanks for your interest in Lug+Carrie! You’re in the right place if you’d like to book a consultation call with one of our experts. This is a no-obligation call where you can find out more about our eBike subscription, ask questions about eBikes, or discuss a bike set up that would work best for you. You can even sign up if you’re ready.</p>
-									<p>All you need to do is provide a few contact details, pick the time that works best for you, and we’ll look forward to speaking with you then!</p>
+									<p>All you need to do is provide a few contact details, pick the time that works best for you, and we’ll look forward to speaking with you then!
+									</p>
+<!-- 									<p>*Please note: Our inventory of quality eBikes is currently very limited in Melbourne and Sydney. We will discuss availability with you when we call.</p> -->
 									<?php
 								}
 								?>
                                                                     
                         </div>
-                    </div>                 
+                    </div>
+
+                 <!--    <div class="_wrap _left white_bg">
+                        <div class="text_block left">
+                           <p class="normal gray_800">
+                                <span style="display: block; float:left">*</span>Please note: Our inventory of quality eBikes is currently very limited in Melbourne and Sydney. We will discuss availability with you when we call.
+                            </p> 
+                        </div>
+                    </div> -->
         
                 </div>
                 
@@ -138,7 +155,7 @@
                                     <label>
                                         <!-- Email input -->
                                         <input id="email" type="email" value="" placeholder="Email*">
-                                        <div class="error_msg">Valid email required</div>
+                                        <div class="error_msg">Vaild email required</div>
                                     </label>
 									
                                     <!-- <label>
@@ -269,7 +286,7 @@
 														<?php
 													
 													?>
-													<div class="green_msg" id="location_note" style="display:none;"></div>
+													<div class="green" id="location_note" style="display:none;"></div>
                                             <div class="error_msg ">Please select a location</div>
                                         </label>
 

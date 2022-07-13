@@ -2,12 +2,12 @@
     --brand-yellow: rgba(251, 192, 38, 1);
     --brand-red: rgba(250, 93, 56, 1);
     --brand-blue: rgba(103, 202, 220, 1);
-    --brand-navy: rgba(27, 257, 87, 1);
+    --brand-navy: rgba(27, 57, 87, 1);
     /*  */
     --yellow: #FBC026;
     --red: #FA5D38;
     --blue: #67cadc;
-    --navy: #1B3957;
+    --navy: rgb(27, 57, 87);
 
     --navy-rgb: rgb(27, 57, 87);
 
@@ -102,6 +102,9 @@
     --light-not-white: #f5f4f0;
     /*  */
     --error: red;
+    --success: #00da00;
+    --success-rgb: 0, 218, 0;
+
 }
 
 

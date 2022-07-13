@@ -77,8 +77,12 @@ pop up
 
 @media screen and (max-width: 1200px){
     #fullscreen .column_third {
-        /* width: 500px; */
         max-width:calc((100vw * var(--columns)/10) - (var(--columns) * 1rem ));
+    }
+}
+@media screen and (max-width: 1080px){
+    #fullscreen .column_third {        
+        max-width: 350px !important;
     }
 }
 

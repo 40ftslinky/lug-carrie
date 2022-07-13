@@ -59,7 +59,20 @@
 }
 
 .about_sect {
-  margin-top: calc(var(--header_height)*1.5);
+  padding-top: calc(var(--header_height)*1.5);
+}
+
+#book-a-test-ride .hero {
+	background-image: url('http://lug.screenrage.com.au/wp-content/uploads/2022/07/Book-a-Test-Ride.jpg');
+}
+#book-a-consultation .hero {
+	background-image: url('http://lug.screenrage.com.au/wp-content/uploads/2022/07/Book-a-Consultation.jpg');
+}
+#self-checkout .hero {
+	background-image: url('http://lug.screenrage.com.au/wp-content/uploads/2022/07/Self-Checkout.jpg');
+}
+#manual-checkout .hero {
+	background-image: url('http://lug.screenrage.com.au/wp-content/uploads/2022/07/Roadside-service.jpeg');
 }
 
 /* ------------------------------------------- */
@@ -477,5 +490,20 @@
 #manuals p:not(h3+p) {
   margin-bottom: 0.5rem;
 }
+
+/*  */
+
+/*  */
+
+.manage-subscription main {
+  min-height: calc(100vh - var(--footer-height));
+}
+
+.manage-subscription .about_sect {
+  margin-top: 0;
+  padding-top: calc(var(--header_height)*1.5);
+}
+
+/*  */
 
 /*end general*/

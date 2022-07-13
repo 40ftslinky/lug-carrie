@@ -150,7 +150,7 @@
 @media screen and (max-width:1080px){    
     .col_right_wrap {
         overflow:unset;
-        /* margin-bottom: 3rem; */
+        margin-bottom: 3rem;
         height: unset
     }
 }
@@ -231,7 +231,7 @@
 #configure form,
 #build-your-bike form {
   max-width: calc((100vw/3));
-  min-height: calc(100vh + var(--header_height));
+  /* min-height: calc(100vh + var(--header_height)); */
 }
 @media screen and (max-width:1350px){    
     #configure form,
@@ -368,12 +368,14 @@
 .checkbox-input:checked + .checkbox-tile .checkbox-thumb {
 /*   filter: grayscale(1); */
 }
-.bikes_checkbox .checkbox-label {
+.bikes_checkbox .checkbox-label, 
+.bike_family_checkbox_wrapper .checkbox-label {
     position:absolute;
     right: 0;
     padding-right: 1rem;
 }
-.bikes_checkbox .product-head {
+.bikes_checkbox .product-head, 
+.bike_family_checkbox_wrapper .product-head {
     justify-content: flex-end;
 }
 
@@ -493,29 +495,35 @@
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
     color: #494949;
-    /*   margin-right:0.5rem; */
-    padding: 0.5rem;
+    margin-top:0.25rem;
+    margin-left:0.25rem;
+    /* padding: 0.5rem; */
 }
 .checkbox-thumb::before {
     background: rgba(32,32,32,0.033);
     content:'';
     position:absolute;
     z-index: 0;
-    top:50%;
-    left:0.5rem;
-    width:126px;
+    top:0.75rem;
+    left:0.75rem;
+    width:110px;
     height:110px;
-    transform: translate(0%,-50%);
+    /* transform: translate(0%,-50%); */
     border-radius: 0.25rem
 }
+
 .lrg .checkbox-thumb::before {
     background-color: unset;
     width: calc(100% - 1rem);
     height: calc(100% - 1rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .checkbox-thumb img {
     width: 110px;
+    height: 110px;
     max-width: unset;
     border-radius: 0.25rem;
     object-fit: contain;
@@ -523,7 +531,7 @@
 }
 
 .lrg .checkbox-thumb img {
-    width: calc(100vw/6 - 4.5rem);
+    width: calc(100vw/6 - 4.75rem);
     height: 100%;
     object-fit: cover;
     max-width: unset;
@@ -533,7 +541,7 @@
 
 @media screen and (max-width:1350px){    
     .lrg .checkbox-thumb img {
-        width: calc(100vw/5 - 4.5rem);
+        width: calc(100vw/5 - 4.75rem);
 		max-height: 110px;
     }
 }
@@ -564,6 +572,28 @@
   color: #202020;
 }
 
+
+/* additional_product_checkbox_outer._group */
+
+.additional_product_checkbox_outer._group {
+    font-size: 0.75rem;
+    font-weight: 300;
+    gap: 0.5rem;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+    width: max-content;
+}
+.additional_product_checkbox_outer label {
+    gap: 0.33rem;
+    align-items: center;
+    margin: 0;
+    display: flex;
+}
+form label input.additional_product_checkbox {
+    width: 1rem;
+}
+
 .product-head {
     display: flex;
     flex-direction: row;
@@ -578,6 +608,22 @@
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+@media screen and (max-width:425px){
+    .product-head {
+        margin-bottom: 0.5rem;  
+    }
+    .product-head .product-title, 
+    .product-head .product-price {
+        font-size: 15px;
+    }  
+    .outer_accessories_checkbox.GSD .checkbox:nth-of-type(6) .product-head .product-title {
+        word-break: break-all;
+    }
+    .outer_accessories_checkbox.HSD .checkbox:nth-of-type(8) .product-head .product-title {
+        word-break: break-all;
+    } 
+}   
+
 .product-head .product-price {
     font-weight: 500;
     margin-left: 1rem;
@@ -602,6 +648,11 @@
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+@media screen and (max-width:425px){  
+    .checkbox-label .product-desc{
+        margin-right: 0rem;
+    }
 }
 
 #col_right_wrap_Bikes .product-desc {
@@ -644,10 +695,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 1rem;
 }
 
 .bike_select .tab-item {
     color: var(--gray-500);
+    padding: 0.5rem 0.25rem;
 }
 .bike_select .tab-item.active {
     color:#202020;
@@ -802,11 +855,13 @@
     flex-direction: row;
     align-content: center;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 0.5rem;
 }
-@media screen and (max-width:450px){    
+@media screen and (max-width:1080px){    
     .info_wrap {
         flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -834,20 +889,30 @@
     margin-bottom: 0;
 }
 .desc_group {
-    font-size: 0.675rem;
-    font-weight: 300;
+    /* font-size: 0.675rem;
+    font-weight: 300; */
     margin-bottom: 1rem;
     flex-direction: column;
 }
 
+.detail_group {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 .detail_total {
     min-width: max-content;
+}
+
+.accessory_group {
+    font-size: 0.675rem;
+    font-weight: 300;
 }
 
 .subtotal_panel [class*="button_"] {
     /* justify-content: space-between; */
     margin-right: 0;
     margin-bottom: 0;
+    margin-top: 1rem;
     flex-direction: row;
 }
 

@@ -166,3 +166,38 @@ input#rememberme {
 .booking_conf p:last-of-type {
     margin-bottom: 0;
 }
+
+
+/* thank you */
+
+.thankyou_section {
+	margin-top: 0 !important;
+	padding-top: 3rem !important;
+}
+
+/* form block */
+
+[class*="book-a-"] ._wrap.form_block,
+#email-design ._wrap.form_block  {
+    padding: 0;
+}
+
+#email-design #stage_1 ._content {
+    flex-direction: column;
+    gap: 0;
+}
+
+@media screen and (min-width:1080px){    
+    ._content {
+        gap: 0;
+    }
+}
+
+/* self-checkout */
+
+#stage_5 .ol {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
