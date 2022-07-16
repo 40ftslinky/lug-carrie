@@ -142,7 +142,7 @@ input[type=submit] {
 .button {
     min-width: 150px;
 }
-.goto_back {
+.goto_back, .goto {
     min-width: unset;
 }
 

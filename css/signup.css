@@ -178,11 +178,13 @@ input#rememberme {
 /* form block */
 
 [class*="book-a-"] ._wrap.form_block,
-#email-design ._wrap.form_block  {
+#email-design ._wrap.form_block,
+#self-checkout-signup ._wrap.form_block  {
     padding: 0;
 }
 
-#email-design #stage_1 ._content {
+#email-design #stage_1 ._content,
+#self-checkout-signup #stage_1 ._content{
     flex-direction: column;
     gap: 0;
 }
@@ -195,9 +197,21 @@ input#rememberme {
 
 /* self-checkout */
 
-#stage_5 .ol {
+#self-checkout-signup #stage_1 ._content .column_40 {
+    --columns: 10;
+    justify-content: center !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stage_2 .select_group {
+    margin-bottom: 1rem;
+}
+
+#stage_5 ol {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
 }
 

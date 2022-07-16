@@ -3,7 +3,7 @@
 // $.noConflict();
 jQuery(document).ready(function( $ ) {
 
-	var do_not_reverse = Array('configure','signup','accessory','operational','operational-zone','about','review','book-a-consultation','book-a-test-ride', 'manage-subscription', 'email-design');
+	var do_not_reverse = Array('configure', 'build-your-bike', 'signup','accessory','operational','operational-zone','about','review','book-a-consultation','book-a-test-ride', 'manage-subscription', 'email-design');
 	
 	var body_id = jQuery("body").attr("id");
 

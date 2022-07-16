@@ -63,7 +63,8 @@
     color: #111827;
     position: relative;
     cursor: pointer;
-    padding-right: 40px;
+    /* padding-right: 40px; */
+    padding-right: 15%;
 }
 .faqs_item_title:after {
     content: '+';

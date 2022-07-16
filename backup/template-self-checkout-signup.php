@@ -222,7 +222,7 @@ foreach($metadata as $meta){
 
                         <div class="progress_timeline">
                             <ol class="progress_list">
-                                <li >Personal Info</li>
+                                <li onclick="form_back(1)">Personal Info</li>
                                 <li class="current">Rider Info</li>
                                 <li>Insurance + Storage</li>
                                 <li>Ts+Cs</li>
@@ -261,6 +261,7 @@ foreach($metadata as $meta){
 														if(strstr($key,"price_")){
 															print "<input type=hidden class='product_price' name='$key' id='$key' value='$post'>";
 														} else {
+															$key=str_replace("_num","",$key);
 															print "<input type=hidden class='product_id' name='$key' id='$key' value='$key'>";
 														}
 														print "\n";
@@ -325,15 +326,15 @@ foreach($metadata as $meta){
 													<div class='outer_answer_label'>
 														<div class="outer_reason_label">
 															<label class="reason_label">
-																<input type="radio" name="riderHeight" class="riderHeight" value="<5.1">Below 5.1</label>
+																<input type="radio" name="riderHeight" class="riderHeight" value="<150">Below 150 cm</label>
 															</div>
 															<div class="outer_reason_label">
 															<label class="reason_label">
-																<input type="radio" name="riderHeight" class="riderHeight" value="<=6.5">Between 5.1 and 6.5</label>
+																<input type="radio" name="riderHeight" class="riderHeight" value=">150">Between 150 - 195 cm</label>
 															</div>
 															<div class="outer_reason_label">
 															<label class="reason_label">
-																<input type="radio" name="riderHeight" class="riderHeight" value=">6.5">Above 6.5</label>
+																<input type="radio" name="riderHeight" class="riderHeight" value=">195">Above 195 cm </label>
 														</div>
 													</div>
 												</div>
@@ -605,9 +606,9 @@ foreach($metadata as $meta){
                                     </div>
 
                                     <div class="button_wrap_right">
-                                        <a  href="#stage_one" class="button naked_black goto goto_reset"  onclick="form_reset(1);" style="display:none;"  data-offset="80">reset</a>
-												<a  href="#stage_one" class="button naked_black goto goto_back"  onclick="form_back(1);" style="display:block;"  data-offset="80">back</a>
-                                        <a  href="#stage_three" class="button white_btn goto goto_next"  onclick="form_next(3);"  data-offset="80">Next</a>
+                                        <a  href="#" class="button naked_black goto goto_reset"  onclick="form_reset(1);" style="display:none;"  data-offset="80">reset</a>
+												<a  href="#" class="button naked_black goto goto_back"  onclick="form_back(1);" style="display:block;"  data-offset="80">back</a>
+                                        <a  href="#" class="button white_btn goto goto_next"  onclick="form_next(3);"  data-offset="80">Next</a>
                                     </div>
                                     
                                 </fieldset>
@@ -632,8 +633,8 @@ foreach($metadata as $meta){
 
                         <div class="progress_timeline">
                             <ol class="progress_list">
-                                <li >Personal Info</li>
-                                <li>Rider Info</li>
+                                <li onclick="form_back(1);">Personal Info</li>
+                                <li onclick="form_back(2);">Rider Info</li>
                                 <li class="current">Insurance + Storage</li>
                                 <li>Ts+Cs</li>
 
@@ -787,8 +788,8 @@ foreach($metadata as $meta){
 
 
                                     <div class="button_wrap_right">
-                                        <a  href="#stage_two"  onclick="form_back(2);" class="button naked_black goto"  data-offset="80">back</a>
-                                        <a  href="#stage_four"  onclick="form_next(4);" class="button white_btn goto"  data-offset="80">Next</a>
+                                        <a  href="#"  onclick="form_back(2);" class="button naked_black goto"  data-offset="80">back</a>
+                                        <a  href="#"  onclick="form_next(4);" class="button white_btn goto"  data-offset="80">Next</a>
                                     </div>
                                 </fieldset>
                             </form>
@@ -811,12 +812,11 @@ foreach($metadata as $meta){
 
                         <div class="progress_timeline">
                             <ol class="progress_list">
-                                <li >Stage One</li>
-                                <li>Stage Two</li>
-                                <li >Stage Three</li>
-                                <li class="current">Stage Four</li>
-                                <li>Stage Five</li>
-                                <li >Stage Six</li>
+                                <li onclick="form_back(1);">Personal Info</li>
+                                <li onclick="form_back(2);">Rider Info</li>
+                                <li onclick="form_back(3);">Insurance + Storage</li>
+                                <li class="current">Ts + Cs</li>
+
                             </ol>
                         </div>
 
@@ -853,8 +853,8 @@ foreach($metadata as $meta){
                                     </div>
 
                                     <div class="button_wrap_right">
-                                        <a  href="#stage_three"  onclick="form_back(3);" class="button naked_black goto"  data-offset="80">back</a>
-                                        <a  href="#stage_five"  onclick="form_next(5);" class="button white_btn goto"  data-offset="80">Submit your application!</a>
+                                        <a  href="#"  onclick="form_back(3);" class="button naked_black goto"  data-offset="80">back</a>
+                                        <a  href="#"  onclick="form_next(5);" class="button white_btn goto"  data-offset="80">Submit your application!</a>
                                     </div>
 
                                 </fieldset>
@@ -894,9 +894,9 @@ foreach($metadata as $meta){
 								?>
 								<div class="progress_timeline">
                             <ol class="progress_list">
-                                <li >Personal Info</li>
-                                <li >Rider Info</li>
-                                <li >Insurance + Storage</li>
+                                <li onclick="form_back(1);">Personal Info</li>
+                                <li onclick="form_back(2);">Rider Info</li>
+                                <li onclick="form_back(3);">Insurance + Storage</li>
                                 <li >Ts+Cs</li>              
                             </ol>
                         </div>
@@ -1015,12 +1015,12 @@ foreach($metadata as $meta){
                         <div class="forms">
                             <form>
                                 <fieldset> 
-                                    <!-- <legend>Inputs as descendents of labels (form legend)</legend> -->
+								<!--
+                              
 
                                     <div class="select_group">
                                         <label>
-                                            <!-- Select -->
-                                            <!-- Select -->
+
                                             Email                                            
                                             <input class="email_input" type="email" id="email" placeholder="Email address">
 													<div class="error_msg red email_input_error" style="display:none;">You must enter an email address</div>
@@ -1029,19 +1029,17 @@ foreach($metadata as $meta){
 									
 									
                                     <div class="select_group">
-                                        <div><label>
-                                            <!-- Select -->
-                                            <!-- Select -->
-                                            <span>Date of Birth </span>   
-													<div>
-													<span style="display:block;  float:left; max-width:110px;"><input class="date_of_birth_d" required   style="max-width:70px; float: left;" min="1" max="31" type="number" id="date_of_birth_d" placeholder="DD" maxlength=2>/</span>
-													<span style="display:block;  max-width:110px; float:left"><input class="date_of_birth_m"  required style="max-width:70px;  float:left" min="1" max="12" type="number" id="date_of_birth_m" placeholder="MM" maxlength=2>/</span>
-                                            <span style="display:block; max-width:160px;  float:left"><input class="date_of_birth_y" required  style="max-width:140px;  float:left" min="1900" max="2022" type="number" id="date_of_birth_y" placeholder="YYYY" maxlength=4></span>
-													<span style="clear:both"></span>
-													</div>
-													<div class="error_msg red dob_error" style="display:none;">You must enter a valid date</div>
-                                        </label></div>
-                                    </div>
+											<div><label>
+												<span>Date of Birth </span>   
+														<div class="dob_wrap">
+														<span class="dob_group"><input class="date_of_birth_d" required   style="max-width:70px; float: left;" min="1" max="31" type="number" id="date_of_birth_d" placeholder="DD" maxlength=2>/</span>
+														<span class="dob_group"><input class="date_of_birth_m"  required style="max-width:70px;  float:left" min="1" max="12" type="number" id="date_of_birth_m" placeholder="MM" maxlength=2>/</span>
+														<span class="dob_group"><input class="date_of_birth_y" required  style="max-width:140px;  float:left" min="1900" max="2022" type="number" id="date_of_birth_y" placeholder="YYYY" maxlength=4></span>
+														<span style="clear:both"></span>
+														</div>
+														<div class="error_msg red dob_error" style="display:none;">You must enter a valid date</div>
+											</label></div>
+										</div>
 									
 									
 									
@@ -1059,7 +1057,7 @@ foreach($metadata as $meta){
                                     <div class="select_group">
                                         <div class="_w50">
                                             <label>
-                                                <!-- Select -->
+
                                                 State:
                                                 <select   name="primaryRiderAddress_state" id="primaryRiderAddress_state"  >
                                                     <option value="Select" disabled selected hidden>Select</option>
@@ -1082,7 +1080,7 @@ foreach($metadata as $meta){
 									if($page_slug=="manual-checkout"){
 									
 									?>
-										<!-- ID and Proof of Address  upload -->
+
                                     <h5>ID and Proof of Address</h5>                                    
                                     <span style="margin-bottom: 1rem;">
                                         Please upload either:<br>
@@ -1112,7 +1110,7 @@ foreach($metadata as $meta){
                                     </div>
                                     <input type="hidden" name="primaryRiderIdentificationImageUrl2" id="primaryRiderIdentificationImageUrl2">									
 									
-										<!-- end  ID and Proof of Address  upload   -->
+
 										
 										
 										<p >
@@ -1133,13 +1131,14 @@ foreach($metadata as $meta){
 										
                                     </div>									
 
-                                    <!-- repeat / make visible if above = checked -->
+
 
                                     <div class="button_wrap_right">
-                                        <a href="#stage_five"  onclick="form_back(5);"  class="button naked_black goto" data-offset="80">back</a>
-                                        <a href="#stage_success"  onclick="form_next(7);" class="button white_btn goto" data-offset="80">Next</a>
+                                        <a href="#"  onclick="form_back(5);"  class="button naked_black goto" data-offset="80">back</a>
+                                        <a href="#"  onclick="form_next(7);" class="button white_btn goto" data-offset="80">Next</a>
                                       </div>
-                                    
+                                    -->
+									
                                 </fieldset>
                             </form>
                         </div>
@@ -1186,11 +1185,14 @@ function form_next(x){
 	
 	
 
-	
+	//
 	$data['firstName']=jQuery("#firstName").val();
 	$data['lastName']=jQuery("#lastName").val();
 	$data['phone']=jQuery("#phone").val();
 	$data['postcode']=jQuery("input[type=number]#postcode").val();
+	if($data['postcode']=="" || typeof $data['postcode'] == 'undefined') {
+		$data['postcode']=jQuery("input#primaryRiderAddress_postcode").val();
+	}
 	// form 2
 	$data['firstName']=jQuery("#firstName").val();
 	//$salutation=jQuery("#salutation").val();
@@ -1262,7 +1264,7 @@ function form_next(x){
 			jQuery("input#firstName").next().removeClass('visible');
 		}
 		
-	} else if(x==4 || x==5) {
+	} else if(x==4) {
 
 		// is consent checkbox checked? 
 		if(jQuery("input#insuranceAgreement").is(":checked")) {
@@ -1276,6 +1278,10 @@ function form_next(x){
 			}
 		}
 
+
+	} else if(x==5){	
+	
+
 		// is consent checkbox checked? 
 		if(jQuery("input#storageLockingAcknowledgement").is(":checked")) {
 			console.log("storageLockingAcknowledgement is checked");
@@ -1286,8 +1292,7 @@ function form_next(x){
 			if(x==5){
 				$verified=0;
 			}
-		}		
-		
+		}			
 		
 	} else if(x==6){
 		
@@ -1303,13 +1308,19 @@ function form_next(x){
 		if($em==""){
 			$verified=0;
 			jQuery(".email_input_error").show();
+			jQuery(".email_input_error").css('opacity', '1');
+			jQuery(".email_input_error").css('visibility', 'visible');
 		}
 		
 		if($yy=="" || $dd=="" || $mm==""){
 			$verified=0;
 			jQuery(".dob_error").show();
+			jQuery(".dob_error").css('opacity', '1');
+			jQuery(".dob_error").css('visibility', 'visible');
 		} else {
 			jQuery(".dob_error").hide();
+			jQuery(".dob_error").css('visibility', 'hidden');
+			jQuery(".dob_error").css('opacity', '0');
 		}
 
 
@@ -1368,8 +1379,14 @@ function form_next(x){
 				
 			if(x==2){
 				data['orderStage']="Stage One";
+				
+				data['primaryRiderAddress_street']=jQuery("#primaryRiderAddress_street").val();
+				data['primaryRiderAddress_city']=jQuery("#primaryRiderAddress_city").val();
+				data['primaryRiderAddress_state']=jQuery("#primaryRiderAddress_state").val();
+				data['primaryRiderAddress_postcode']=jQuery("#primaryRiderAddress_postcode").val();				
+				
 			}
-			if(x==3 || x==4 || x==5){
+			if(x==3){
 				data['orderStage']="Stage Two";
 				data['whereDidYouHearAboutUs']=jQuery("#whereDidYouHearAboutUs").val();
 				data['whereDidYouHearAboutUsOther']=jQuery("#whereDidYouHearAboutUsOther").val();
@@ -1409,16 +1426,24 @@ function form_next(x){
 				if($up3!=""){
 					data['additionalRiderIdentificationImageUrls'].push($up3);
 				}
-				var $up4=jQuery("#additionalRiderIdentificationImageUr2").val();
+				var $up4=jQuery("#additionalRiderIdentificationImageUrl2").val();
 				if($up4!=""){
 					data['additionalRiderIdentificationImageUrls'].push($up4);
 				}
 				data['passenger1Age']=jQuery("#passenger1Age").val();
 				data['passenger2Age']=jQuery("#passenger2Age").val();
-				data['otherNotes']=jQuery("#otherNotes").val();
-				data['insuranceAgreement']=insuranceAgreement;
-				data['storageLockingAcknowledgement']=storageLockingAcknowledgement;
 				
+
+								
+				data['otherNotes']=jQuery("#otherNotes").val();
+				console.log(data);
+			}
+			
+			if(x==4){
+				data['orderStage']="Stage Three";
+				
+				data['insuranceAgreement']=insuranceAgreement;
+
 				data['bikeStorageLocation']=jQuery("input[name=bikeStorageLocation]:checked").val();
 				data['bikeStorageLocationOther']=jQuery("#bikeStorageLocationOther").val();
 				data['bikeStorageAdditionalDetails']=jQuery("#bikeStorageAdditionalDetails").val();
@@ -1436,23 +1461,25 @@ function form_next(x){
 					data['bikeStorageImageURLs'].push($up2);
 				}							
 				
-				
-				
-				console.log(data);
-			}
-			if(x==6){
 
-				data['orderStage']="Stage Three";
+				
+				
+			}
+			
+			
+			if(x==5){
+
+				data['orderStage']="Stage Four";
+				
+				data['storageLockingAcknowledgement']=storageLockingAcknowledgement;
+				
 							
 				
 			}	
 			if(x==7){
 				data['orderStage']="Stage Four";
 				
-				data['primaryRiderAddress_street']=jQuery("#primaryRiderAddress_street").val();
-				data['primaryRiderAddress_city']=jQuery("#primaryRiderAddress_city").val();
-				data['primaryRiderAddress_state']=jQuery("#primaryRiderAddress_state").val();
-				data['primaryRiderAddress_postcode']=jQuery("#primaryRiderAddress_postcode").val();
+
 
 				data['primaryRiderIdentificationImageUrls']=Array();
 				var $up1=jQuery("#primaryRiderIdentificationImageUrl").val();

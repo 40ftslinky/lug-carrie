@@ -67,7 +67,7 @@
 				
 			?>
 			<div class="_row top"> 
-				<div class="column_80 centered"> 
+				<div class="column_80 center"> 
 					<h4 class="blue" id="self_checkout_signup_stage01_title">
 						<?php echo $h4; ?>
 					</h4>			
@@ -165,53 +165,53 @@
                                         <div class="error_msg ">Last name required</div>
                                     </label>
 
-                                        <?php
+								<?php
+																								
+									if($contact_type=="order"){
 										
-										
-											
-											if($contact_type=="order"){
-												
-												?>
-													<div class="select_group">
-														<label>Street Address
-															<input type="text"  name="primaryRiderAddress_street" id="primaryRiderAddress_street"  placeholder="Street Address">
-														</label>
-													</div>
-													<div class="select_group">
-														<label>Suburb
-															<input type="text"   name="primaryRiderAddress_city" id="primaryRiderAddress_city"  placeholder="Suburb">
-														</label>
-													</div>
-													<div class="select_group">
-														<div class="_w50">
-															<label>
-																<!-- Select -->
-																State:
-																<select   name="primaryRiderAddress_state" id="primaryRiderAddress_state"  >
-																	<option value="Select" disabled selected hidden>Select</option>
-																	<option value="NSW">New South Wales</option>
-																			<option value="VIC">Victoria</option>
-																</select>
-															</label>
-														</div>  
-														<div class="select_group">
-															<label>Postcode
-																<input type="text" placeholder="Postcode"   name="primaryRiderAddress_postcode" id="primaryRiderAddress_postcode"  >
-															</label>
-														</div>
-													</div>
-										<div class="select_group">
-
-										<label>
-                                            <!-- Phone input -->
-                                            <input id="phone" class="telephone_input" type="tel" value="" placeholder="Phone*">
-                                            <div class="error_msg ">Valid number required</div>
-                                        </label>
+									?>
+									
+									<div class="select_group">
+										<label>Street Address
+											<input type="text"  name="primaryRiderAddress_street" id="primaryRiderAddress_street"  placeholder="Street Address">
+										</label>
+									</div>
+									<div class="select_group">
+										<label>Suburb
+											<input type="text"   name="primaryRiderAddress_city" id="primaryRiderAddress_city"  placeholder="Suburb">
+										</label>
+									</div>
+									<div class="select_group">
+										<div class="_w50  _group">
+											<label>
+												<!-- Select -->
+												State:
+												<select   name="primaryRiderAddress_state" id="primaryRiderAddress_state"  >
+													<option value="Select" disabled selected hidden>Select</option>
+													<option value="NSW">New South Wales</option>
+															<option value="VIC">Victoria</option>
+												</select>
+											</label>
+										</div>  
+										<div class="_w50 _group">
+											<label>Postcode
+												<input type="text" placeholder="Postcode"   name="primaryRiderAddress_postcode" id="primaryRiderAddress_postcode"  >
+											</label>
 										</div>
-												<?php
-												
-											} else {	
-											?>
+									</div>
+									<div class="select_group">
+										<label>
+											<!-- Phone input -->
+											<input id="phone" class="telephone_input" type="tel" value="" placeholder="Phone*">
+											<div class="error_msg ">Valid number required</div>
+										</label>
+									</div>
+
+									<?php
+										
+									} else {
+											
+									?>
 
                                     <div class="select_group">
 
